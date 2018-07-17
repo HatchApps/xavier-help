@@ -4,7 +4,9 @@ module.exports = {
     themeConfig: {
         sidebar: [
             '/',
-            '/sandbox'
+            '/getting-started/',
+            '/team/',
+            '/clients/'
         ],
         displayAllHeaders: true,
         lastUpdated: 'Last Updated',
