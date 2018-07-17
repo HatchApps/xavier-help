@@ -4,9 +4,9 @@ module.exports = {
     themeConfig: {
         sidebar: [
             '/',
-            '/getting-started/',
-            '/team/',
-            '/clients/'
+            '/getting-started',
+            '/team-view',
+            '/client-view'
         ],
         displayAllHeaders: true,
         lastUpdated: 'Last Updated',

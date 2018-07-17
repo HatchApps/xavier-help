@@ -1,5 +1,0 @@
----
-title: Sandbox
----
-
-# Sandbox Tips
