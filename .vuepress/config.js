@@ -8,6 +8,7 @@ module.exports = {
             '/team-view',
             '/client-view',
             '/xero-integration',
+            '/troubleshooting',
             '/contact-us'
         ],
         displayAllHeaders: true,
