@@ -6,7 +6,9 @@ module.exports = {
             '/',
             '/getting-started',
             '/team-view',
-            '/client-view'
+            '/client-view',
+            '/xero-integration',
+            '/contact-us'
         ],
         displayAllHeaders: true,
         lastUpdated: 'Last Updated',
