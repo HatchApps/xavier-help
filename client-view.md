@@ -12,15 +12,30 @@ Xero using the *Unlink* button.
 Unlinking a client from Xero means it will remain in Xavier, but will no longer sync with Xero to retrieve the latest 
 changes. A client can be re-linked to Xero at any point, and syncing will resume.  
 
-[Syncing with Xero](/xero-integration.md#syncing) happens automatically overnight, but you can also trigger a sync on-demand via the *Sync Now* button. 
+[Syncing with Xero](/xero-integration.md#syncing) happens automatically overnight, but you can also trigger a sync on-demand 
+via the *Sync Now* button. 
 
 This view also highlights any issues with the client's Lock Dates - [find out more](/team-management.md#lock-dates).
 
 ## Sandbox
+The Sandbox is your data playground, a place where your KPI hopes and dreams can come to life. 
+
+![Sandbox](./images/sandbox.png)
+
+Interested in the tech? Behind the scenes we've integrated [ag-Grid's amazing data tables framework](https://www.ag-grid.com/), 
+which provides the enterprise-grade pivot table functionality, right in your browser.   
 
 ## Reports
 
 ## Insights
+In addition to allowing you to slice and dice your Client data, Xavier applies a number of its own data analysis
+techniques and presents the findings up as *Insights*...
+
+### Unreconciled Transactions
+*Coming Soon*
+
+### Duplicate Contacts
+*Coming Soon*
 
 ### Multi-Coded Contacts
 
