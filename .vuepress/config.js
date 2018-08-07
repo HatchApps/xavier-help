@@ -5,8 +5,8 @@ module.exports = {
         sidebar: [
             '/',
             '/getting-started',
-            '/team-view',
             '/client-view',
+            '/team-management',
             '/xero-integration',
             '/troubleshooting',
             '/contact-us'

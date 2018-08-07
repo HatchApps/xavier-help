@@ -38,7 +38,3 @@ Once the initial sync is finished, your client is ready for analysis - go forth!
 Learn more about our interaction with Xero [here](/xero-integration.md).
 
 Having issues adding your first client? Check out our [troubleshooting tips](/troubleshooting.md). 
-
-
-## Inviting Team Members
-

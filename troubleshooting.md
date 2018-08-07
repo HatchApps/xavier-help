@@ -39,7 +39,7 @@ Rest assured that we've optimised this process to be as fast as possible - the p
 even as certified partners we still have restrictions on how fast we can pull data out of Xero. If you're interested in the 
 tech side of things, you can read about Xero's API rate limits [here](https://developer.xero.com/documentation/auth-and-limits/xero-api-limits). 
 
-Subsequent syncs, either manual or automated overnight, only retrieve the xero records that have changed since the last sync, 
+Subsequent syncs, either manual or automated overnight, only retrieve the Xero records that have changed since the last sync, 
 so should be substantially faster in comparison.
 
 Think your import is taking too long or has failed? [Get in touch](/contact-us.html), we're here to help.    
