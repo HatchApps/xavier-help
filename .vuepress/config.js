@@ -6,7 +6,8 @@ module.exports = {
         sidebar: [
             '/',
             '/getting-started',
-            '/client-view',
+            '/sandbox-reporting',
+            '/insights',
             '/team-management',
             '/xero-integration',
             '/troubleshooting',

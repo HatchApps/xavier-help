@@ -20,7 +20,7 @@ After you register you'll be taken to the home page. This is where your team's c
 
 ![Import your first client](./images/add-first-client.png)
 
-Clicking **Import your first client** will take you to Xero. You'll be asked to login if you haven't already:
+Clicking *Import your first client* will take you to Xero. You'll be asked to login if you haven't already:
 
 ![Xero login](./images/xero-login.png)
 
@@ -38,3 +38,20 @@ Once the initial sync is finished, your client is ready for analysis - go forth!
 Learn more about our interaction with Xero [here](/xero-integration.md).
 
 Having issues adding your first client? Check out our [troubleshooting tips](/troubleshooting.md).
+
+## Client Overview
+Clicking on a client card from the home page will take you through to the management of that specific client.
+
+![Client Overview](./images/client-overview.png)
+
+In addition to providing high level stats about a client, the overview is where you can manage a client, 
+adjusting specific aspects from the *Edit* button, removing it from Xavier via the *Delete* button and un-linking it from
+Xero using the *Unlink* button. 
+
+Unlinking a client from Xero means it will remain in Xavier, but will no longer sync with Xero to retrieve the latest 
+changes. A client can be re-linked to Xero at any point, and syncing will resume.  
+
+[Syncing with Xero](/xero-integration.md#syncing) happens automatically overnight, but you can also trigger a sync on-demand 
+via the *Sync Now* button. 
+
+This view also highlights any issues with the client's Lock Dates - [find out more](/team-management.md#lock-dates).
