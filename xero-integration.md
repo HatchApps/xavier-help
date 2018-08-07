@@ -3,7 +3,8 @@
 ## How do we interact with Xero?
 
 ### Process Flow and Data Types
-*diagram to go here*
+
+![Xero Integration](./images/xero-relation-diagram.svg)
 
 ### Syncing - automated and manual
 
