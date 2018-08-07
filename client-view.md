@@ -22,8 +22,24 @@ The Sandbox is your data playground, a place where your KPI hopes and dreams can
 
 ![Sandbox](./images/sandbox.png)
 
+### The Sandbox Data
+We start with Xero's Journal Line Items as a base, and supplement each record with additional data based on the type of 
+journal it is - be it an Invoice, and Bank Transaction, a Credit Note and so on. We also bring in Contact and Account 
+information so you've got all the key information you need in one place.  
+
+### Customising the Sandbox
+The sandbox is a drag and drop report-builder, with spreadsheet-like functionality, right in your browser. And if you're
+a fan of Excel's pivot tables, you'll find that too. You can choose the columns you want to see, group-by, sort, collapse 
+and expand until you get it just how you want. In the image below the sandbox has been customised to group by Contact, 
+sort by Gross Amount and hide some columns. 
+
+![Customised Sandbox](./images/customised-sandbox.png)
+
 Interested in the tech? Behind the scenes we've integrated [ag-Grid's amazing data tables framework](https://www.ag-grid.com/), 
-which provides the enterprise-grade pivot table functionality, right in your browser.   
+which provides the enterprise-grade pivot table functionality.   
+
+### Saving as a Custom Report
+You can save sandbox configurations as a custom report.
 
 ## Reports
 
