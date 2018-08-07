@@ -15,4 +15,19 @@ module.exports = {
         displayAllHeaders: true,
         lastUpdated: 'Last Updated',
     },
+    configureWebpack: {
+        optimization: {
+            splitChunks: {
+                cacheGroups: {
+                    styles: {
+                        name: 'styles',
+                        // necessary to ensure async chunks are also extracted
+                        test: m => /css-extract/.test(m.type),
+                        chunks: 'all',
+                        enforce: false
+                    }
+                }
+            }
+        }
+    }
 };
