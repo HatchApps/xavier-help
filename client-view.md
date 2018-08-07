@@ -1,10 +1,20 @@
-# Client View
+# Client Views
 Clicking on a client card from the home page will take you through to the management of that specific client.
 
 ## Overview
-In addition to the 
 
-This view also highlights any issues with the  
+![Client Overview](./images/client-overview.png)
+
+In addition to providing high level stats about a client, the overview is where you can manage a client, 
+adjusting specific aspects from the *Edit* button, removing it from Xavier via the *Delete* button and un-linking it from
+Xero using the *Unlink* button. 
+
+Unlinking a client from Xero means it will remain in Xavier, but will no longer sync with Xero to retrieve the latest 
+changes. A client can be re-linked to Xero at any point, and syncing will resume.  
+
+[Syncing with Xero](/xero-integration.md#syncing) happens automatically overnight, but you can also trigger a sync on-demand via the *Sync Now* button. 
+
+This view also highlights any issues with the client's Lock Dates - [find out more](/team-management.md#lock-dates).
 
 ## Sandbox
 
