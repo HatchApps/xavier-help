@@ -1,6 +1,7 @@
 module.exports = {
     title: 'Xavier Analytics - Help',
     description: '',
+    ga: 'UA-76675321-9',
     themeConfig: {
         sidebar: [
             '/',
