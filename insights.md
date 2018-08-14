@@ -6,7 +6,16 @@ techniques and presents the findings up as *Insights*...
 *Coming Soon*
 
 ## Duplicate Contacts
-*Coming Soon*
+![Multi-Coded Contacts](./images/duplicate-contacts.png)
+
+The results shown in this Xavier insight are your Xero contacts that we’ve identified as potential duplicates. 
+This can happen if you create a new contact during the process of inputting an invoice or similar, and miss the fact that
+the contact already exists.
+
+Review these, (soon you'll be able to dismiss any incorrect suggestions), and click on the Xero links for the contacts 
+you want to amend. 
+
+Xero guidance on merging contacts can be found [here](https://central.xero.com/s/article/Edit-or-merge-an-existing-contact).
 
 ## Multi-Coded Contacts
 
