@@ -30,5 +30,16 @@ Think your sync is taking too long? Our [troubleshooting](/troubleshooting.md#sl
 :::
 
 ## Managing the Xero connection
-Your client will remain connected and in sync with Xero unless you tell Xavier otherwise. You can disconnect a client
-from...
+Your client will remain connected and in sync with Xero unless you tell Xavier otherwise. Disconnecting a client from 
+Xero will mean that the client will remain in Xavier in its current state - it will no longer receive updates from Xero.
+You can do this via the *Unlink from Xero* button on the *Client Overview* page.
+
+![Unlink From Xero](./images/unlink-from-xero.png)
+
+If a client is not connected to Xero this will be indicated by the open padlock and the *Link to Xero* button.
+If you wish to link a client back up with Xero, clicking this will redirect you to Xero for re-authentication. Xavier 
+will do a sync after re-linking, so that it is up to date with any changes.
+
+![Reconnect To Xero](./images/reconnect-to-xero.png)
+
+ 
