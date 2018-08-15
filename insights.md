@@ -3,7 +3,17 @@ In addition to allowing you to slice and dice your Client data, Xavier applies a
 techniques and presents the findings up as *Insights*...
 
 ## Unreconciled Transactions
-*Coming Soon*
+![Unreconciled Transactions](./images/unreconciled-transactions.png)
+
+Xavier lets you view a client's unreconciled bank transactions. It uses Xero's Bank Statement Report data to do so. 
+From each record, you can click straight into Xero to start the reconciliation process. This insight allows you to
+quickly order by the oldest records (useful if you are approaching month end), and also see/filter/group the records
+that are in a "locked" period. 
+
+You can also hit the *View All Items* button at the top of the insight to work with all bank statement records, not just
+the unreconciled ones.  
+
+Xero guidance on bank reconciliation can be found [here](https://central.xero.com/s/article/Bank-reconciliation-in-Xero).
 
 ## Duplicate Contacts
 ![Multi-Coded Contacts](./images/duplicate-contacts.png)
