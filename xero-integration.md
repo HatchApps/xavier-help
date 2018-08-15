@@ -42,4 +42,11 @@ will do a sync after re-linking, so that it is up to date with any changes.
 
 ![Reconnect To Xero](./images/reconnect-to-xero.png)
 
+Xero also [provide a way](https://central.xero.com/s/article/Disconnect-a-connected-app-in-Xero) of removing connected 
+apps directly from their site.
+
+::: warning
+Even if disconnected, your client's data will remain in Xavier until the client is deleted
+:::  
+
  
