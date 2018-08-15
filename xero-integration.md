@@ -46,7 +46,7 @@ Xero also [provide a way](https://central.xero.com/s/article/Disconnect-a-connec
 apps directly from their site.
 
 ::: warning
-Even if disconnected, your client's data will remain in Xavier until the client is deleted
+Even if disconnected, your client's data will remain in Xavier until the client is [deleted](/faq.md#how-can-i-remove-a-client-from-xavier)
 :::  
 
  
