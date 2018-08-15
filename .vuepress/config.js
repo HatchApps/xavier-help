@@ -10,6 +10,7 @@ module.exports = {
             '/insights',
             '/team-management',
             '/xero-integration',
+            '/faq',
             '/troubleshooting',
             '/contact-us'
         ],

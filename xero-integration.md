@@ -27,4 +27,8 @@ or from the options menu of a client on the *Client List* page:
 
 ::: tip
 Think your sync is taking too long? Our [troubleshooting](/troubleshooting.md#slow-client-syncing) may help.
+:::
 
+## Managing the Xero connection
+Your client will remain connected and in sync with Xero unless you tell Xavier otherwise. You can disconnect a client
+from...
