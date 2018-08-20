@@ -1,5 +1,8 @@
 # Xero Integration
 
+## Connecting to Xero
+A walkthrough of connecting Xavier to Xero can be found in our [Getting Started](/getting-started.md#adding-your-first-client) guide.
+
 ## How do we interact with Xero?
 The diagram below illustrates the general process flow between Xavier and Xero, from connecting a client to Xavier through
 to automated syncing overnight. You can see the Xero data we import into a Xavier client in the *Xero Organisation*:

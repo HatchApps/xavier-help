@@ -27,7 +27,21 @@ If you're lucky enough to grow to need more than 50 clients whilst using Xavier,
 ### What's your Custom Pricing?
 If you have more than 50 clients, please [get in touch](/contact-us.md) and we can arrange a custom plan for you that 
 will meet your needs.
-                        
+
+## Working with Xero
+
+### How do I connect Xavier to my Xero account?
+A walkthrough of connecting Xavier to Xero can be found in our [Getting Started](/getting-started.md#adding-your-first-client) guide.                      
+
+### What Xero data does Xavier use, and how?
+With your approval, we create a *Client* in Xavier out of the data we get from Xero. We keep Xavier up to date with any
+changes in Xero with an automated syncing process. Our [Xero Integration](/xero-integration.md#how-do-we-interact-with-xero) 
+guide has more info on the data we use, and the [syncing](/xero-integration.md#syncing) process. 
+
+### Can I stop Xavier from syncing with Xero?
+Yes, you can [disconnect](/xero-integration.md#managing-the-xero-connection) Xavier from Xero, which retains a snapshot
+of the data in Xavier without further updates. You can also [delete](/faq.md#how-can-i-remove-a-client-from-xavier) a 
+client from Xavier completely. 
 
 ## Data Management
 
