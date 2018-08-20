@@ -19,7 +19,22 @@ An invite will be emailed to your colleague with a link to Xavier. When they cli
 they'll be asked to sign up and provide login details. They'll be automatically added to your team via this process.
 
 ## Account Managers
-*Coming Soon*
+If your team manages many clients, you'll likely have a concept in your team structure where certain people look after
+certain clients. In Xavier, we refer to these people as *Account Managers*.
+
+When you first create a Xavier client, you'll be automatically assigned to that client as the Account Manager. You can
+see who each client's Account Manager is on the Client List, and filter the list so that you only see the clients that 
+you manage:
+
+![Account Manager](./images/account-manager.png)
+
+To change who the Account Manager is for a client, click on the client in the client list, then *Edit* from the Client 
+Overview. 
+
+![Edit Account Manager](./images/account-manager-edit.png)
+
+Aside from having a streamlined view in the Client List, we have bigger plans for the Account Manager function - watch 
+this space!
 
 ## Lock Dates
 *Coming Soon*
