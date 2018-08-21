@@ -37,4 +37,52 @@ Aside from having a streamlined view in the Client List, we have bigger plans fo
 this space!
 
 ## Lock Dates
-*Coming Soon*
+Lock Dates are a feature of Xero designed to help prevent changes to records in periods that have already been reported 
+on or filed:
+
+![Xero Lock Dates](./images/xero-lock-dates.png)
+
+Xavier combines knowledge of a client's lock dates in Xero with account filing information from Companies House 
+(where available) to help you keep Xero data stable.
+
+As you can see in the Xero screenshot above, there are two lock date concepts in Xero. Xero do not give them specific
+names, but in Xavier we define them as:
+
+* **Reporting Period Lock Date** (the first one in Xero): this lock date usually tracks your monthly or quarterly 
+reporting period. Records older than this lock date *shouldn't usually* be altered, but since the financial year may 
+still be active then this may still happen - but only advisors should be able to alter.  
+
+* **End of Year Lock Date** (the second one in Xero): this is the date at which the last filed company's accounts were 
+made up to. No changes should be made to records beyond this date. 
+
+There are some limitations to Xero's handling of lock dates: anyone with access to a client's settings in Xero can 
+change the lock dates. There is nothing preventing users from changing the locked period to a date in the past,
+allowing them to change historical records, and there is no history of this change taking place. If this is problematic 
+for you, Xavier has your back...
+
+### Lock Date History
+Xavier tracks changes to Xero's lock dates. You can view the history of these changes from the *Client Overview* page:
+
+![Lock Date History](./images/lock-date-history.png)
+
+Changes that have shifted the dates backwards are flagged so that you can quickly spot possible issues and dig deeper.
+Reporting Period backwards changes are flagged with a warning, End of Year backwards changes get an error flag. 
+
+### End of Year Dates
+If a company registration number is provided in Xero, Xavier queries Companies House to get accounts filing information.
+If the last-filed date in Companies House is more recent than the current End of Year lock date in Xero, Xavier will
+raise a warning. 
+
+*(Screenshot)*
+
+### Reporting Periods
+By encouraging the active maintenance of monthly reporting period lock dates in Xero, you can reduce the amount of data 
+inconsistencies between Xero and third parties. 
+
+*(Screenshot)*
+
+### Locked Records in Reporting
+
+*(Screenshot)*
+
+Learn more about [lock dates in Xero](https://central.xero.com/s/article/Set-up-and-work-with-lock-dates).
