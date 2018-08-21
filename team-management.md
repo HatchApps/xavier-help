@@ -53,7 +53,8 @@ reporting period. Records older than this lock date *shouldn't usually* be alter
 still be active then this may still happen - but only advisors should be able to alter.  
 
 * **End of Year Lock Date** (the second one in Xero): this is the date at which the last filed company's accounts were 
-made up to. No changes should be made to records beyond this date. 
+made up to. No changes should be made to records beyond this date. The implications of changing this are usually more 
+severe.
 
 There are some limitations to Xero's handling of lock dates: anyone with access to a client's settings in Xero can 
 change the lock dates. There is nothing preventing users from changing the locked period to a date in the past,
@@ -76,12 +77,27 @@ raise a warning.
 *(Screenshot)*
 
 ### Reporting Periods
-By encouraging the active maintenance of monthly reporting period lock dates in Xero, you can reduce the amount of data 
-inconsistencies between Xero and third parties. 
+By encouraging the active maintenance of monthly reporting period lock dates in Xero, your team can reduce the amount 
+of data inconsistencies between Xero and third parties. 
 
-*(Screenshot)*
+A typical reporting cycle might be that at the end of each month,
+the accounting team has two weeks to prepare and submit their end of month reports to a client. Once the reports are 
+submitted the Reporting Period Lock Date would be brought forward in Xero to restrict changes from being made in the 
+closed period. 
+
+In Xavier, you can configure a team-wide grace period that indicates how long your team has to close off the month and 
+update Xero:  
+
+![Lock Date Grace](./images/lock-date-grace.png)
+
+If a client's Reporting Period Lock Date slips behind the grace period, Xavier will show this as an alert on the *Client
+Overview* page:
+
+![Lock Date Grace Exceeded](./images/lock-date-grace-exceeded.png)
 
 ### Locked Records in Reporting
+
+The concept of records being in locked periods is carried throughout Xavier...
 
 *(Screenshot)*
 
