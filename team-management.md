@@ -74,7 +74,7 @@ If a company registration number is provided in Xero, Xavier queries Companies H
 If the last-filed date in Companies House is more recent than the current End of Year lock date in Xero, Xavier will
 raise a warning. 
 
-*(Screenshot)*
+![End of Year Lock Date Warning](./images/end-of-year-lock-date-warning.png)
 
 ### Reporting Periods
 By encouraging the active maintenance of monthly reporting period lock dates in Xero, your team can reduce the amount 
@@ -86,7 +86,7 @@ submitted the Reporting Period Lock Date would be brought forward in Xero to res
 closed period. 
 
 In Xavier, you can configure a team-wide grace period that indicates how long your team has to close off the month and 
-update Xero:  
+update the lock dates in Xero:  
 
 ![Lock Date Grace](./images/lock-date-grace.png)
 
@@ -97,8 +97,10 @@ Overview* page:
 
 ### Locked Records in Reporting
 
-The concept of records being in locked periods is carried throughout Xavier...
+The concept of records being in locked periods is carried throughout Xavier. The Sandbox, custom reports and insights 
+such as Unreconciled Transactions all show whether a particular record falls within a locked period. You can then choose
+to filter out or sort by this attribute.
 
-*(Screenshot)*
+![Locked Records](./images/locked-records.png)
 
 Learn more about [lock dates in Xero](https://central.xero.com/s/article/Set-up-and-work-with-lock-dates).
