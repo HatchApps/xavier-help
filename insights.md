@@ -42,4 +42,32 @@ Xero provides a dedicated mechanism for re-coding, and their support documentati
 ## Corporation Tax
 ![Coporation Tax](./images/insight-corporation-tax.png)
 
-The Corporation Tax insight gives an estimate of corporation tax due for the current and previous financial years.
+The Corporation Tax insight gives an estimate of the corporation tax accrued by a company for the current and previous 
+financial years, based on UK tax rates and using the financial year-end dates in the Xero settings.
+
+In terms of how the different elements are calculated, Xavier starts your team off with some defaults based on the chart 
+of account's [Account Type](https://central.xero.com/s/article/Components-of-an-account-in-your-chart-of-accounts-AU?userregion=true)
+and the  [Reporting Codes](https://central.xero.com/s/article/Report-codes-for-practices-using-report-templates) 
+provided by Xero. 
+
+### Client-specific configuration
+Reporting Codes are applied to all Accounts, and can be customised in Xero by your team. They are a great way of 
+achieving reporting consistency across clients that have different chart of account configurations. But you only have 
+visibility of Reporting Codes if you are a Xero Partner, and sometimes it is not feasible to configure these for every 
+client you work with. 
+
+Xavier allows you to override the default corporation tax calculation for a client. By clicking on the cog beside an 
+element of the corporation tax view you will see what is currently being used for that section of the calculation. 
+
+![Coporation Tax Section Calculation](./images/insight-corporation-tax-override.png)
+
+Clicking "change" allows you to specify individual account codes to either include or exclude, depending on the section: 
+
+![Coporation Tax Section Override](./images/insight-corporation-tax-override-change.png)
+
+Specifying account codes means that the default calculation will no longer be used for this client, and Xavier will 
+instead use the account codes provided. Upon clicking *Save*, the corporation tax will be recalculated for current and
+previous years based on the new configuration.
+
+You can remove account codes from the calculation at any time, and removing all of them will result in the calculation 
+reverting back to using the Xavier defaults.
