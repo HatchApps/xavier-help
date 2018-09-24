@@ -34,10 +34,38 @@ Each Invoice and Bank Transaction line item is assigned an Account Code and a Ta
 The majority of the time, these codes *should* be consistent for a given supplier or customer.
 
 It happens to be best of us though - sometimes these records are assigned the wrong codes, or coding evolves over time.
-We’ve crunched the numbers to find these potential mis-codings and you'll them presented in this insight, with helpful
+We’ve crunched the numbers to find these potential mis-codings and you'll see them presented in this insight, with helpful
 links directly to Xero allowing you to amend these where needed.
 
-Xero provides a dedicated mechanism for re-coding, and their support documentation on this is [here](https://central.xero.com/s/article/Find-Recode-a-group-of-transaction-lines).
+Xero provides a dedicated mechanism for re-coding, and their support documentation on this is 
+[here](https://central.xero.com/s/article/Find-Recode-a-group-of-transaction-lines).
+
+## Contact Defaults
+Contacts in Xero can be setup with "default" account codes for sales and purchases. If set, Xero will use these to 
+pre-populate the account code fields during bank statement reconciliation. For contacts that your client has
+a recurring relationship with (e.g. a supplier that bills monthly), setting these defaults in Xero can dramatically 
+speed up the reconciliation process:
+
+![Setting Contact Defaults in Xero](./images/cleanup-contact-defaults-xero-settings.png)
+
+Figuring out what contacts are eligible for setting up a default code in Xero can be time consuming. This Xavier system 
+analyses each contact's transaction history and searches for contacts where either sales or purchase invoices have been 
+consistently assigned the same account code, and presents these up to you in a handy list: 
+
+![Contact Defaults](./images/cleanup-contact-defaults.png)
+
+You can review the transaction history of these contacts and decide whether or not to apply Xavier's suggestion.
+
+Dismissing the suggestion will hide it from the "Suggested" list, but you can always undo this from the "Dismissed" list if 
+you want it back.
+
+Clicking *Set as default* does what is says on the tin - Xavier will prompt you to confirm before setting the suggested
+account code in Xero as the default for either Sales or Purchases:
+
+![Contact Defaults Confirm Setting](./images/cleanup-contact-defaults-confirm.png)
+
+Xero's support documentation on settings for Contacts is [here](https://central.xero.com/s/article/What-are-contacts-in-Xero-UK).
+
 
 ## Corporation Tax
 ![Coporation Tax](./images/insight-corporation-tax.png)
