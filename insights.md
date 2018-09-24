@@ -131,3 +131,14 @@ bank transactions within 6 months of the end of the period, with:
 
 If such a payment is found, the *Payment Detected* field will be set to "Yes". Clicking on this will take you straight 
 through to the bank transaction in Xero.
+
+## GoProposal Stats
+![GoProposal Stats](./images/insight-goproposal.png)
+
+Designed for accountancy firms utilising [GoProposal](https://goproposal.com/) to determine pricing for their clients, 
+the GoProposal Stats insight gives a breakdown of the key trading statistics of a company, with a focus on volume, e.g. 
+number of bank transactions for the period. These figures can then be input directly into GoProposal to quickly 
+calculate pricing when a client is up for renewal.
+
+This insight calculates statistics for a rolling 12 month period, starting from the last complete month, and working 
+back from there.
