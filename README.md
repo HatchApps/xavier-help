@@ -7,3 +7,5 @@ You'll find a quick overview of the key features on [our website](https://xavier
 You can also have a play without needing an account using our [demo system](https://demo.xavier-analytics.com).
 
 Prefer to jump straight in? [Sign Up](https://app.xavier-analytics.com/register) for a free trial to get started.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/07s3HqUvnks?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
