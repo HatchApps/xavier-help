@@ -99,3 +99,35 @@ previous years based on the new configuration.
 
 You can remove account codes from the calculation at any time, and removing all of them will result in the calculation 
 reverting back to using the Xavier defaults.
+
+
+## VAT Tracking
+![VAT Tracking](./images/insight-vat.png)
+
+The VAT Tracking insight gives an estimate of the VAT accrued by a company for the current VAT period, and includes 
+estimates for previous periods dating back to the end of the previous financial year. The financial year and VAT periods 
+are based on the client's settings in Xero.
+
+### Cash vs Accrual Schemes
+In the UK, a company could be configured to report VAT to HMRC on a Cash basis or an Accrual basis. Xavier automatically 
+detects this based on Xero settings and adjusts the VAT calculation accordingly.  
+
+### Flat Rate Scheme
+Xavier will detect if a client is on a [Flat Rate Scheme](https://www.gov.uk/vat-flat-rate-scheme/how-much-you-pay), but 
+it has no way of knowing what VAT rate has been agreed with HMRC for the client. The first time you view the VAT Tracking
+insight, Xavier will prompt for the VAT rate to use if it detects the client is on a Flat Rate Scheme:
+
+![Flat Rate Scheme Prompt](./images/insight-vat-rate-prompt.png)
+ 
+You can adjust this for a client at any time by clicking on *Adjust Rate* in the menu bar of the VAT view.  
+
+### Payment Detection
+Xavier will try and detect if a previous period's accrued VAT has been paid to HMRC or not, by searching for reconciled 
+bank transactions within 6 months of the end of the period, with:
+- a GL Account with the Reporting Code of `LIA.CUR.TAX.VAT`
+- a payment amount within a 2% variance of the estimated amount for the period
+
+![VAT Payment Detection](./images/insight-vat-payment.png)
+
+If such a payment is found, the *Payment Detected* field will be set to "Yes". Clicking on this will take you straight 
+through to the bank transaction in Xero.
