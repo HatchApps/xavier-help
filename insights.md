@@ -142,3 +142,21 @@ calculate pricing when a client is up for renewal.
 
 This insight calculates statistics for a rolling 12 month period, starting from the last complete month, and working 
 back from there.
+
+## Historical Changes
+![Historical Changes](./images/insight-historical-changes.png)
+
+Have you ever had that uncomfortable feeling that something in a previous period has changed after you've reported it to
+the board or to the tax authorities? All the accountants we know have run into this at some point. Everyone makes 
+mistakes, and it can be quite easy for someone with Advisor privileges in Xero to create a record with the wrong journal 
+date. 
+
+The tricky thing is tracking down these changes so they can be amended. Xavier allows you to identify exactly what was 
+changed and when within seconds. Simply input the historical reporting period that you want to check, and the close date 
+from which you expect no more transactions to have been logged for that period, and click *Run Report*.
+
+Xavier queries the underlying journal transactions for the client, and looks for transactions that have a journal date 
+within the historical period, but a created date of __after__ the reporting close date. 
+
+You'll be able to jump straight to the offending transaction(s) in Xero from the results. And, in case you need to show 
+someone else where it all went wrong, you can always export the results to PDF. 
