@@ -119,7 +119,20 @@ insight, Xavier will prompt for the VAT rate to use if it detects the client is 
 
 ![Flat Rate Scheme Prompt](./images/insight-vat-rate-prompt.png)
  
-You can adjust this for a client at any time by clicking on *Adjust Rate* in the menu bar of the VAT view.  
+You can adjust this for a client at any time by clicking on *Adjust Rate* in the menu bar of the VAT view.
+
+### Scheme Thresholds
+For the Cash and Flat Rate schemes, Xavier monitors your 
+[taxable turnover](https://www.gov.uk/vat-registration/calculate-turnover) to ensure that you remain on the right 
+scheme from a compliance perspective, using HMRC's defined [thresholds](https://www.gov.uk/vat-registration-thresholds).
+
+For example, you'll get an alert at the top of the VAT insight if you exceed a threshold:
+
+![VAT Exceeded Threshold](./images/insight-vat-alert-exceeded.png)
+
+And similarly Xavier also warns you if you are approaching a threshold:
+
+![VAT Approaching Threshold](./images/insight-vat-alert-approaching.png)      
 
 ### Payment Detection
 Xavier will try and detect if a previous period's accrued VAT has been paid to HMRC or not, by searching for reconciled 
