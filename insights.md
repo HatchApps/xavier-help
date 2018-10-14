@@ -132,8 +132,8 @@ For example, you'll get an alert at the top of the VAT insight if you exceed a t
 
 And similarly Xavier also warns you if you are approaching a threshold:
 
-![VAT Approaching Threshold](./images/insight-vat-alert-approaching.png)      
-
+![VAT Approaching Threshold](./images/insight-vat-alert-approaching.png)
+       
 ### Payment Detection
 Xavier will try and detect if a previous period's accrued VAT has been paid to HMRC or not, by searching for reconciled 
 bank transactions within 6 months of the end of the period, with:
@@ -144,6 +144,43 @@ bank transactions within 6 months of the end of the period, with:
 
 If such a payment is found, the *Payment Detected* field will be set to "Yes". Clicking on this will take you straight 
 through to the bank transaction in Xero.
+
+## VAT Return Checks
+Xavier provides a set of checks that have been designed to quickly spot tax issues with respect to transaction data over 
+a given filing period. Simply enter in the date range and the minimum amounts (more on those below) and hit *Run Report* 
+to generate the checks. Expanding the card allows you to see these transactions, with a link directly to Xero to sort 
+them out.
+
+![VAT Return Checks](./images/insight-vat-return.png)
+
+### Reconciliation Review
+This uses the same logic as the [Unreconciled Transactions](/insights.html#unreconciled-transactions) insight to find 
+unreconciled transactions for the date range you have supplied.
+
+### Revenue Account Review
+This check finds transactions that don't have an Account Class of REVENUE, but have been assigned as revenue Tax Type of 
+OUTPUT2, RROUTPUT or ZERORATEDOUTPUT.
+
+### Expense Account Review
+This check finds expense transactions that have been assigned a Tax Type of INPUT2, with accounts that have Reporting 
+Codes of EXP.ADM.ENT (Entertainment), EXP.ADM.PRI (Printing & Postage) or EXP.ADM.TRA (Travel International).
+
+### Balance Sheet Review
+This check finds ASSET, LIABILITY or EQUITY type transactions with a non-zero tax value, excluding Fixed Assets (account 
+type FIXED) and Reporting Codes of LIA.CUR.ACC (income in advance) or ASS.CUR.REC.PRE (prepayments).
+
+### Zero-Rated Review
+This check finds transactions with a tax type of ZERORATEDINPUT with a net value above the minimum amount set by you in 
+the report header (*Zero Rated Min*). The idea here is to ensure the client is claiming back VAT on as many high value 
+items as possible.
+
+### No-VAT Review
+This check finds transactions with a tax type of NONE with a net value above the minimum amount set by you in 
+the report header (*No VAT Min*).
+
+### Multi-coded Contacts
+The same as the [Multi-Coded Contacts](/insights.html#multi-coded-contacts) insight, but looking at contacts that 
+have transactions in the reporting period specified.  
 
 ## GoProposal Stats
 ![GoProposal Stats](./images/insight-goproposal.png)
