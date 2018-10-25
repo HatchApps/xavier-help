@@ -28,7 +28,7 @@ you want to amend.
 Xero guidance on merging contacts can be found [here](https://central.xero.com/s/article/Edit-or-merge-an-existing-contact).
 
 ## Multi-Coded Contacts
-![Multi-Coded Contacts](./images/multi-coded-contacts.png)
+![Multi-Coded Contacts](./images/insight-multi-coded.png)
 
 Each Invoice and Bank Transaction line item is assigned an Account Code and a Tax Code in Xero.
 The majority of the time, these codes *should* be consistent for a given supplier or customer.
@@ -39,6 +39,19 @@ links directly to Xero allowing you to amend these where needed.
 
 Xero provides a dedicated mechanism for re-coding, and their support documentation on this is 
 [here](https://central.xero.com/s/article/Find-Recode-a-group-of-transaction-lines).
+
+### Selecting The Date Filters
+The Multi-Coded Contacts insight allows you to specify two different date filters:
+
+**Active During**: This is the period where you want to find contacts to assess. Xavier will find and evaluate contacts 
+that have been active (i.e. they have transactions) during this time period. For example, this could be your reporting 
+period of the previous month. 
+
+**Check Transactions Since**: Once Xavier finds the active contacts to evaluate, this date refers to how far back in 
+time Xavier should look into each Contact's transaction history to compare account and tax codes and surface any 
+inconsistencies. For example, if you know that you changed your accounts structure at the start of the year, it doesn't 
+make sense to evaluate transaction history before the change, so set this date to be the 1st of January (or whenever 
+you made the change).    
 
 ## Contact Defaults
 Contacts in Xero can be setup with "default" account codes for sales and purchases. If set, Xero will use these to 
