@@ -22,8 +22,7 @@ The results shown in this Xavier insight are your Xero contacts that we’ve ide
 This can happen if you create a new contact during the process of inputting an invoice or similar, and miss the fact that
 the contact already exists.
 
-Review these, (soon you'll be able to dismiss any incorrect suggestions), and click on the Xero links for the contacts
-you want to amend.
+Review these, you may dismiss any which aren't true duplicates, or clicking the name of the contact will take you to Xero to amend them. The transaction count should give a good indication of which contact has had more activity.
 
 Xero guidance on merging contacts can be found [here](https://central.xero.com/s/article/Edit-or-merge-an-existing-contact).
 

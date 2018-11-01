@@ -24,7 +24,7 @@ module.exports = {
             '/xero-integration',
             '/faq',
             '/troubleshooting',
-            '/contact-us'
+            '/contact-us',
         ],
         displayAllHeaders: true,
         lastUpdated: 'Last Updated',
