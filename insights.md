@@ -36,39 +36,39 @@ It happens to be best of us though - sometimes these records are assigned the wr
 We’ve crunched the numbers to find these potential mis-codings and you'll see them presented in this insight, with helpful
 links directly to Xero allowing you to amend these where needed.
 
-Xero provides a dedicated mechanism for re-coding, and their support documentation on this is 
+Xero provides a dedicated mechanism for re-coding, and their support documentation on this is
 [here](https://central.xero.com/s/article/Find-Recode-a-group-of-transaction-lines).
 
 ### Selecting The Date Filters
 The Multi-Coded Contacts insight allows you to specify two different date filters:
 
-**Active During**: This is the period where you want to find contacts to assess. Xavier will find and evaluate contacts 
-that have been active (i.e. they have transactions) during this time period. For example, this could be your reporting 
-period of the previous month. 
+**Active During**: This is the period where you want to find contacts to assess. Xavier will find and evaluate contacts
+that have been active (i.e. they have transactions) during this time period. For example, this could be your reporting
+period of the previous month.
 
-**Check Transactions Since**: Once Xavier finds the active contacts to evaluate, this date refers to how far back in 
-time Xavier should look into each Contact's transaction history to compare account and tax codes and surface any 
-inconsistencies. For example, if you know that you changed your accounts structure at the start of the year, it doesn't 
-make sense to evaluate transaction history before the change, so set this date to be the 1st of January (or whenever 
-you made the change).    
+**Check Transactions Since**: Once Xavier finds the active contacts to evaluate, this date refers to how far back in
+time Xavier should look into each Contact's transaction history to compare account and tax codes and surface any
+inconsistencies. For example, if you know that you changed your accounts structure at the start of the year, it doesn't
+make sense to evaluate transaction history before the change, so set this date to be the 1st of January (or whenever
+you made the change).
 
 ## Contact Defaults
-Contacts in Xero can be setup with "default" account codes for sales and purchases. If set, Xero will use these to 
+Contacts in Xero can be setup with "default" account codes for sales and purchases. If set, Xero will use these to
 pre-populate the account code fields during bank statement reconciliation. For contacts that your client has
-a recurring relationship with (e.g. a supplier that bills monthly), setting these defaults in Xero can dramatically 
+a recurring relationship with (e.g. a supplier that bills monthly), setting these defaults in Xero can dramatically
 speed up the reconciliation process:
 
 ![Setting Contact Defaults in Xero](./images/cleanup-contact-defaults-xero-settings.png)
 
-Figuring out what contacts are eligible for setting up a default code in Xero can be time consuming. This Xavier system 
-analyses each contact's transaction history and searches for contacts where either sales or purchase invoices have been 
-consistently assigned the same account code, and presents these up to you in a handy list: 
+Figuring out what contacts are eligible for setting up a default code in Xero can be time consuming. This Xavier system
+analyses each contact's transaction history and searches for contacts where either sales or purchase invoices have been
+consistently assigned the same account code, and presents these up to you in a handy list:
 
 ![Contact Defaults](./images/cleanup-contact-defaults.png)
 
 You can review the transaction history of these contacts and decide whether or not to apply Xavier's suggestion.
 
-Dismissing the suggestion will hide it from the "Suggested" list, but you can always undo this from the "Dismissed" list if 
+Dismissing the suggestion will hide it from the "Suggested" list, but you can always undo this from the "Dismissed" list if
 you want it back.
 
 Clicking *Set as default* does what is says on the tin - Xavier will prompt you to confirm before setting the suggested
@@ -78,64 +78,62 @@ account code in Xero as the default for either Sales or Purchases:
 
 Xero's support documentation on settings for Contacts is [here](https://central.xero.com/s/article/What-are-contacts-in-Xero-UK).
 
-
 ## Corporation Tax
 ![Coporation Tax](./images/insight-corporation-tax.png)
 
-The Corporation Tax insight gives an estimate of the corporation tax accrued by a company for the current and previous 
+The Corporation Tax insight gives an estimate of the corporation tax accrued by a company for the current and previous
 financial years, based on UK tax rates and using the financial year-end dates in the Xero settings.
 
-In terms of how the different elements are calculated, Xavier starts your team off with some defaults based on the chart 
+In terms of how the different elements are calculated, Xavier starts your team off with some defaults based on the chart
 of account's [Account Type](https://central.xero.com/s/article/Components-of-an-account-in-your-chart-of-accounts-AU?userregion=true)
-and the  [Reporting Codes](https://central.xero.com/s/article/Report-codes-for-practices-using-report-templates) 
-provided by Xero. 
+and the  [Reporting Codes](https://central.xero.com/s/article/Report-codes-for-practices-using-report-templates)
+provided by Xero.
 
 ### Client-specific configuration
-Reporting Codes are applied to all Accounts, and can be customised in Xero by your team. They are a great way of 
-achieving reporting consistency across clients that have different chart of account configurations. But you only have 
-visibility of Reporting Codes if you are a Xero Partner, and sometimes it is not feasible to configure these for every 
-client you work with. 
+Reporting Codes are applied to all Accounts, and can be customised in Xero by your team. They are a great way of
+achieving reporting consistency across clients that have different chart of account configurations. But you only have
+visibility of Reporting Codes if you are a Xero Partner, and sometimes it is not feasible to configure these for every
+client you work with.
 
-Xavier allows you to override the default corporation tax calculation for a client. By clicking on the cog beside an 
-element of the corporation tax view you will see what is currently being used for that section of the calculation. 
+Xavier allows you to override the default corporation tax calculation for a client. By clicking on the cog beside an
+element of the corporation tax view you will see what is currently being used for that section of the calculation.
 
 ![Coporation Tax Section Calculation](./images/insight-corporation-tax-override.png)
 
-Clicking "change" allows you to specify individual account codes to either include or exclude, depending on the section: 
+Clicking "change" allows you to specify individual account codes to either include or exclude, depending on the section:
 
 ![Coporation Tax Section Override](./images/insight-corporation-tax-override-change.png)
 
-Specifying account codes means that the default calculation will no longer be used for this client, and Xavier will 
+Specifying account codes means that the default calculation will no longer be used for this client, and Xavier will
 instead use the account codes provided. Upon clicking *Save*, the corporation tax will be recalculated for current and
 previous years based on the new configuration.
 
-You can remove account codes from the calculation at any time, and removing all of them will result in the calculation 
+You can remove account codes from the calculation at any time, and removing all of them will result in the calculation
 reverting back to using the Xavier defaults.
-
 
 ## VAT Tracking
 ![VAT Tracking](./images/insight-vat.png)
 
-The VAT Tracking insight gives an estimate of the VAT accrued by a company for the current VAT period, and includes 
-estimates for previous periods dating back to the end of the previous financial year. The financial year and VAT periods 
+The VAT Tracking insight gives an estimate of the VAT accrued by a company for the current VAT period, and includes
+estimates for previous periods dating back to the end of the previous financial year. The financial year and VAT periods
 are based on the client's settings in Xero.
 
 ### Cash vs Accrual Schemes
-In the UK, a company could be configured to report VAT to HMRC on a Cash basis or an Accrual basis. Xavier automatically 
-detects this based on Xero settings and adjusts the VAT calculation accordingly.  
+In the UK, a company could be configured to report VAT to HMRC on a Cash basis or an Accrual basis. Xavier automatically
+detects this based on Xero settings and adjusts the VAT calculation accordingly.
 
 ### Flat Rate Scheme
-Xavier will detect if a client is on a [Flat Rate Scheme](https://www.gov.uk/vat-flat-rate-scheme/how-much-you-pay), but 
+Xavier will detect if a client is on a [Flat Rate Scheme](https://www.gov.uk/vat-flat-rate-scheme/how-much-you-pay), but
 it has no way of knowing what VAT rate has been agreed with HMRC for the client. The first time you view the VAT Tracking
 insight, Xavier will prompt for the VAT rate to use if it detects the client is on a Flat Rate Scheme:
 
 ![Flat Rate Scheme Prompt](./images/insight-vat-rate-prompt.png)
- 
+
 You can adjust this for a client at any time by clicking on *Adjust Rate* in the menu bar of the VAT view.
 
 ### Scheme Thresholds
-For the Cash and Flat Rate schemes, Xavier monitors your 
-[taxable turnover](https://www.gov.uk/vat-registration/calculate-turnover) to ensure that you remain on the right 
+For the Cash and Flat Rate schemes, Xavier monitors your
+[taxable turnover](https://www.gov.uk/vat-registration/calculate-turnover) to ensure that you remain on the right
 scheme from a compliance perspective, using HMRC's defined [thresholds](https://www.gov.uk/vat-registration-thresholds).
 
 For example, you'll get an alert at the top of the VAT insight if you exceed a threshold:
@@ -145,54 +143,54 @@ For example, you'll get an alert at the top of the VAT insight if you exceed a t
 And similarly Xavier also warns you if you are approaching a threshold:
 
 ![VAT Approaching Threshold](./images/insight-vat-alert-approaching.png)
-       
+
 ### Payment Detection
-Xavier will try and detect if a previous period's accrued VAT has been paid to HMRC or not, by searching for reconciled 
+Xavier will try and detect if a previous period's accrued VAT has been paid to HMRC or not, by searching for reconciled
 bank transactions within 6 months of the end of the period, with:
 - a GL Account with the Reporting Code of `LIA.CUR.TAX.VAT`
 - a payment amount within a 2% variance of the estimated amount for the period
 
 ![VAT Payment Detection](./images/insight-vat-payment.png)
 
-If such a payment is found, the *Payment Detected* field will be set to "Yes". Clicking on this will take you straight 
+If such a payment is found, the *Payment Detected* field will be set to "Yes". Clicking on this will take you straight
 through to the bank transaction in Xero.
 
 ## VAT Return Checks
-Xavier provides a set of checks that have been designed to quickly spot tax issues with respect to transaction data over 
-a given filing period. Simply enter in the date range and the minimum amounts (more on those below) and hit *Run Report* 
-to generate the checks. Expanding the card allows you to see these transactions, with a link directly to Xero to sort 
+Xavier provides a set of checks that have been designed to quickly spot tax issues with respect to transaction data over
+a given filing period. Simply enter in the date range and the minimum amounts (more on those below) and hit *Run Report*
+to generate the checks. Expanding the card allows you to see these transactions, with a link directly to Xero to sort
 them out.
 
 ![VAT Return Checks](./images/insight-vat-return.png)
 
 ### Reconciliation Review
-This uses the same logic as the [Unreconciled Transactions](/insights.html#unreconciled-transactions) insight to find 
+This uses the same logic as the [Unreconciled Transactions](/insights.html#unreconciled-transactions) insight to find
 unreconciled transactions for the date range you have supplied.
 
 ### Revenue Account Review
-This check finds transactions that don't have an Account Class of REVENUE, but have been assigned as revenue Tax Type of 
+This check finds transactions that don't have an Account Class of REVENUE, but have been assigned as revenue Tax Type of
 OUTPUT2, RROUTPUT or ZERORATEDOUTPUT.
 
 ### Expense Account Review
-This check finds expense transactions that have been assigned a Tax Type of INPUT2, with accounts that have Reporting 
+This check finds expense transactions that have been assigned a Tax Type of INPUT2, with accounts that have Reporting
 Codes of EXP.ADM.ENT (Entertainment), EXP.ADM.PRI (Printing & Postage) or EXP.ADM.TRA (Travel International).
 
 ### Balance Sheet Review
-This check finds ASSET, LIABILITY or EQUITY type transactions with a non-zero tax value, excluding Fixed Assets (account 
+This check finds ASSET, LIABILITY or EQUITY type transactions with a non-zero tax value, excluding Fixed Assets (account
 type FIXED) and Reporting Codes of LIA.CUR.ACC (income in advance) or ASS.CUR.REC.PRE (prepayments).
 
 ### Zero-Rated Review
-This check finds transactions with a tax type of ZERORATEDINPUT with a net value above the minimum amount set by you in 
-the report header (*Zero Rated Min*). The idea here is to ensure the client is claiming back VAT on as many high value 
+This check finds transactions with a tax type of ZERORATEDINPUT with a net value above the minimum amount set by you in
+the report header (*Zero Rated Min*). The idea here is to ensure the client is claiming back VAT on as many high value
 items as possible.
 
 ### No-VAT Review
-This check finds transactions with a tax type of NONE with a net value above the minimum amount set by you in 
+This check finds transactions with a tax type of NONE with a net value above the minimum amount set by you in
 the report header (*No VAT Min*).
 
 ### Multi-coded Contacts
-The same as the [Multi-Coded Contacts](/insights.html#multi-coded-contacts) insight, but looking at contacts that 
-have transactions in the reporting period specified.  
+The same as the [Multi-Coded Contacts](/insights.html#multi-coded-contacts) insight, but looking at contacts that
+have transactions in the reporting period specified.
 
 ## Activity Stats
 ![Activity Stats](./images/insight-activity-stats.png)
@@ -202,23 +200,36 @@ pricing for their clients, the _Activity Stats_ insight gives a breakdown of the
 with a focus on volume, e.g. number of bank transactions for the period. These figures can then be input directly into 
 your proposal tool to quickly calculate pricing when a client is up for renewal.
 
-This insight calculates statistics for a rolling 12 month period, starting from the last complete month, and working 
+This insight calculates statistics for a rolling 12 month period, starting from the last complete month, and working
 back from there.
 
 ## Historical Changes
 ![Historical Changes](./images/insight-historical-changes.png)
 
 Have you ever had that uncomfortable feeling that something in a previous period has changed after you've reported it to
-the board or to the tax authorities? All the accountants we know have run into this at some point. Everyone makes 
-mistakes, and it can be quite easy for someone with Advisor privileges in Xero to create a record with the wrong journal 
-date. 
+the board or to the tax authorities? All the accountants we know have run into this at some point. Everyone makes
+mistakes, and it can be quite easy for someone with Advisor privileges in Xero to create a record with the wrong journal
+date.
 
-The tricky thing is tracking down these changes so they can be amended. Xavier allows you to identify exactly what was 
-changed and when within seconds. Simply input the historical reporting period that you want to check, and the close date 
+The tricky thing is tracking down these changes so they can be amended. Xavier allows you to identify exactly what was
+changed and when within seconds. Simply input the historical reporting period that you want to check, and the close date
 from which you expect no more transactions to have been logged for that period, and click *Run Report*.
 
-Xavier queries the underlying journal transactions for the client, and looks for transactions that have a journal date 
-within the historical period, but a created date of __after__ the reporting close date. 
+Xavier queries the underlying journal transactions for the client, and looks for transactions that have a journal date
+within the historical period, but a created date of __after__ the reporting close date.
 
-You'll be able to jump straight to the offending transaction(s) in Xero from the results. And, in case you need to show 
-someone else where it all went wrong, you can always export the results to PDF. 
+You'll be able to jump straight to the offending transaction(s) in Xero from the results. And, in case you need to show
+someone else where it all went wrong, you can always export the results to PDF.
+
+## Regular Suppliers
+![Regular Suppliers](./images/insight-regular-suppliers.png)
+
+The Regular Suppliers insight is designed to analyse your client's payments to their suppliers over time and
+automatically detect issues. Our AI will look for months where the total amount paid is higher than normal for
+a supplier.
+
+Clicking a supplier will show a chart of payments over time and highlight the periods where we have detected where there
+may be an issue. Clicking on a bar in the chart will explain the issue that we have found and show a summary of payments to the
+supplier in the chosen period. You may then choose to dismiss the alert or go through to Xero to investigate.
+
+We are really excited about the possiblities here and we will be working hard to continue making this insight more powerful.
