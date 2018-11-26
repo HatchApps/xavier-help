@@ -194,13 +194,13 @@ the report header (*No VAT Min*).
 The same as the [Multi-Coded Contacts](/insights.html#multi-coded-contacts) insight, but looking at contacts that 
 have transactions in the reporting period specified.  
 
-## GoProposal Stats
-![GoProposal Stats](./images/insight-goproposal.png)
+## Activity Stats
+![Activity Stats](./images/insight-activity-stats.png)
 
-Designed for accountancy firms utilising [GoProposal](https://goproposal.com/) to determine pricing for their clients, 
-the GoProposal Stats insight gives a breakdown of the key trading statistics of a company, with a focus on volume, e.g. 
-number of bank transactions for the period. These figures can then be input directly into GoProposal to quickly 
-calculate pricing when a client is up for renewal.
+Designed for accountancy firms utilising proposal tools such as [GoProposal](https://goproposal.com/) to determine 
+pricing for their clients, the _Activity Stats_ insight gives a breakdown of the key trading statistics of a company, 
+with a focus on volume, e.g. number of bank transactions for the period. These figures can then be input directly into 
+your proposal tool to quickly calculate pricing when a client is up for renewal.
 
 This insight calculates statistics for a rolling 12 month period, starting from the last complete month, and working 
 back from there.
