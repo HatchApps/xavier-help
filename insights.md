@@ -52,6 +52,15 @@ inconsistencies. For example, if you know that you changed your accounts structu
 make sense to evaluate transaction history before the change, so set this date to be the 1st of January (or whenever
 you made the change).
 
+### Narrowing The Scope
+The Multi-Coded Contacts insight allows you to get really targeted with the data cleanup process, and quickly filter out 
+any suggestions that don't make sense for your situation.
+
+**Revenue | Expense | All**: Restrict the suggestions list to only transactions relating to Revenue OR Expenses.
+  
+**Account | Tax | All**: Restrict the suggestions list to only transactions Xavier has identified with Account Code 
+anomalies, OR Tax Code anomalies.
+
 ## Contact Defaults
 Contacts in Xero can be setup with "default" account codes for sales and purchases. If set, Xero will use these to
 pre-populate the account code fields during bank statement reconciliation. For contacts that your client has
