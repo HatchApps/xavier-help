@@ -181,8 +181,9 @@ This check finds transactions that don't have an Account Class of REVENUE, but h
 OUTPUT2, RROUTPUT or ZERORATEDOUTPUT.
 
 ### Expense Account Review
-This check finds expense transactions that have been assigned a Tax Type of INPUT2, with accounts that have Reporting
-Codes of EXP.ADM.ENT (Entertainment), EXP.ADM.PRI (Printing & Postage) or EXP.ADM.TRA (Travel International).
+This check finds expense transactions that have been assigned a Tax Type of INPUT2 (20% VAT on Expenses), with accounts
+that have [Reporting Codes](https://central.xero.com/s/article/Report-codes-for-practices-using-report-templates) of 
+EXP.ADM.ENT (Entertainment), EXP.ADM.PRI (Printing & Postage) or EXP.ADM.TRA (Travel International).
 
 ### Balance Sheet Review
 This check finds ASSET, LIABILITY or EQUITY type transactions with a non-zero tax value, excluding Fixed Assets (account
