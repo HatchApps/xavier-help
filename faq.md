@@ -20,13 +20,19 @@ either during or after your free trial.
 There are no minimum terms for your Xavier service. If you decide to cancel, you will have access to Xavier until the
 end of your monthly billing cycle, which will not renew.
 
-### Can I change plans at any time?
-If you're lucky enough to grow to need more than 50 clients whilst using Xavier, please inform us by
-[email](/contact-us.md) and we'll get you sorted with a personalised plan right away.
+### When will I be billed?
+Xavier bills in advance; you will receive an invoice for the number of clients present at the start of the monthly billing cycle, which begins when you have entered your payment details, and any free trials have ended.
+
+### What happens when I add or remove clients?
+If you add or remove a client during the monthly billing cycle, you will be billed accordingly for that client at the start of the next monthly billing cycle.  
 
 ### What's your Custom Pricing?
 If you have more than 50 clients, please [get in touch](/contact-us.md) and we can arrange a custom plan for you that
 will meet your needs.
+
+### Can I change plans at any time?
+If you're lucky enough to grow to need more than 50 clients whilst using Xavier, please inform us by
+[email](/contact-us.md) and we'll get you sorted with a personalised plan right away.
 
 ## Working with Xero
 
