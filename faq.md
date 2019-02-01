@@ -21,7 +21,7 @@ There are no minimum terms for your Xavier service. If you decide to cancel, you
 end of your monthly billing cycle, which will not renew.
 
 ### When will I be billed?
-Xavier bills in advance; you will receive an invoice for the number of clients present at the start of the monthly billing cycle, which begins when you have entered your payment details, and any free trials have ended.
+Xavier bills in advance; you will receive an invoice by email for the number of clients present at the start of the monthly billing cycle, which begins when you have entered your payment details, and any free trials have ended.
 
 ### What happens when I add or remove clients?
 If you add or remove a client during the monthly billing cycle, you will be billed accordingly for that client at the start of the next monthly billing cycle.  

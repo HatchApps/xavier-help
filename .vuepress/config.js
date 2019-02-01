@@ -20,6 +20,7 @@ module.exports = {
             '/getting-started',
             '/sandbox-reporting',
             '/insights',
+            '/checks',
             '/team-management',
             '/xero-integration',
             '/faq',
