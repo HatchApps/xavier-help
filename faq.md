@@ -34,6 +34,31 @@ will meet your needs.
 If you're lucky enough to grow to need more than 50 clients whilst using Xavier, please inform us by
 [email](/contact-us.md) and we'll get you sorted with a personalised plan right away.
 
+
+## Regional Compatibility
+
+### Does Xavier work outside the UK? 
+
+Xavier does accept multiple currencies - it detects the currency used in Xero, and will display that currency for that client accross the site.
+
+Xavier currently only uses UK tax calculations; for clients outside the UK we slightly alter the Xavier experience in the following ways to prevent confusion:
+
+- Hide Corporation Tax and VAT Tracking Insights from the navigation
+  
+- Hide Corporation Tax and VAT Tracking Insight statistics from the Client Overview dashboard
+  
+- Rename VAT Return Checks to Tax Return Checks
+
+### Will Xavier include tax calculations for clients outside the UK in the future?
+
+We've definitely got this on our roadmap! There's no real timescale for this though. For now, we're focussing on making sure that we are building a great product and 
+that means working with local accountants. We still love hearing from our international users, so if you would like to see Xavier 
+bring tax insights to your region then please let us know. This helps us to prioritise which regions to start with.
+
+>We feel that Xavier is a really useful toolkit for any Xero client data, not just UK clients, so we would encourage you to 
+try Xavier for your team, wherever you're based. For international accountancies who would like a Xavier paid subscription, we offer 
+a discount code which will apply until we roll out full functionality in your area.  
+
 ## Working with Xero
 
 ### How do I connect Xavier to my Xero account?
