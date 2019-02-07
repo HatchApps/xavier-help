@@ -164,6 +164,35 @@ bank transactions within 6 months of the end of the period, with:
 If such a payment is found, the *Payment Detected* field will be set to "Yes". Clicking on this will take you straight
 through to the bank transaction in Xero.
 
+## Fixed Assets
+![VAT Tracking](./images/insight-fixed-assets.png)
+
+Fixed Assets are a somewhat separate part of the Xero system, which can lead to some inconsistencies. Xavier connects to
+the Fixed Assets register in Xero and compares it with the general accounting ledger to highlight where records may be
+out of sync.
+
+### Fixed Asset Accounts
+Xavier looks at general ledger Accounts that have an Account Type of _FIXED_, and then looks for mapped Asset
+Types in the Fixed Asset register. Accounts need to be selected as the Fixed Asset Account, Depreciation Expense Account
+or Accumulated Depreciation Account of at least one Asset Type to be considered "mapped". 
+
+Xavier then checks the balance of any unmapped Accounts - if any are non-zero then this should be considered a genuine 
+issue that needs immediate attention.   
+
+### Depreciation Run
+This simple check compares the Reporting Period specified at the top of the insight with the "Last Depreciation Date" in
+the Fixed Asset Register, and shows an error if they don't match.
+
+### Asset Type Reconciliation
+This section cycles through all of the Asset Types in the register and compares their balance with the balances of their
+mapped Accounts in the general ledger, up to the Reporting Date, and highlights any that don't match. You can expand
+each Asset type to compare transaction history of the Account with the Asset Type activity.  
+
+### Draft Assets
+Xavier searches the fixed asset register for draft assets and lists them here for convenience. This section is a good
+place to start if the asset types are not reconciling in the section above.
+
+
 ## Activity Stats
 ![Activity Stats](./images/insight-activity-stats.png)
 
