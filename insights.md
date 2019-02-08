@@ -179,18 +179,26 @@ or Accumulated Depreciation Account of at least one Asset Type to be considered 
 Xavier then checks the balance of any unmapped Accounts - if any are non-zero then this should be considered a genuine 
 issue that needs immediate attention.   
 
-### Depreciation Run
-This simple check compares the Reporting Period specified at the top of the insight with the "Last Depreciation Date" in
-the Fixed Asset Register, and shows an error if they don't match.
-
-### Asset Type Reconciliation
-This section cycles through all of the Asset Types in the register and compares their balance with the balances of their
-mapped Accounts in the general ledger, up to the Reporting Date, and highlights any that don't match. You can expand
-each Asset type to compare transaction history of the Account with the Asset Type activity.  
-
 ### Draft Assets
 Xavier searches the fixed asset register for draft assets and lists them here for convenience. This section is a good
 place to start if the asset types are not reconciling in the section above.
+
+### Fixed Asset Account Reconciliation
+This section cycles through all of the accounts in Xero's general ledger that are specified as the *Fixed Asset Account*
+in the Fixed Assets register. It  compares their balance with the combined totals of the *Purchase Price* of all assets
+associated with it, up to the Reporting Date, and highlights any that don't match. You can expand
+each Asset type to compare transaction history of the Account with the Asset activity. 
+
+### Depreciation Account Reconciliation
+Similar in logic to the Fixed Asset Account Reconciliation, this section cycles through all of the accounts in Xero's 
+general ledger that are specified as the *Accumulated Depreciation Account* in the Fixed Assets register. It  compares
+their balance with the combined totals of the "Depreciation Value" of all assets associated with it, up to the Reporting
+Date, and highlights any that don't match. The Depreciation Value is a calculation of the difference between the 
+*Purchase Price* and *Accounting Book Value* of an asset.  
+
+### Depreciation Run
+This simple check compares the Reporting Period specified at the top of the insight with the "Last Depreciation Date" in
+the Fixed Asset Register, and shows an error if they don't match.
 
 
 ## Activity Stats
