@@ -97,3 +97,15 @@ if the annual taxable turnover is within the threshold of your detected scheme.
 A summary of the [Corporation Tax](/insights.html#corporation-tax) insight, sharing the next estimated payment for the 
 previous period, and the estimated corporation tax accrued for the current period.
 
+### Dividends Status
+This check shows a running tally of the dividends posted in the system since the start of the client's current financial
+year. The point of this check is to ensure that dividends are declared where necessary from an audit trail perspecitve,
+and that these intended funds are not being distributed via other channels.
+ 
+By default, the check retrieves the balance of each control account based on account codes found under the reporting 
+code *EQU.RET.DIV*. You can change the account codes used by clicking the small cog next to the card title. Expanding 
+the card shows a balance for each of the dividend accounts found. Clicking on a dividend account will display a detailed
+grid of its transaction history since the start of the financial year.
+
+In terms of status, the Dividends check will show a warning if it is greater than 3 months into the client's financial 
+year and no evidence of dividends declaration has been found. 
