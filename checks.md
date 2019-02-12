@@ -79,6 +79,16 @@ By default, the check calculates the PAYE control account balance based on accou
 *LIA.CUR.TAX.OTH*. You can change the account codes used by clicking the small cog next to the card title. Expanding the 
 card shows the detailed grid of PAYE transaction history for the last 6 months.
 
+The PAYE check runs through the following logic:
+- All is well: if the Control Account balance is 0 and there is a Manual or Xero Payroll Journal present in the last
+complete month
+- All is well: the Control Account balance is equal to the amount posted in the Manual or Xero Payroll Journal(s) in the
+last complete month, and the snapshot date is well in advance of the HMRC Deadline
+- Warning: Contol Account and Journals balance, but HMRC payment due date is approaching
+- Error: No Manual or Xero Payroll Journal found in the last complete month
+- Error: No payment detected, and HMRC payment deadline is past due
+- Error: Control Account balance is non-zero and does not reconcile with balance of Manual or Xero Payroll journals
+
 ### VAT Status
 A summary of the [VAT Tracking](/insights.html#vat-tracking) insight reporting on the VAT accrued since the start of the period, and 
 if the annual taxable turnover is within the threshold of your detected scheme. 
