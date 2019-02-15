@@ -87,6 +87,28 @@ account code in Xero as the default for either Sales or Purchases:
 
 Xero's support documentation on settings for Contacts is [here](https://central.xero.com/s/article/What-are-contacts-in-Xero-UK).
 
+
+## Dormant Accounts
+This view identifies GL Accounts that have not had any transactional activity recorded against them from the "Dormant
+Since" date you supply.
+
+![Dormant Accounts](./images/cleanup-dormant-accounts.png)
+
+You can review the transaction history of these accounts and decide whether or not to take action on Xavier's suggestion.
+The idea is to help you identify old account codes that could be cleaned up, either through archiving or deleting, for
+better reporting. 
+
+You can filter and sort to look at accounts with transactional history (activity) and also by Account Class. Xavier
+won't show you Xero System Accounts as they cannot be archived.
+
+For each account found, you can follow the link to Xero's Chart of Accounts to archive or delete the account, or you can 
+dismiss it. Dismissing the suggestion will hide it from the "Suggested" list, but you can always undo this from the 
+"Dismissed" list if you want it back.
+
+Read more on
+[managing account codes in Xero](https://central.xero.com/s/article/Delete-archive-or-restore-an-account-in-your-chart-of-accounts). 
+
+
 ## Corporation Tax
 ![Coporation Tax](./images/insight-corporation-tax.png)
 
