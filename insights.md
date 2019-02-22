@@ -223,6 +223,38 @@ This simple check compares the Reporting Period specified at the top of the insi
 the Fixed Asset Register, and shows an error if they don't match.
 
 
+## Aged Balances
+![VAT Tracking](./images/insight-aged-balances.png)
+
+The Aged Balances insight looks at aged Debtors and Creditors (i.e. old invoices) at a snapshot in time.
+
+### Setting Parameters
+- **Reporting Date**: this is the point in time that you want to evaluate your debtors and creditors at, based on invoice
+dates.
+- **Invoice Age**: the age of the invoice in relation to the _Reporting Date_. For example, setting the _Invoice Age_ to
+two months means Xavier will only look at invoices that are dated older than two months from the Reporting Date.
+
+### Aged Receivables
+This surfaces your debtors, old invoices for people that owe you money. You can see a count of old invoices at a glance
+and a sum of the total amount owed. Clicking on this card will expand to show the detail of each aged invoice, each with
+a link straight to Xero if needed.
+
+### Aged Payables
+This surfaces your creditors, old invoices for people that you owe money to. You can see a count of old invoices at a 
+glance and a sum of the total amount you owe. Clicking on this card will expand to show the detail of each aged invoice,
+each with a link straight to Xero if needed.
+
+### Average Debtor Days
+This uses a common ratio-based method to provide an indication of the length of time it takes for your debtors to pay 
+you. This is based on the total Receivable amount owed at the _Reporting Date_, and the gross revenue over the last 12
+months up to the _Reporting Date_.
+
+### Overpayments
+The check allows you to review all overpayments that still have remaining credit available at the time of the
+_Reporting Date_, by checking the dates of any allocations to make sure they are applicable. This is categorised into
+Overpayments relating to Suppliers and Customers.     
+
+
 ## Activity Stats
 ![Activity Stats](./images/insight-activity-stats.png)
 
