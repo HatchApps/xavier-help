@@ -58,11 +58,44 @@ how to approach it with your client. You can click the speech bubble again to cl
 
 ![Health Check](./images/health-check-screenshot.png)
 
-### Unreconciled Transaction
+### Unreconciled Transactions
 This uses the same logic as the [Unreconciled Transactions](/insights.html#unreconciled-transactions) insight to find
 unreconciled transactions for the date range you have supplied, and the age of the oldest unreconciled transaction. The 
 indicator will be amber if there are unreconciled transactions over 15 days old, and red for if there are any over 30 
 days old. 
+
+### Fixed Assets
+The same as the [Fixed Assets](/insights.html#fixed-assets) insight, but using the end date specified in the Health
+Check as the fixed asset _Reporting Date_.
+
+### Dormant Accounts
+The same as the [Dormant Accounts](/insights.html#dormant-accounts) cleanup tool, but using 2 years before the end date
+specified in the Health Check as the _Dormant Since_ date.
+
+### Aged Balances
+The same as the [Aged Balances](/insights.html#aged-balances) insight, but using the end date specified in the Health
+Check as the Aged Balances _Reporting Date_. The _Invoice Age_ is fixed to 3 months from the end of the Health Check
+period.
+
+### Entertainment Accounts
+The purpose of this check is to highlight entertainment expenditure across two categories, Staff and Business, each of
+which have different tax rules. __Note:__ this requires some manual configuration per client to report correctly. The
+default configuration uses the Xero Reporting Code _EXP.ADM.ENT_ to try and summarise entertainment expenditure in 
+general.
+
+You can change the configuration by clicking the small cog next to the Entertainment Accounts title.
+Clicking on the Staff Entertainment or Business Entertainment cards will expand to allow you to review the relevant
+transaction history.
+
+- __Staff Entertainment__: once the number of employees and the account codes for staff entertainment have been set, this check shows the spend 
+per person since the start of the current UK tax year. Warnings or errors are displayed as the spend per person 
+approaches or exceeds the current HMRC allowable limit of £150.
+
+- __Business Entertainment__: This check summarises the expenditure during the Health Check _Reporting Period_ for the account codes specified as 
+Business Entertainment. As VAT cannot be reclaimed on this expenditure, this is also summarised for review.
+
+__Note:__ the rules around staff entertainment are specific to UK tax at present. 
+
 
 ### Multi-coded Contacts
 The same as the [Multi-Coded Contacts](/insights.html#multi-coded-contacts) insight, but looking at contacts that
