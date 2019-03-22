@@ -42,6 +42,11 @@ the report header (*No VAT Min*).
 The same as the [Multi-Coded Contacts](/insights.html#multi-coded-contacts) insight, but looking at contacts that
 have transactions in the reporting period specified.
 
+### High Value Transactions
+This check finds transactions that are lacking attachments (useful from a VAT evidence point of view), with a net value
+above the minimum amount set by you in the popup configuration (click the little cog beside the title to set the minimum
+value).
+
 
 ## Health Check
 The health check is designed for practices to run through on a regular basis with their clients, ensuring that the books 
