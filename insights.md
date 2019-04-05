@@ -61,6 +61,12 @@ any suggestions that don't make sense for your situation.
 **Account | Tax | All**: Restrict the suggestions list to only transactions Xavier has identified with Account Code 
 anomalies, OR Tax Code anomalies.
 
+### Understanding the Colour-Coding
+Xavier adds colour to the transaction rows to provide a clear indication as to which transactions fall into the "Active
+During" period and which ones are historical:
+
+![Understanding Multi-Coded Colour Coding](./images/cleanup-multi-coded-colours.png)
+
 ## Contact Defaults
 Contacts in Xero can be setup with "default" account codes for sales and purchases. If set, Xero will use these to
 pre-populate the account code fields during bank statement reconciliation. For contacts that your client has
