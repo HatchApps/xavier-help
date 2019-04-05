@@ -269,8 +269,29 @@ pricing for their clients, the _Activity Stats_ insight gives a breakdown of the
 with a focus on volume, e.g. number of bank transactions for the period. These figures can then be input directly into 
 your proposal tool to quickly calculate pricing when a client is up for renewal.
 
-This insight calculates statistics for a rolling 12 month period, starting from the last complete month, and working
-back from there.
+By default, this insight calculates statistics for a rolling 12 month period, starting from the last complete month, and
+working back from there. However, you can select a date range and Xavier will do its best to segment your date range
+into monthly slots.
+
+### Understanding Turnover
+The Activity Stats insight uses the following logic to determine the Turnover calculation:
+
+The _NET_ value of all transactions in the selected date range that have an __Account Type__ of either _Revenue_ or
+_Sales_.
+
+::: tip
+Note that the Account Type _Other Income_ is not included in this calculation.
+:::
+
+![Account Types in Xero](./images/insight-activity-turnover-xero-accounts.png)   
+
+This gives you some flexibility in determining this Turnover figure, as the Account Type can be modified for each 
+account in Xero. 
+
+::: tip
+Xero provide some documentation on working with
+[Chart of Accounts](https://central.xero.com/s/article/Chart-of-accounts-in-Xero).
+:::
 
 ## Historical Changes
 ![Historical Changes](./images/insight-historical-changes.png)
