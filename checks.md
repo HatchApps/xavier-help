@@ -42,10 +42,20 @@ the report header (*No VAT Min*).
 The same as the [Multi-Coded Contacts](/insights.html#multi-coded-contacts) insight, but looking at contacts that
 have transactions in the reporting period specified.
 
-### High Value Transactions
+### Transactions Without Attachments
 This check finds transactions that are lacking attachments (useful from a VAT evidence point of view), with a net value
 above the minimum amount set by you in the popup configuration (click the little cog beside the title to set the minimum
-value).
+value). Clicking the card shows the list of transactions, which you can filter by Revenue or Expense.
+
+### Transactions With Attachments
+This check allows you to review transactions that do have attachments, with a net value above the minimum amount set by 
+you in the popup configuration (click the little cog beside the title to set the minimum value). Clicking the card shows
+the list of transactions, which you can filter by Revenue or Expense. Clicking the plus beside the Contact Name in a
+transaction row will expand to show a list of attachments relating to that transaction. For each attachment listed, you
+can click "View Attachment" which will open the attachment in another browser tab, or download it, depending on the file
+type:
+
+![Transactions With Attachments](./images/insight-vat-return-attachments.png)
 
 
 ## Health Check
