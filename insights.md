@@ -2,16 +2,40 @@
 In addition to allowing you to slice and dice your Client data, Xavier applies a number of its own data analysis
 techniques and presents the findings up as *Insights*...
 
-## Unreconciled Transactions
-![Unreconciled Transactions](./images/unreconciled-transactions.png)
+## Bank Reconciliation
+![Bank Reconciliation](./images/cleanup-bank-reconciliation.png)
 
-Xavier lets you view a client's unreconciled bank transactions. It uses Xero's Bank Statement Report data to do so.
-From each record, you can click straight into Xero to start the reconciliation process. This insight allows you to
-quickly order by the oldest records (useful if you are approaching month end), and also see/filter/group the records
-that are in a "locked" period.
+Xavier uses a combination of Xero's Bank Statement Report data, bank transactions and payments to provide an
+interactive view across all of an organisation's bank accounts. The format loosely follows Xero's Bank Reconciliation
+Report, distinguishing between outstanding payments, receipts and unreconciled bank statement lines. 
 
-You can also hit the *View All Items* button at the top of the insight to work with all bank statement records, not just
-the unreconciled ones.
+Expanding one of these categories allows you to see transaction-level detail in a flexible grid view. From each record,
+you can click straight into Xero to start the reconciliation process. The grid allows you to quickly order by the 
+oldest records (useful if you are approaching month end), and also see/filter/group the records that are in a "locked" 
+period.
+
+![Bank Reconciliation](./images/cleanup-bank-rec-payments.png) 
+
+### Foreign Currency Bank Accounts
+Xavier detects when a bank account is in a different currency to the base currency of the organisation, and displays
+accordingly. There's a toggle that allows you to view the reconciliation totals for a bank account in either the native
+currency of the bank account or the base currency of the organisation.
+
+![Bank Reconciliation](./images/cleanup-bank-rec-multi-currency.png) 
+
+::: tip
+Xavier does not have access to Xero's exchange rates, so the base currency calculated balances for a foreign currency
+may not always totally match up to the report in Xero - use as a guideline only.
+:::
+
+More about exchange rates in Xero can be found in their
+[support documentation](https://central.xero.com/s/article/View-exchange-rate-or-conversion-rate).
+
+### All Bank Statements
+You can also hit the *All Statements* button at the top of the insight to work in a full sandbox-style grid with all 
+bank statement records, not just the unreconciled ones.
+
+![Bank Reconciliation](./images/cleanup-bank-rec-all-statements.png) 
 
 Xero guidance on bank reconciliation can be found [here](https://central.xero.com/s/article/Bank-reconciliation-in-Xero).
 
