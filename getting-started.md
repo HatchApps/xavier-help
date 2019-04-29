@@ -34,27 +34,10 @@ And then you'll be asked to select and/or confirm the Xero organisation you want
 After allowing Xavier access, you'll be redirected back to Xavier, where the initial sync process will begin.
 This can take between 1 and 45 minutes depending on the size of the client.
 
-![Initial client sync](./images/initial-client-sync.png)
-
 Once the initial sync is finished, your client is ready for analysis - go forth!
 
 Learn more about our interaction with Xero [here](/xero-integration.md).
 
 Having issues adding your first client? Check out our [troubleshooting tips](/troubleshooting.md).
 
-## Client Overview
-Clicking on a client card from the home page will take you through to the management of that specific client.
-
-![Client Overview](./images/client-overview.png)
-
-In addition to providing high level stats about a client, the overview is where you can manage a client, 
-adjusting specific aspects from the *Edit* button, removing it from Xavier via the *Delete* button and un-linking it from
-Xero using the *Unlink* button. 
-
-Unlinking a client from Xero means it will remain in Xavier, but will no longer sync with Xero to retrieve the latest 
-changes. A client can be re-linked to Xero at any point, and syncing will resume.  
-
-[Syncing with Xero](/xero-integration.md#syncing) happens automatically overnight, but you can also trigger a sync on-demand 
-via the *Sync Now* button. 
-
-This view also highlights any issues with the client's Lock Dates - [find out more](/team-management.md#lock-dates).
+Once you've got a client added, click on through to the [Client Overview](/clients.md#client-overview)

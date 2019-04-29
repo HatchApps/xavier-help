@@ -18,6 +18,7 @@ module.exports = {
         sidebar: [
             '/',
             '/getting-started',
+            '/clients',
             '/sandbox-reporting',
             '/insights',
             '/checks',

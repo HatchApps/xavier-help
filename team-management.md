@@ -23,10 +23,10 @@ If your team manages many clients, you'll likely have a concept in your team str
 certain clients. In Xavier, we refer to these people as *Account Managers*.
 
 When you first create a Xavier client, you'll be automatically assigned to that client as the Account Manager. You can
-see who each client's Account Manager is on the Client List, and filter the list so that you only see the clients that 
+see who each client's Account Manager by their icon on the Client List card, and filter the list so that you only see the clients that 
 you manage:
 
-![Account Manager](./images/account-manager.png)
+![Account Manager](./images/client-list-snippet.png)
 
 To change who the Account Manager is for a client, click on the client in the client list, then *Edit* from the Client 
 Overview. 
@@ -62,7 +62,7 @@ allowing them to change historical records, and there is no history of this chan
 for you, Xavier has your back...
 
 ### Lock Date History
-Xavier tracks changes to Xero's lock dates. You can view the history of these changes from the *Client Overview* page:
+Xavier tracks changes to Xero's lock dates. You can view the history of these changes from *Insights* > *Lock Date History*:
 
 ![Lock Date History](./images/lock-date-history.png)
 
@@ -91,9 +91,7 @@ update the lock dates in Xero:
 ![Lock Date Grace](./images/lock-date-grace.png)
 
 If a client's Reporting Period Lock Date slips behind the grace period, Xavier will show this as an alert on the *Client
-Overview* page:
-
-![Lock Date Grace Exceeded](./images/lock-date-grace-exceeded.png)
+Overview* page.
 
 ### Locked Records in Reporting
 
