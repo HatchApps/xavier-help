@@ -18,6 +18,40 @@ of the team settings.
 An invite will be emailed to your colleague with a link to Xavier. When they click on the link in the email to accept,
 they'll be asked to sign up and provide login details. They'll be automatically added to your team via this process.
 
+## Two-Factor Authentication
+Team Members can enable Two-Factor Authentication (2FA). 2FA provides additional account security by requiring you to
+provide a token during login in addition to your username and password. This token is retrieved from an application on
+your mobile phone. Xavier uses [Authy](https://authy.com/) to provide 2FA. To get started, Team Members should download
+and install the Authy mobile app for iOS or Android, then follow the instructions below:
+
+### Enabling 2FA
+Turning on 2FA in Xavier is simple. From the drop-down _User Menu_ in the top right of your screen, select
+_Your Settings_, then head to _Security_. Enter your country code (e.g. +44 for the UK) and mobile number and click
+"Enable". 
+
+![Enable 2FA](./images/team-enable-2fa.png)    
+
+::: tip
+Xavier will give you an emergency recovery token that allows you to login if you've lost your phone. Take note of it 
+immediately by storing it in a safe secure place, such as a Password Manager.
+:::
+
+### Logging in with 2FA
+If you have 2FA enabled, enter your email address and password like normal, then you'll be presented with one extra step
+where you need to enter the 2FA token. Retrieve this from the Authy mobile app:
+
+![Login with 2FA](./images/team-2fa-login.png)
+
+### Disabling 2FA
+You can disable 2FA in the same place you enabled it. From the drop-down _User Menu_ in the top right of your screen, 
+select _Your Settings_, then head to _Security_.
+
+### Monitor Adoption of 2FA
+If you're the team owner, you can see which team members have enabled 2FA. From the drop-down _User Menu_ in the top 
+right of your screen, select _Team Settings_, then head to _Team Members_:
+
+![2FA Adoption](./images/team-members-2fa.png)
+
 ## Account Managers
 If your team manages many clients, you'll likely have a concept in your team structure where certain people look after
 certain clients. In Xavier, we refer to these people as *Account Managers*.
