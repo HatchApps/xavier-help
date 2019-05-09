@@ -87,6 +87,37 @@ now have an individual Health Score, which the overall Health Score is derived f
 data quality of your clients and easily see that progress on a daily basis.
 
 The score is presented as a percentage, with a heart icon for traffic-light status. The health score is relative to the 
-date selected, and proportional to the size of the client. The algorithm for the health score is still going through 
-development as we adjust the weighting of Xavier's different cleanup and insight scores on the final health score, but keep aiming for that 100%!
+date selected, and proportional to the size of the client. The following Xavier elements contribute to the health score
+currently:
 
+* Bank Reconciliation
+* Multi-Coded Contacts
+* Duplicate Contacts
+* Regular Supplier Anomalies
+* Lock Dates
+* Fixed Assets
+* Dormant Accounts
+* Contact Defaults
+* Aged Balances
+* PAYE (if configured)
+
+::: tip
+The algorithm for the health score will evolve as we fine-tune the weighting of Xavier's different cleanup and insight
+scores on the final health score, but keep aiming for that 100%!
+:::
+
+## Client Visibility
+
+Xavier provides two options for determining who in your team can view a particular client's data. The following options
+can be selected from the _Client Settings_ view:
+
+![Client Overview](./images/client-visibility.png)
+
+**Whole Team:** everyone on your Xavier team can view this client's data.
+
+**Xero Users Only:** only the users linked to the Client in Xero, with the Xero role of either _Adviser_ or _Standard_
+will be able to view the client's data in Xavier. 
+
+If _Xero Users Only_ is selected, this view will show you which of your Xavier team members are eligible to view the
+Client, and will also list the users in Xero that are not part of your Xavier team yet - you can choose to invite them
+from here. Clients with _Xero Users Only_ will also show a different visibility icon on the _Client List_.
