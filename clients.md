@@ -15,7 +15,7 @@ or the ones you have selected as favourites. Click on each of the client cards t
 <iframe width="560" height="315" src="https://www.youtube.com/embed/TJ0_MaW1rP8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 You can sort and filter your clients from this view for an at-a-glance practice overview. 
-Sort by the general [Client Health Score](http://localhost:8081/clients.html#client-health-score), or select an insight metric and choose to sort by either it's individual *Health Score* 
+Sort by the general [Client Health Score](/clients.html#client-health-score), or select an insight metric and choose to sort by either it's individual *Health Score* 
 or the number of issues identified for that insight (i.e., by volume). You can choose to sort ascending or descending, 
 and combined with the filtering of the list by My Accounts and Favourites, the "at a glance" reporting potential is 
 quite powerful.
