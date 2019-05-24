@@ -95,12 +95,12 @@ make sense to evaluate transaction history before the change, so set this date t
 you made the change).
 
 ### Narrowing The Scope
-The Multi-Coded Contacts insight allows you to get really targeted with the data cleanup process, and quickly filter out 
+The Multi-Coded Contacts insight allows you to get really targeted with the data cleanup process, and quickly filter out
 any suggestions that don't make sense for your situation.
 
 **Revenue | Expense | All**: Restrict the suggestions list to only transactions relating to Revenue OR Expenses.
-  
-**Account | Tax | All**: Restrict the suggestions list to only transactions Xavier has identified with Account Code 
+
+**Account | Tax | All**: Restrict the suggestions list to only transactions Xavier has identified with Account Code
 anomalies, OR Tax Code anomalies.
 
 ### Understanding the Colour-Coding
@@ -110,16 +110,16 @@ During" period and which ones are historical:
 ![Understanding Multi-Coded Colour Coding](./images/cleanup-multi-coded-colours.png)
 
 ## Contact Defaults
-Contacts in Xero can be setup with "default" account codes for sales and purchases. If set, Xero will use these to
-pre-populate the account code fields during bank statement reconciliation. For contacts that your client has
+Contacts in Xero can be setup with "default" account codes and tax types for sales and purchases. If set, Xero will use these to
+pre-populate the account code or tax type fields during bank statement reconciliation. For contacts that your client has
 a recurring relationship with (e.g. a supplier that bills monthly), setting these defaults in Xero can dramatically
 speed up the reconciliation process:
 
 ![Setting Contact Defaults in Xero](./images/cleanup-contact-defaults-xero-settings.png)
 
-Figuring out what contacts are eligible for setting up a default code in Xero can be time consuming. This Xavier system
+Figuring out which contacts are eligible for setting up these defaults can be time consuming. This Xavier system
 analyses each contact's transaction history and searches for contacts where either sales or purchase invoices have been
-consistently assigned the same account code, and presents these up to you in a handy list:
+consistently assigned the same account code or tax type, and presents these up to you in a handy list:
 
 ![Contact Defaults](./images/cleanup-contact-defaults.png)
 
@@ -129,7 +129,7 @@ Dismissing the suggestion will hide it from the "Suggested" list, but you can al
 you want it back.
 
 Clicking *Set as default* does what is says on the tin - Xavier will prompt you to confirm before setting the suggested
-account code in Xero as the default for either Sales or Purchases:
+code in Xero as the default for either Sales or Purchases:
 
 ![Contact Defaults Confirm Setting](./images/cleanup-contact-defaults-confirm.png)
 
@@ -314,9 +314,9 @@ Overpayments relating to Suppliers and Customers.
 ## Activity Stats
 ![Activity Stats](./images/insight-activity-stats.png)
 
-Designed for accountancy firms utilising proposal tools such as [GoProposal](https://goproposal.com/) to determine 
-pricing for their clients, the _Activity Stats_ insight gives a breakdown of the key trading statistics of a company, 
-with a focus on volume, e.g. number of bank transactions for the period. These figures can then be input directly into 
+Designed for accountancy firms utilising proposal tools such as [GoProposal](https://goproposal.com/) to determine
+pricing for their clients, the _Activity Stats_ insight gives a breakdown of the key trading statistics of a company,
+with a focus on volume, e.g. number of bank transactions for the period. These figures can then be input directly into
 your proposal tool to quickly calculate pricing when a client is up for renewal.
 
 By default, this insight calculates statistics for a rolling 12 month period, starting from the last complete month, and
