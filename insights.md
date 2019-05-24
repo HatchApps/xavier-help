@@ -16,6 +16,24 @@ period.
 
 ![Bank Reconciliation](./images/cleanup-bank-rec-payments.png) 
 
+### Net Assets
+The Net Assets figure is a calculated balance of all transactions with the **Account Class** of _ASSET_ minus all 
+transactions with the **Account Class** of _LIABILITY_, up the the reporting date. This figure is also available as a 
+metric on the [Client List](/clients.html#client-list) and [Practice Dashboard](/clients.html#practice-dashboard). Xero 
+Account Classes are shown below:  
+
+![VAT Tracking](./images/cleanup-bank-rec-account-classes.png)
+
+### Cash Position
+The Cash Position figure is a consolidated statement balance of all bank accounts, on the reporting date set. This 
+figure is also available as a metric on the [Client List](/clients.html#client-list) and
+[Practice Dashboard](/clients.html#practice-dashboard).
+
+::: tip
+Foreign bank account balances are converted to the base currency to produce this number - use as a guideline only, where
+this is a factor, and see below for more info.
+::: 
+
 ### Foreign Currency Bank Accounts
 Xavier detects when a bank account is in a different currency to the base currency of the organisation, and displays
 accordingly. There's a toggle that allows you to view the reconciliation totals for a bank account in either the native
