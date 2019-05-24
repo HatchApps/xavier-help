@@ -190,6 +190,14 @@ previous years based on the new configuration.
 You can remove account codes from the calculation at any time, and removing all of them will result in the calculation
 reverting back to using the Xavier defaults.
 
+### Capital Allowances
+The _Capital Allowances_ section of the Corporation Tax insight uses the Fixed Assets register in Xero to look for 
+registered assets purchased during the date period. It specifically looks for:
+
+- Fixed Assets with a status of "Registered" (i.e. Draft won't count)
+- Fixed Assets with a purchase date that falls within the start and end dates you've set at the top of the Corporation
+Tax view
+
 ## VAT Tracking
 ![VAT Tracking](./images/insight-vat.png)
 
