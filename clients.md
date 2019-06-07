@@ -116,8 +116,16 @@ can be selected from the _Client Settings_ view:
 **Whole Team:** everyone on your Xavier team can view this client's data.
 
 **Xero Users Only:** only the users linked to the Client in Xero, with the Xero role of either _Adviser_ or _Standard_
-will be able to view the client's data in Xavier. 
+will be able to view the client's data in Xavier. Xavier uses the email you signed up with to match to the user in Xero. 
 
 If _Xero Users Only_ is selected, this view will show you which of your Xavier team members are eligible to view the
 Client, and will also list the users in Xero that are not part of your Xavier team yet - you can choose to invite them
 from here. Clients with _Xero Users Only_ will also show a different visibility icon on the _Client List_.
+
+**Spectific Users Only:** only the users you have selected to view this client will be able to view the data in Xavier.
+
+::: tip
+The default visibility setting for clients is _Xero Users Only_. However if you are importing a client and your email 
+address does not match the user you have signed into in Xero, the default setting will be _Specific Users Only_, and you 
+will be asked to select those specific users in a popup before the client can be imported.
+:::  
