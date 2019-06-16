@@ -12,7 +12,15 @@ them out.
 
 ![VAT Return Checks](./images/insight-vat-return.png)
 
-### Reconciliation Review
+### Scheme Thresholds
+This check finds looks at annual and quarterly (where applicable) Taxable Turnover and makes sure that they are within 
+the limits of the selected VAT scheme [as defined by HMRC](https://www.gov.uk/vat-registration-thresholds). You'll see 
+a warning if the limits are within 10%, and an error if turnover has exceeded the limits.
+
+### Estimated VAT
+See the [VAT Tracking](/insights.html#vat-tracking) documentation for an overview of this check.
+
+### Unreconciled Transactions
 This uses the same logic as the [Unreconciled Transactions](/insights.html#unreconciled-transactions) insight to find
 unreconciled transactions for the date range you have supplied.
 
@@ -28,6 +36,10 @@ EXP.ADM.ENT (Entertainment), EXP.ADM.PRI (Printing & Postage) or EXP.ADM.TRA (Tr
 ### Balance Sheet Review
 This check finds ASSET, LIABILITY or EQUITY type transactions with a non-zero tax value, excluding Fixed Assets (account
 type FIXED) and Reporting Codes of LIA.CUR.ACC (income in advance) or ASS.CUR.REC.PRE (prepayments).
+
+### 20% VAT Review
+This check finds transactions with a tax type of either 20% VAT on Income or 20% VAT on Expenses with a net value above
+the minimum amount set by you in the configuration for this check.
 
 ### Zero-Rated Review
 This check finds transactions with a tax type of ZERORATEDINPUT with a net value above the minimum amount set by you in
@@ -91,6 +103,11 @@ specified in the Health Check as the _Dormant Since_ date.
 The same as the [Aged Balances](/insights.html#aged-balances) insight, but using the end date specified in the Health
 Check as the Aged Balances _Reporting Date_. The _Invoice Age_ is fixed to 3 months from the end of the Health Check
 period.
+
+### Draft Invoices
+This check looks for invoices that have a status of either _DRAFT_ or _SUBMITTED_ (Awaiting Approval) and have an 
+invoice date that is before the end of the reporting period. Ideally these should be dealt with before the period is 
+closed off. 
 
 ### Entertainment Accounts
 The purpose of this check is to highlight entertainment expenditure across two categories, Staff and Business, each of
