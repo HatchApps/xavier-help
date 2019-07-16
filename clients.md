@@ -79,6 +79,14 @@ via the *Sync Now* button.
 
 This view also highlights any issues with the client's Lock Dates - [find out more](/team-management.md#lock-dates).
 
+You can *export* the client overview in both PDF and .XLS format: 
+
+- The PDF export contains your team branding (which you can add in the [Team Profile](/team-management.html#team-profile)) 
+and additional explanations for each item, which will make it easier for your client to understand. The items are also 
+arranged in priority order. 
+- The .XLSX format is a really stripped-down version of the overview, which is perfect for linking into your own spreadsheet 
+reports.  
+
 ## Client Health Score
 
 Xavier calculates an overall score for a client to indicate the health of their books. You'll find the Health Score 

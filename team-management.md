@@ -6,12 +6,32 @@ you'll be the owner of a "team" in Xavier.
 
 ## Team Roles
 The creator of a team will be the team owner, everyone else will be team members. Only the team owner can perform 
-team management actions like inviting a team member or adjusting billing and subscription settings.  
+team management actions like inviting a team member or adjusting billing and subscription settings.
+
+## Team Settings
+
+The Team Settings are available in the sidebar in the *Team View*; from here, you can manage all things Team related... 
+
+### Team Profile
+You can add a team icon here, and also add a *branding header*. This header image will be added to the top of Xavier's 
+PDF exports. It's best suited to a smaller logo than a large facebook-style banner image, as it will display at about 
+70px high on the PDF, so we would recommend uploading an image no larger than 100px tall, and no wider than 800px. 
+We only accept .jpg and .png image formats.   
+
+You can also change your Team Name in this view, if you need to. Fix a typo, have an identity crisis, or go for a whole pivot! 
+
+### Team Members
+This view allows you to invite, view and update all members of your team in Xavier. See [below](#inviting-team-members) 
+for more information on how to manage your team.
+
+### Team Subscription
+Manage your subscription with Xavier, view your subscription plan and the breakdown of Xavier's rolling discounts within your clients. 
+You can also manage your billing information, and add any coupon codes.  
 
 ## Inviting Team Members
-If you're the team owner, you can invite other people to become members of your team via the *Invite Team* action in the 
-menu underneath your user icon in the top-right corner of Xavier. This will take you through to the *Membership* section
-of the team settings.
+If you're the team owner, you can invite other people to become members of your team in the *Team Members* section of the 
+*Team Settings*, or via the *Invite Team* action in the menu underneath your user icon in the top-right corner of Xavier. 
+This will also take you through to the *Team Members* section of the team settings.
 
 ![Invite Team](./images/invite-team.png) 
 
@@ -136,3 +156,4 @@ to filter out or sort by this attribute.
 ![Locked Records](./images/locked-records.png)
 
 Learn more about [lock dates in Xero](https://central.xero.com/s/article/Set-up-and-work-with-lock-dates).
+
