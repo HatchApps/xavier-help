@@ -58,7 +58,7 @@ bank statement records, not just the unreconciled ones.
 Xero guidance on bank reconciliation can be found [here](https://central.xero.com/s/article/Bank-reconciliation-in-Xero).
 
 ## Duplicate Contacts
-![Multi-Coded Contacts](./images/duplicate-contacts.png)
+![Duplicate Contacts](./images/duplicate-contacts.png)
 
 The results shown in this Xavier insight are your Xero contacts that we’ve identified as potential duplicates.
 This can happen if you create a new contact during the process of inputting an invoice or similar, and miss the fact that
@@ -67,6 +67,13 @@ the contact already exists.
 Review these, you may dismiss any which aren't true duplicates, or clicking the name of the contact will take you to Xero to amend them. The transaction count should give a good indication of which contact has had more activity.
 
 Xero guidance on merging contacts can be found [here](https://central.xero.com/s/article/Edit-or-merge-an-existing-contact).
+
+### Dismissals
+Each duplicate contact can be 'dismissed' - this means that Xavier will no longer count that combination of client names 
+to be a potential duplicate. Dismissed items do not contribute to the [Health Score](/clients.html#client-health-score). 
+Any dismissed duplicates can be viewed by selecting *dismissed* from the filter at the top 
+of the screen, where you can then review and *undo* any accidental dismissals.  
+
 
 ## Multi-Coded Contacts
 ![Multi-Coded Contacts](./images/insight-multi-coded.png)
@@ -109,6 +116,18 @@ During" period and which ones are historical:
 
 ![Understanding Multi-Coded Colour Coding](./images/cleanup-multi-coded-colours.png)
 
+#### Dismissals
+
+If there is good reason for the different coding, then you can dismiss the multi-coded alert and it will not show again. 
+Any dismissed alerts can be viewed by selecting *dismissed* from the filter at the top of the screen, where you can then review and *undo* any accidental dismissals. Dismissed items do not contribute to the [Health Score](/clients.html#client-health-score). 
+
+This dismissal applies to a few levels below the contact, taking into account both *direction* (Payable/Receivable) and 
+whether they are *Tax Code* or *Account Code* differences. 
+
+For example, you can dismiss an alert for a contact with differences in receivable account codes, and we won't raise any 
+more alerts for additional receivable account codes placed against that contact, but you will still get an alert for that 
+client if we detect multiple *payable* account code differences, or multiple receivable *tax codes*.
+
 ## Contact Defaults
 Contacts in Xero can be setup with "default" account codes and tax types for sales and purchases. If set, Xero will use these to
 pre-populate the account code or tax type fields during bank statement reconciliation. For contacts that your client has
@@ -125,9 +144,6 @@ consistently assigned the same account code or tax type, and presents these up t
 
 You can review the transaction history of these contacts and decide whether or not to apply Xavier's suggestion.
 
-Dismissing the suggestion will hide it from the "Suggested" list, but you can always undo this from the "Dismissed" list if
-you want it back.
-
 Clicking *Set as default* does what is says on the tin - Xavier will prompt you to confirm before setting the suggested
 code in Xero as the default for either Sales or Purchases:
 
@@ -135,6 +151,15 @@ code in Xero as the default for either Sales or Purchases:
 
 Xero's support documentation on settings for Contacts is [here](https://central.xero.com/s/article/What-are-contacts-in-Xero-UK).
 
+### Dismissals
+
+If you think the suggested default is not suitable, you can dismiss it. Any dismissed suggestions can be viewed by selecting 
+*dismissed* from the filter at the top of the screen, where you can then review and *undo* any accidental dismissals. 
+Dismissed items do not contribute to the [Health Score](/clients.html#client-health-score).
+
+The dismissal covers the combination of contact name and the type of suggested account code; account code or tax type. If you 
+dismiss a suggested account code default for a contact, for example, you will still be suggested potential default tax 
+types if one becomes suitable.
 
 ## Dormant Accounts
 This view identifies GL Accounts that have not had any transactional activity recorded against them from the "Dormant
@@ -156,6 +181,11 @@ dismiss it. Dismissing the suggestion will hide it from the "Suggested" list, bu
 Read more on
 [managing account codes in Xero](https://central.xero.com/s/article/Delete-archive-or-restore-an-account-in-your-chart-of-accounts). 
 
+### Dismissals
+Each account code can be 'dismissed' if you're not ready to take action and do not want Xavier to raise it again. 
+Dismissed items do not contribute to the [Health Score](/clients.html#client-health-score). 
+Any dismissed account codes can be viewed by selecting *dismissed* from the filter at the top 
+of the screen, where you can then review and *undo* any accidental dismissals.  
 
 ## Corporation Tax
 ![Coporation Tax](./images/insight-corporation-tax.png)
@@ -379,6 +409,14 @@ Xavier provides a set of checks that have been designed to quickly spot tax issu
 a given filing period. Simply enter in the date range and the minimum amounts (more on those below) and hit *Run Report*
 to generate the checks. Expanding the card allows you to see these transactions, with a link directly to Xero to sort
 them out.
+
+### Dismissals
+Each anomalous period can be 'dismissed' if you have reviewed the period and do not want Xavier to raise it again. 
+The card for that supplier will not be removed from the view until all anomalous periods in the chart have been dismissed.
+Dismissed items do not contribute to the [Health Score](/clients.html#client-health-score). 
+Any dismissed periods can be viewed by selecting *dismissed* from the filter at the top 
+of the screen, where you can then review and *undo* any accidental dismissals.  
+
 
 ![VAT Return Checks](./images/insight-vat-return.png)
 
