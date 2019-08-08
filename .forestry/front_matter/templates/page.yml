@@ -8,3 +8,5 @@ fields:
     required: false
   label: Title
   description: The page title
+pages:
+- getting-started.md
