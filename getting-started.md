@@ -1,5 +1,9 @@
++++
+
++++
 # Getting Started
-Short on time? Check out our walkthrough video as a quickstart:
+
+Short on time? Check out our video as a quickstart:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kcXrI91JmPc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
@@ -14,16 +18,15 @@ know how to do this, you can share this help link with them:
 
 [https://help.xavier-analytics.com/team-management.html#inviting-team-members](/team-management.md#inviting-team-members)
 
-
 ## Adding Your First Client
 
-It all kicks off in Xavier when you add your first client. A *Client* in Xavier is linked to an *Organisation* in Xero.
+It all kicks off in Xavier when you add your first client. A _Client_ in Xavier is linked to an _Organisation_ in Xero.
 
 After you register you'll be taken to the home page. This is where your team's clients will live once they've been imported from Xero.
 
 ![Import your first client](./images/add-first-client.png)
 
-Clicking *Import your first client* will take you to Xero. You'll be asked to login if you haven't already:
+Clicking _Import your first client_ will take you to Xero. You'll be asked to login if you haven't already:
 
 ![Xero login](./images/xero-login.png)
 
