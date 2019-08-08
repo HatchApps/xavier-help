@@ -1,0 +1,80 @@
+// additional CSS styles
+
+.theme-container {
+    .sidebar {
+        background: linear-gradient(to top, #171229, #3C2441);
+        background-color: #3C2441;
+        color: white;
+    }
+
+    .sidebar-links li {
+        margin-top: 0 !important;
+    }
+
+    .sidebar-link {
+        color: white;
+        font-weight: 400 !important;
+        line-height: 1.4 !important;
+        font-size: 15px !important;
+    }
+
+    .sidebar-link.active {
+        background-color: #0E061E;
+        border-left-color: #eac434;
+        color: white;
+        font-weight: 600 !important;
+        // font-size: 1.1em !important;
+    }
+
+    .sidebar-link:hover {
+        background-color: #0E061E;
+        color: #03cea4;
+    }
+
+    .sidebar-sub-headers .sidebar-link {
+        color:#ffffff80;
+        font-size: 0.95em !important;
+    }
+    .sidebar-sub-headers .sidebar-link:hover {
+        color:#03cea4;
+        background-color: transparent;
+    }
+
+    .sidebar-sub-headers .sidebar-link.active {
+        color:#eac434;
+        background-color: transparent;
+        font-weight: 500 !important;
+    }
+
+    .navbar {
+        background-color: #0E061E;
+        color: white;
+        border-bottom: none;
+    }
+
+    .navbar .site-name {
+        color: white;
+    }
+
+    .navbar .links {
+        background: transparent;
+    }
+
+    .navbar .site-name:hover {
+        color: #03cea4;
+    }
+
+    a {
+        color: #e50066;
+    }
+
+    @media (max-width: 719px) {
+        .sidebar-button {
+            left: .6rem;
+        }
+
+        .navbar {
+            padding-left: 3.4rem;
+        }
+    }
+}
