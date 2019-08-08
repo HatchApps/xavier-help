@@ -3,4 +3,5 @@ label: Page
 hide_body: false
 fields: []
 pages:
+- test-page.md
 - getting-started.md
