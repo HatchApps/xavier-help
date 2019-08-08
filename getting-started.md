@@ -1,6 +1,9 @@
++++
+
++++
 # Getting Started
 
-Short on time? Check out our video as a quickstart:
+Short on time? Check out our walkthrough video as a quickstart:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kcXrI91JmPc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
