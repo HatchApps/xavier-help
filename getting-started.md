@@ -1,6 +1,3 @@
-+++
-
-+++
 # Getting Started
 
 Short on time? Check out our video as a quickstart:
