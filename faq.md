@@ -1,3 +1,6 @@
+---
+---
+
 # FAQ
 
 ## Billing
@@ -24,7 +27,7 @@ end of your monthly billing cycle, which will not renew.
 Xavier bills in advance; you will receive an invoice by email for the number of clients present at the start of the monthly billing cycle, which begins when you have entered your payment details, and any free trials have ended.
 
 ### What happens when I add or remove clients?
-If you add or remove a client during the monthly billing cycle, you will be billed accordingly for that client at the start of the next monthly billing cycle.  
+If you add or remove a client during the monthly billing cycle, you will be billed accordingly for that client at the start of the next monthly billing cycle.
 
 ### What's your Custom Pricing?
 If you have more than 50 clients, please [get in touch](/contact-us.md) and we can arrange a custom plan for you that
@@ -37,27 +40,27 @@ If you're lucky enough to grow to need more than 50 clients whilst using Xavier,
 
 ## Regional Compatibility
 
-### Does Xavier work outside the UK? 
+### Does Xavier work outside the UK?
 
 Xavier does accept multiple currencies - it detects the currency used in Xero, and will display that currency for that client accross the site.
 
 Xavier currently only uses UK tax calculations; for clients outside the UK we slightly alter the Xavier experience in the following ways to prevent confusion:
 
 - Hide Corporation Tax and VAT Tracking Insights from the navigation
-  
+
 - Hide Corporation Tax and VAT Tracking Insight statistics from the Client Overview dashboard
-  
+
 - Rename VAT Return Checks to Tax Return Checks
 
 ### Will Xavier include tax calculations for clients outside the UK in the future?
 
-We've definitely got this on our roadmap! There's no real timescale for this though. For now, we're focussing on making sure that we are building a great product and 
-that means working with local accountants. We still love hearing from our international users, so if you would like to see Xavier 
+We've definitely got this on our roadmap! There's no real timescale for this though. For now, we're focussing on making sure that we are building a great product and
+that means working with local accountants. We still love hearing from our international users, so if you would like to see Xavier
 bring tax insights to your region then please let us know. This helps us to prioritise which regions to start with.
 
->We feel that Xavier is a really useful toolkit for any Xero client data, not just UK clients, so we would encourage you to 
-try Xavier for your team, wherever you're based. For international accountancies who would like a Xavier paid subscription, we offer 
-a discount code which will apply until we roll out full functionality in your area.  
+>We feel that Xavier is a really useful toolkit for any Xero client data, not just UK clients, so we would encourage you to
+try Xavier for your team, wherever you're based. For international accountancies who would like a Xavier paid subscription, we offer
+a discount code which will apply until we roll out full functionality in your area.
 
 ## Working with Xero
 

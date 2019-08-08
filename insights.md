@@ -1,3 +1,6 @@
+---
+---
+
 # Insights
 In addition to allowing you to slice and dice your Client data, Xavier applies a number of its own data analysis
 techniques and presents the findings up as *Insights*...
@@ -7,39 +10,39 @@ techniques and presents the findings up as *Insights*...
 
 Xavier uses a combination of Xero's Bank Statement Report data, bank transactions and payments to provide an
 interactive view across all of an organisation's bank accounts. The format loosely follows Xero's Bank Reconciliation
-Report, distinguishing between outstanding payments, receipts and unreconciled bank statement lines. 
+Report, distinguishing between outstanding payments, receipts and unreconciled bank statement lines.
 
 Expanding one of these categories allows you to see transaction-level detail in a flexible grid view. From each record,
-you can click straight into Xero to start the reconciliation process. The grid allows you to quickly order by the 
-oldest records (useful if you are approaching month end), and also see/filter/group the records that are in a "locked" 
+you can click straight into Xero to start the reconciliation process. The grid allows you to quickly order by the
+oldest records (useful if you are approaching month end), and also see/filter/group the records that are in a "locked"
 period.
 
-![Bank Reconciliation](./images/cleanup-bank-rec-payments.png) 
+![Bank Reconciliation](./images/cleanup-bank-rec-payments.png)
 
 ### Net Assets
-The Net Assets figure is a calculated balance of all transactions with the **Account Class** of _ASSET_ minus all 
-transactions with the **Account Class** of _LIABILITY_, up the the reporting date. This figure is also available as a 
-metric on the [Client List](/clients.html#client-list) and [Practice Dashboard](/clients.html#practice-dashboard). Xero 
-Account Classes are shown below:  
+The Net Assets figure is a calculated balance of all transactions with the **Account Class** of _ASSET_ minus all
+transactions with the **Account Class** of _LIABILITY_, up the the reporting date. This figure is also available as a
+metric on the [Client List](/clients.html#client-list) and [Practice Dashboard](/clients.html#practice-dashboard). Xero
+Account Classes are shown below:
 
 ![VAT Tracking](./images/cleanup-bank-rec-account-classes.png)
 
 ### Cash Position
-The Cash Position figure is a consolidated statement balance of all bank accounts, on the reporting date set. This 
+The Cash Position figure is a consolidated statement balance of all bank accounts, on the reporting date set. This
 figure is also available as a metric on the [Client List](/clients.html#client-list) and
 [Practice Dashboard](/clients.html#practice-dashboard).
 
 ::: tip
 Foreign bank account balances are converted to the base currency to produce this number - use as a guideline only, where
 this is a factor, and see below for more info.
-::: 
+:::
 
 ### Foreign Currency Bank Accounts
 Xavier detects when a bank account is in a different currency to the base currency of the organisation, and displays
 accordingly. There's a toggle that allows you to view the reconciliation totals for a bank account in either the native
 currency of the bank account or the base currency of the organisation.
 
-![Bank Reconciliation](./images/cleanup-bank-rec-multi-currency.png) 
+![Bank Reconciliation](./images/cleanup-bank-rec-multi-currency.png)
 
 ::: tip
 Xavier does not have access to Xero's exchange rates, so the base currency calculated balances for a foreign currency
@@ -50,10 +53,10 @@ More about exchange rates in Xero can be found in their
 [support documentation](https://central.xero.com/s/article/View-exchange-rate-or-conversion-rate).
 
 ### All Bank Statements
-You can also hit the *All Statements* button at the top of the insight to work in a full sandbox-style grid with all 
+You can also hit the *All Statements* button at the top of the insight to work in a full sandbox-style grid with all
 bank statement records, not just the unreconciled ones.
 
-![Bank Reconciliation](./images/cleanup-bank-rec-all-statements.png) 
+![Bank Reconciliation](./images/cleanup-bank-rec-all-statements.png)
 
 Xero guidance on bank reconciliation can be found [here](https://central.xero.com/s/article/Bank-reconciliation-in-Xero).
 
@@ -69,10 +72,10 @@ Review these, you may dismiss any which aren't true duplicates, or clicking the 
 Xero guidance on merging contacts can be found [here](https://central.xero.com/s/article/Edit-or-merge-an-existing-contact).
 
 ### Dismissals
-Each duplicate contact can be 'dismissed' - this means that Xavier will no longer count that combination of client names 
-to be a potential duplicate. Dismissed items do not contribute to the [Health Score](/clients.html#client-health-score). 
-Any dismissed duplicates can be viewed by selecting *dismissed* from the filter at the top 
-of the screen, where you can then review and *undo* any accidental dismissals.  
+Each duplicate contact can be 'dismissed' - this means that Xavier will no longer count that combination of client names
+to be a potential duplicate. Dismissed items do not contribute to the [Health Score](/clients.html#client-health-score).
+Any dismissed duplicates can be viewed by selecting *dismissed* from the filter at the top
+of the screen, where you can then review and *undo* any accidental dismissals.
 
 
 ## Multi-Coded Contacts
@@ -118,14 +121,14 @@ During" period and which ones are historical:
 
 #### Dismissals
 
-If there is good reason for the different coding, then you can dismiss the multi-coded alert and it will not show again. 
-Any dismissed alerts can be viewed by selecting *dismissed* from the filter at the top of the screen, where you can then review and *undo* any accidental dismissals. Dismissed items do not contribute to the [Health Score](/clients.html#client-health-score). 
+If there is good reason for the different coding, then you can dismiss the multi-coded alert and it will not show again.
+Any dismissed alerts can be viewed by selecting *dismissed* from the filter at the top of the screen, where you can then review and *undo* any accidental dismissals. Dismissed items do not contribute to the [Health Score](/clients.html#client-health-score).
 
-This dismissal applies to a few levels below the contact, taking into account both *direction* (Payable/Receivable) and 
-whether they are *Tax Code* or *Account Code* differences. 
+This dismissal applies to a few levels below the contact, taking into account both *direction* (Payable/Receivable) and
+whether they are *Tax Code* or *Account Code* differences.
 
-For example, you can dismiss an alert for a contact with differences in receivable account codes, and we won't raise any 
-more alerts for additional receivable account codes placed against that contact, but you will still get an alert for that 
+For example, you can dismiss an alert for a contact with differences in receivable account codes, and we won't raise any
+more alerts for additional receivable account codes placed against that contact, but you will still get an alert for that
 client if we detect multiple *payable* account code differences, or multiple receivable *tax codes*.
 
 ## Contact Defaults
@@ -153,12 +156,12 @@ Xero's support documentation on settings for Contacts is [here](https://central.
 
 ### Dismissals
 
-If you think the suggested default is not suitable, you can dismiss it. Any dismissed suggestions can be viewed by selecting 
-*dismissed* from the filter at the top of the screen, where you can then review and *undo* any accidental dismissals. 
+If you think the suggested default is not suitable, you can dismiss it. Any dismissed suggestions can be viewed by selecting
+*dismissed* from the filter at the top of the screen, where you can then review and *undo* any accidental dismissals.
 Dismissed items do not contribute to the [Health Score](/clients.html#client-health-score).
 
-The dismissal covers the combination of contact name and the type of suggested account code; account code or tax type. If you 
-dismiss a suggested account code default for a contact, for example, you will still be suggested potential default tax 
+The dismissal covers the combination of contact name and the type of suggested account code; account code or tax type. If you
+dismiss a suggested account code default for a contact, for example, you will still be suggested potential default tax
 types if one becomes suitable.
 
 ## Dormant Accounts
@@ -169,23 +172,23 @@ Since" date you supply.
 
 You can review the transaction history of these accounts and decide whether or not to take action on Xavier's suggestion.
 The idea is to help you identify old account codes that could be cleaned up, either through archiving or deleting, for
-better reporting. 
+better reporting.
 
 You can filter and sort to look at accounts with transactional history (activity) and also by Account Class. Xavier
 won't show you Xero System Accounts as they cannot be archived.
 
-For each account found, you can follow the link to Xero's Chart of Accounts to archive or delete the account, or you can 
-dismiss it. Dismissing the suggestion will hide it from the "Suggested" list, but you can always undo this from the 
+For each account found, you can follow the link to Xero's Chart of Accounts to archive or delete the account, or you can
+dismiss it. Dismissing the suggestion will hide it from the "Suggested" list, but you can always undo this from the
 "Dismissed" list if you want it back.
 
 Read more on
-[managing account codes in Xero](https://central.xero.com/s/article/Delete-archive-or-restore-an-account-in-your-chart-of-accounts). 
+[managing account codes in Xero](https://central.xero.com/s/article/Delete-archive-or-restore-an-account-in-your-chart-of-accounts).
 
 ### Dismissals
-Each account code can be 'dismissed' if you're not ready to take action and do not want Xavier to raise it again. 
-Dismissed items do not contribute to the [Health Score](/clients.html#client-health-score). 
-Any dismissed account codes can be viewed by selecting *dismissed* from the filter at the top 
-of the screen, where you can then review and *undo* any accidental dismissals.  
+Each account code can be 'dismissed' if you're not ready to take action and do not want Xavier to raise it again.
+Dismissed items do not contribute to the [Health Score](/clients.html#client-health-score).
+Any dismissed account codes can be viewed by selecting *dismissed* from the filter at the top
+of the screen, where you can then review and *undo* any accidental dismissals.
 
 ## Corporation Tax
 ![Coporation Tax](./images/insight-corporation-tax.png)
@@ -221,7 +224,7 @@ You can remove account codes from the calculation at any time, and removing all 
 reverting back to using the Xavier defaults.
 
 ### Capital Allowances
-The _Capital Allowances_ section of the Corporation Tax insight uses the Fixed Assets register in Xero to look for 
+The _Capital Allowances_ section of the Corporation Tax insight uses the Fixed Assets register in Xero to look for
 registered assets purchased during the date period. It specifically looks for:
 
 - Fixed Assets with a status of "Registered" (i.e. Draft won't count)
@@ -282,10 +285,10 @@ out of sync.
 ### Fixed Asset Accounts
 Xavier looks at general ledger Accounts that have an Account Type of _FIXED_, and then looks for mapped Asset
 Types in the Fixed Asset register. Accounts need to be selected as the Fixed Asset Account, Depreciation Expense Account
-or Accumulated Depreciation Account of at least one Asset Type to be considered "mapped". 
+or Accumulated Depreciation Account of at least one Asset Type to be considered "mapped".
 
-Xavier then checks the balance of any unmapped Accounts - if any are non-zero then this should be considered a genuine 
-issue that needs immediate attention.   
+Xavier then checks the balance of any unmapped Accounts - if any are non-zero then this should be considered a genuine
+issue that needs immediate attention.
 
 ### Draft Assets
 Xavier searches the fixed asset register for draft assets and lists them here for convenience. This section is a good
@@ -295,14 +298,14 @@ place to start if the asset types are not reconciling in the section above.
 This section cycles through all of the accounts in Xero's general ledger that are specified as the *Fixed Asset Account*
 in the Fixed Assets register. It  compares their balance with the combined totals of the *Purchase Price* of all assets
 associated with it, up to the Reporting Date, and highlights any that don't match. You can expand
-each Asset type to compare transaction history of the Account with the Asset activity. 
+each Asset type to compare transaction history of the Account with the Asset activity.
 
 ### Depreciation Account Reconciliation
-Similar in logic to the Fixed Asset Account Reconciliation, this section cycles through all of the accounts in Xero's 
+Similar in logic to the Fixed Asset Account Reconciliation, this section cycles through all of the accounts in Xero's
 general ledger that are specified as the *Accumulated Depreciation Account* in the Fixed Assets register. It  compares
 their balance with the combined totals of the "Depreciation Value" of all assets associated with it, up to the Reporting
-Date, and highlights any that don't match. The Depreciation Value is a calculation of the difference between the 
-*Purchase Price* and *Accounting Book Value* of an asset.  
+Date, and highlights any that don't match. The Depreciation Value is a calculation of the difference between the
+*Purchase Price* and *Accounting Book Value* of an asset.
 
 ### Depreciation Run
 This simple check compares the Reporting Period specified at the top of the insight with the "Last Depreciation Date" in
@@ -326,19 +329,19 @@ and a sum of the total amount owed. Clicking on this card will expand to show th
 a link straight to Xero if needed.
 
 ### Aged Payables
-This surfaces your creditors, old invoices for people that you owe money to. You can see a count of old invoices at a 
+This surfaces your creditors, old invoices for people that you owe money to. You can see a count of old invoices at a
 glance and a sum of the total amount you owe. Clicking on this card will expand to show the detail of each aged invoice,
 each with a link straight to Xero if needed.
 
 ### Average Debtor Days
-This uses a common ratio-based method to provide an indication of the length of time it takes for your debtors to pay 
+This uses a common ratio-based method to provide an indication of the length of time it takes for your debtors to pay
 you. This is based on the total Receivable amount owed at the _Reporting Date_, and the gross revenue over the last 12
 months up to the _Reporting Date_.
 
 ### Overpayments
 The check allows you to review all overpayments that still have remaining credit available at the time of the
 _Reporting Date_, by checking the dates of any allocations to make sure they are applicable. This is categorised into
-Overpayments relating to Suppliers and Customers.     
+Overpayments relating to Suppliers and Customers.
 
 
 ## Activity Stats
@@ -363,10 +366,10 @@ _Sales_.
 Note that the Account Type _Other Income_ is not included in this calculation.
 :::
 
-![Account Types in Xero](./images/insight-activity-turnover-xero-accounts.png)   
+![Account Types in Xero](./images/insight-activity-turnover-xero-accounts.png)
 
-This gives you some flexibility in determining this Turnover figure, as the Account Type can be modified for each 
-account in Xero. 
+This gives you some flexibility in determining this Turnover figure, as the Account Type can be modified for each
+account in Xero.
 
 ::: tip
 Xero provide some documentation on working with
@@ -411,11 +414,11 @@ to generate the checks. Expanding the card allows you to see these transactions,
 them out.
 
 ### Dismissals
-Each anomalous period can be 'dismissed' if you have reviewed the period and do not want Xavier to raise it again. 
+Each anomalous period can be 'dismissed' if you have reviewed the period and do not want Xavier to raise it again.
 The card for that supplier will not be removed from the view until all anomalous periods in the chart have been dismissed.
-Dismissed items do not contribute to the [Health Score](/clients.html#client-health-score). 
-Any dismissed periods can be viewed by selecting *dismissed* from the filter at the top 
-of the screen, where you can then review and *undo* any accidental dismissals.  
+Dismissed items do not contribute to the [Health Score](/clients.html#client-health-score).
+Any dismissed periods can be viewed by selecting *dismissed* from the filter at the top
+of the screen, where you can then review and *undo* any accidental dismissals.
 
 
 ![VAT Return Checks](./images/insight-vat-return.png)
@@ -430,7 +433,7 @@ OUTPUT2, RROUTPUT or ZERORATEDOUTPUT.
 
 ### Expense Account Review
 This check finds expense transactions that have been assigned a Tax Type of INPUT2 (20% VAT on Expenses), with accounts
-that have [Reporting Codes](https://central.xero.com/s/article/Report-codes-for-practices-using-report-templates) of 
+that have [Reporting Codes](https://central.xero.com/s/article/Report-codes-for-practices-using-report-templates) of
 EXP.ADM.ENT (Entertainment), EXP.ADM.PRI (Printing & Postage) or EXP.ADM.TRA (Travel International).
 
 ### Balance Sheet Review
