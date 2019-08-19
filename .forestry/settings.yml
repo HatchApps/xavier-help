@@ -15,13 +15,12 @@ public_path: "/images"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
+instant_preview: 
 build:
-  preview_command: vuepress build -d .vuepress/dist
-  publish_command: vuepress build -d .vuepress/dist
   preview_output_directory: ".vuepress/dist"
-  output_directory: ".vuepress/dist"
-  instant_preview_command: npm run forestry:preview
   install_dependencies_command: yarn install
   preview_docker_image: node:10
   mount_path: "/srv"
   working_dir: "/srv"
+  instant_preview_command: npm run forestry:preview
+  preview_command: vuepress build -d .vuepress/dist
