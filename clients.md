@@ -1,24 +1,24 @@
 ---
----
 
+---
 # Clients
 
-A *Client* in Xavier is linked to an *Organisation* in Xero.
+A _Client_ in Xavier is linked to an _Organisation_ in Xero.
 
-Xavier is at it's most powerful for accountancies when you have added all your practice clients. The *Client List* and *Practice Dashboard* are
+Xavier is at it's most powerful for accountancies when you have added all your practice clients. The _Client List_ and _Practice Dashboard_ are
 essential tools for prioritising and staying on top of your clients and keeping an eye on your practice performance;
 you'll be able to handle issues as and when they occur, and your clients will always feel like the centre of attention.
 
 ## Client List
 
-This is your *Team* home page in Xavier, and also where you can add, search and access each of your clients.
+This is your _Team_ home page in Xavier, and also where you can add, search and access each of your clients.
 In this view, you can choose to display all clients, only the clients you are an Account Manager for,
-or the ones you have selected as favourites. Click on each of the client cards to view the *Client Overview* for that client.
+or the ones you have selected as favourites. Click on each of the client cards to view the _Client Overview_ for that client.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/TJ0_MaW1rP8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 You can sort and filter your clients from this view for an at-a-glance practice overview.
-Sort by the general [Client Health Score](/clients.html#client-health-score), or select an insight metric and choose to sort by either it's individual *Health Score*
+Sort by the general [Client Health Score](/clients.html#client-health-score), or select an insight metric and choose to sort by either it's individual _Health Score_
 or the number of issues identified for that insight (i.e., by volume). You can choose to sort ascending or descending,
 and combined with the filtering of the list by My Accounts and Favourites, the "at a glance" reporting potential is
 quite powerful.
@@ -44,7 +44,15 @@ Here's some scenarios that will immediately benefit from this kind of practice-l
 * How are the clients doing that are being looked after by my newest bookkeeper?
 * Which client has got the highest ratio of Multi-Coded Contacts so we can look to improve their coding processes?
 
-## Practice Dashboard
+### Favourite Clients
+
+By clicking the pink star, your client will become a 'Favourite'. This is really useful for clients that you need to view regularly, or are currently working a lot with. Favourite clients are specific to each user, so you can just select the Clients that are most relevant to you. 
+
+You can filter both the client list, and the [practice dashboard,](https://help.xavier-analytics.com/clients.html#practice-dashboard) to your favourite clients, to check them out more easily.  
+
+When switching quickly between clients in the sidebar, your favourite clients will always sit at the top of the list so you can find and switch between them quickly. 
+
+### Practice Dashboard
 
 The Practice Dashboard is a KPI data playground across all of your clients. This view contains the data from the Client List including
 all of your client metrics, plus links straight to the client in Xero for you to compare data across clients or account managers.
@@ -59,36 +67,37 @@ on the right.
 
 You can save or export your configurations to Excel, using the buttons in the secondary navigation at the top right.
 
-You can save these configurations in your *Practice Dashboard* by selecting *save*.
+You can save these configurations in your _Practice Dashboard_ by selecting _save_.
 You'll need to give your dashboard a name, then decide whether to keep this report configuration private, or share it with the rest of your team.
-Saved dashboards can be accessed by selecting *Custom Dashboards* in the sidebar. Just like
+Saved dashboards can be accessed by selecting _Custom Dashboards_ in the sidebar. Just like
 [custom reports](https://help.xavier-analytics.com/sandbox-reporting.html#custom-reports), they can then be edited,
 favourited, or deleted from this view.
 
 ## Client Overview
-Clicking on a client card from the *Client List* will take you through to the management of that specific client.
+
+Clicking on a client card from the _Client List_ will take you through to the management of that specific client.
 
 ![Client Overview](./images/client-overview.png)
 
 In addition to providing high level stats about a client, the overview is where you can manage a client,
-adjusting specific aspects from the *Edit* button, removing it from Xavier via the *Delete* button and un-linking it from
-Xero using the *Unlink* button.
+adjusting specific aspects from the _Edit_ button, removing it from Xavier via the _Delete_ button and un-linking it from
+Xero using the _Unlink_ button.
 
 Unlinking a client from Xero means it will remain in Xavier, but will no longer sync with Xero to retrieve the latest
 changes. A client can be re-linked to Xero at any point, and syncing will resume.
 
 [Syncing with Xero](/xero-integration.md#syncing) happens automatically overnight, but you can also trigger a sync on-demand
-via the *Sync Now* button.
+via the _Sync Now_ button.
 
 This view also highlights any issues with the client's Lock Dates - [find out more](/team-management.md#lock-dates).
 
-You can *export* the client overview in both PDF and .XLS format:
+You can _export_ the client overview in both PDF and .XLS format:
 
-- The PDF export contains your team branding (which you can add in the [Team Profile](/team-management.html#team-profile))
-and additional explanations for each item, which will make it easier for your client to understand. The items are also
-arranged in priority order.
-- The .XLSX format is a really stripped-down version of the overview, which is perfect for linking into your own spreadsheet
-reports.
+* The PDF export contains your team branding (which you can add in the [Team Profile](/team-management.html#team-profile))
+  and additional explanations for each item, which will make it easier for your client to understand. The items are also
+  arranged in priority order.
+* The .XLSX format is a really stripped-down version of the overview, which is perfect for linking into your own spreadsheet
+  reports.
 
 ## Client Health Score
 
