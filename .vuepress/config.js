@@ -20,6 +20,7 @@ module.exports = {
             '/getting-started',
             '/clients',
             '/sandbox-reporting',
+            '/focus',
             '/insights',
             '/checks',
             '/team-management',
