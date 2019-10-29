@@ -23,12 +23,17 @@ Short on time? Check out our video as a quickstart:
 Xavier tackles all sorts of accounting insights, and spots many kinds of errors. These are organised into Checks,
 which you can think of as individual tools or tasks that require review by someone.  
 
-_image of Check with alert to go here_
+![Focus Check with Alert](./images/focus-check.png)
 
 If the Check has a down-arrow on the right-hand-side, then it can be expanded to show more detailed information by 
 clicking on the card:
 
-_image of an expanded Check to go here_
+![Focus Check Expanded](./images/focus-check-expanded.png)
+
+Some Checks have additional configuration options that can be adjusted while you are in Flow Mode. These Checks have
+cog icons beside their title. Clicking on the cog will bring up the options that can be adjusted:
+
+![Focus Check Settings](./images/focus-check-settings.png)
 
 Sometimes if a Check raises an alert then you are prompted to take action and fix whatever Xavier has found to be
 the issue. Focus provides a library of these Checks that can be combined together into
@@ -36,11 +41,14 @@ the issue. Focus provides a library of these Checks that can be combined togethe
 
 ## Custom Checks
 
+![Focus Custom Check](./images/focus-custom-check.png)
+
 There's often non-Xavier tasks that you'd like your team members to work on during jobs like Management Reporting or
 Year End. That's where Custom Checks come in. You can create your own Custom Checks that can be added to any Flow
-Template you like. You can also include links in the description of the Check so your colleagues know where to go:
+Template you like. You can also include links in the description of the Check so your colleagues know where to go, by
+highlighting a word:
 
-_image of Custom Check create modal to go here_
+![Focus Custom Check Create](./images/focus-custom-check-create.png)
 
 ## Flow Templates
 
@@ -49,7 +57,7 @@ your colleagues through a specific job without needing to build lengthy internal
 be built on-the-fly when creating a Flow, at which point you can decide whether you only need the template once or you'd
 like to save the template for re-use. They can also be created from the Flow Templates view.
 
-_image of the template builder to go here_
+![Focus Flow Template](./images/focus-flow-template.png)
 
 Once multiple Checks have been added to a template they can be re-ordered by dragging and dropping.  
 
@@ -59,7 +67,7 @@ Creating a Flow involves assigning a Flow Template to one or more Clients, assig
 selecting a reporting period and a due date for when the Flow needs to be completed. You can select a pre-existing 
 [Flow Template](/focus.html#flow-templates), or build your own as you go.
 
-_image of Flow Create to go here_
+![Focus Flow Create](./images/focus-flow-create.png)
 
 ::: tip
 If you add multiple Clients when building a Flow, a Flow will be created for each Client.
@@ -68,7 +76,7 @@ If you add multiple Clients when building a Flow, a Flow will be created for eac
 In the final step, if any of the Checks require your input to specify additional parameters, you will be prompted to
 provide these before Saving the Flow.
 
-_image of Flow Parameters to go here_
+![Focus Flow Parameters](./images/focus-flow-parameters.png)
 
 If you are creating the Flow for just one Client there will also be the option to "Save & Start". This provides a
 shortcut where the Flow will be both created and started in one go, and you will be taken directly into
@@ -78,14 +86,15 @@ shortcut where the Flow will be both created and started in one go, and you will
 
 The Flow List shows all Flows for your team, and provides various filters to quickly find the Flows you are looking for.
 You can filter Flows by their status (Not Started, In Progress, Complete), and order by different values such as Due 
-Date and Period End. Use the search box to filter based on the Flow Template name.
+Date and Period End. Use the search box to filter based on the Flow Template name. If the Flow is not yet completed,
+warnings will be displayed as the Due Date set for the Flow is approaching.
 
-_Flow List image here_
+![Focus Flow List](./images/focus-flow-list.png)
 
 There are options available for each Flow by clicking on the menu on the right of the card. **Note** that Flows that have
 been started cannot be edited.
 
-_Options menu here_  
+![Focus Flow Options](./images/focus-flow-options.png)  
 
 ::: tip
 A version of the Flow List is available when viewing an individual Client too, which is automatically filtered to Flows
@@ -98,7 +107,7 @@ When you click on a Flow, you are taken to a special "Flow Mode", which hides th
 allows you to focus on the job at hand. From here you can run through the Checks in a logical order and mark each one as
 complete once you are happy.
 
-_Flow mode image here_
+![Focus Flow Mode](./images/focus-flow-mode.png)  
 
 From the left hand menu you can head back to the [Flow List](/focus.html#the-flow-list) by clicking on _Focus Home_, and
 go to the Client Overview by clicking on the name of the Client. 
@@ -107,12 +116,12 @@ go to the Client Overview by clicking on the name of the Client.
 
 Progress is made on a Flow by completing Checks. This is done by clicking on the ticks beside each Check: 
 
-_image of partially completed Flow to go here, with Check Ticks highlighted_
+![Focus Completing a Check](./images/focus-check-complete.png)  
 
 If needed, you can click the tick again to change the Check back to incomplete. Only once you've completed all Checks
 will Xavier allow you to mark the Flow as _Complete_:
 
-_image of Complete button to go here_
+![Focus Completing a Flow](./images/focus-flow-complete.png)  
 
 ::: warning
 Once a Flow is completed this cannot be reversed, so make sure you're happy with all the Checks before performing this
@@ -124,7 +133,7 @@ final step.
 Xavier tracks the progress of a Flow via an audit trail called _Flow History_. In the "History" view of the Flow you
 can see key events for the Flow laid out in a timeline:
 
-_image of Flow History to go here_
+![Focus Flow History](./images/focus-flow-history.png)  
 
 This includes events such as a user rolling back a completed Check. A snapshot of the 
 [Health Score](/clients.html#client-health-score) is also captured at the time of these events, so you can track the 
