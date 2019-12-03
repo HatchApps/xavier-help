@@ -31,6 +31,36 @@ for more information on how to manage your team.
 Manage your subscription with Xavier, view your subscription plan and the breakdown of Xavier's rolling discounts within your clients.
 You can also manage your billing information, and add any coupon codes.
 
+## Xavier Enterprise Team Roles
+
+Xavier has four different user roles for Enterprise teams:
+
+* __Owner__: This is the "Super Admin" that is owner of the team(s)
+* __Admin__: Part of the management team with wide-ranging permissions
+* __Adviser__: Team member with elevated permissions
+* __Member__: Team member with restricted permissions
+
+
+The access permissions for these team members are as follows:
+
+
+| Action/View                                    | Member Permission  | Adviser Permission | Admin Permission  | Owner Permission  |
+| ---------------------------------------------- |:------------------:|:------------------:|:-----------------:|:-----------------:|
+Can invite new team members                      |	N                 |	N	               | N                 | Y                 |
+Access to Portfolio-wide client list/app         |	N                 |	N	               | N	               | Y                 |
+Can create a Portfolio-wide Custom Report (coming soon)|N             | N                  | N                 | Y                 |
+Access to team settings                          |	N                 |	N                  | Y                 | Y                 |
+Access to client settings (tags, visibility, etc)|	N                 |	N                  | Y	               | Y                 |
+Can add a new client                             |	N                 |	N                  | Y	               | Y                 |
+Can manage team integrations                     |	N                 |	N                  | Y                 | Y                 |
+Can create a Team-wide Custom Report             |	N                 |	Y	               | Y                 | Y                 |
+Can create Flow templates                        |	N                 |	Y                  | Y                 | Y                 |
+Can review and approve completed Flows           |	N                 |	Y                  | Y                 | Y                 |
+Can create a Flow from existing template         |	Y                 |	Y                  | Y                 | Y                 |
+Can create a private Custom Report               |	Y                 |	Y                  | Y                 | Y                 |
+
+
+
 ## Inviting Team Members
 If you're the team owner, you can invite other people to become members of your team in the *Team Members* section of the
 *Team Settings*, or via the *Invite Team* action in the menu underneath your user icon in the top-right corner of Xavier.
