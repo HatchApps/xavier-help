@@ -45,4 +45,24 @@ tech side of things, you can read about Xero's API rate limits [here](https://de
 Subsequent syncs, either manual or automated overnight, only retrieve the Xero records that have changed since the last sync,
 so should be substantially faster in comparison.
 
-Think your import is taking too long or has failed? [Get in touch](/contact-us.html), we're here to help.
+Think your import is taking too long or has failed? See next section for synch failures or [Get in touch](/contact-us.html), we're here to help.
+
+## Initial Sync Failures
+
+Errors could occur when data is synchronized for the first time from Xero to Xavier.
+
+This section provides an overview of different types of sync errors, some of the possible scenarios that cause those errors and potential ways to fix the errors.
+
+This section includes the common error types and may not cover all the possible errors.
+
+* **Xero auth failed. Could not sync client**: Check that you are using the correct Xero account credentials, and have the required access rights to the client in Xero, before trying again. Please see [Permissions](/troubleshooting.html#xero-access-permissions) above for more information.
+
+* **Daily Xero Rate limit exceeded**: Rate Limiter is a service that controls the amount of incoming and outgoing traffic to or from Xero.  If a User exceeds the rate limit, then any further requests will be denied until the rate limit timeframe resets. We are always working to improve and expand at our side, however, we don't have control over Xero's daily limit. The most common error occurs due to a large amount of data that needs to be fetched from Xero, which can lead to exceeding this daily limit and generate an error.
+Please try again after the cooling period (24 hours). For further information please click [here](https://developer.xero.com/documentation/auth-and-limits/xero-api-limits).
+
+
+* **Could not sync client**: Something has failed during the sync process please [get in touch](/contact-us.html).
+
+
+
+

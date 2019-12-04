@@ -1,9 +1,9 @@
 {
   "scripts": {
     "dev": "vuepress dev",
-    "build": "vuepress build && cp -R ./.vuepress/dist ./docs"
+    "build": "vuepress build && rm -r ./docs && cp -R ./.vuepress/dist ./docs"
   },
   "dependencies": {
-    "vuepress": "^0.13.0"
+    "vuepress": "0.14.11"
   }
 }
