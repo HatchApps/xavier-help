@@ -46,11 +46,11 @@ Here's some scenarios that will immediately benefit from this kind of practice-l
 
 ### Favourite Clients
 
-By clicking the pink star, your client will become a 'Favourite'. This is really useful for clients that you need to view regularly, or are currently working a lot with. Favourite clients are specific to each user, so you can just select the Clients that are most relevant to you. 
+By clicking the pink star, your client will become a 'Favourite'. This is really useful for clients that you need to view regularly, or are currently working a lot with. Favourite clients are specific to each user, so you can just select the Clients that are most relevant to you.
 
-You can filter both the client list, and the [practice dashboard,](https://help.xavier-analytics.com/clients.html#practice-dashboard) to your favourite clients, to check them out more easily.  
+You can filter both the client list, and the [practice dashboard,](https://help.xavier-analytics.com/clients.html#practice-dashboard) to your favourite clients, to check them out more easily.
 
-When switching quickly between clients in the sidebar, your favourite clients will always sit at the top of the list so you can find and switch between them quickly. 
+When switching quickly between clients in the sidebar, your favourite clients will always sit at the top of the list so you can find and switch between them quickly.
 
 ### Practice Dashboard
 
@@ -128,7 +128,7 @@ scores on the final health score, but keep aiming for that 100%!
 
 ## Client Visibility
 
-Xavier provides two options for determining who in your team can view a particular client's data. The following options
+Xavier provides three options for determining who in your team can view a particular client's data. The following options
 can be selected from the _Client Settings_ view:
 
 ![Client Overview](./images/client-visibility.png)
