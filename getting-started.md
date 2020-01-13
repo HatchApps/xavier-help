@@ -3,9 +3,11 @@
 ---
 # Getting Started
 
-Short on time? Check out our video as a quickstart:
+Prefer video? Check out our recent overview webinar:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kcXrI91JmPc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IaJNcmeHXkA?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+We've also got a series of video tutorials on the _Learn_ section of our site: [https://xavier-analytics.com/learn/](https://xavier-analytics.com/learn/)
 
 ## Registration
 
