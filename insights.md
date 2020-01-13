@@ -175,13 +175,13 @@ The idea is to help you identify old account codes that could be cleaned up, eit
 better reporting.
 
 You can filter and sort to look at accounts with transactional history (activity) and also by Account Class. Xavier
-won't show you Xero System Accounts as they cannot be archived.
+won't show you Xero System Accounts and certain other Accounts as they cannot be archived.
 
-For each account found, you can follow the link to Xero's Chart of Accounts to archive or delete the account, or you can
-dismiss it. Dismissing the suggestion will hide it from the "Suggested" list, but you can always undo this from the
-"Dismissed" list if you want it back.
+For each account suggested by Xavier, you can either archive it, or dismiss it. Archiving the suggestion makes the
+appropriate change in Xero. Dismissing the suggestion will hide it from the "Suggested" list, but you can always undo
+this from the "Dismissed" list if you want it back.
 
-Read more on
+You can also follow the link to Xero's Chart of Accounts to restore an archived account or delete one. Read more on
 [managing account codes in Xero](https://central.xero.com/s/article/Delete-archive-or-restore-an-account-in-your-chart-of-accounts).
 
 ### Dismissals
