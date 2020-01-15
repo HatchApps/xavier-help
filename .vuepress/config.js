@@ -25,6 +25,7 @@ module.exports = {
             '/checks',
             '/team-management',
             '/xero-integration',
+            '/api',
             '/faq',
             '/troubleshooting',
             '/contact-us',
