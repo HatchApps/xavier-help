@@ -13,7 +13,7 @@ Xavier offers an API to extract basic data about your organizations. If you woul
 
 The current version of the API lives at: ```https://api.xavier-analytics.com/```
 
-The easiest way to start using our API is by finding an HTTP client online. We would recommend to use <a href="https://www.getpostman.com/downloads/">Postman</a>, or <a href="https://paw.cloud/">Paw</a> as they are ready-to-use, free tools.
+The easiest way to start using our API is by finding an HTTP client online. We would recommend using <a href="https://www.getpostman.com/downloads/">Postman</a>, or <a href="https://paw.cloud/">Paw</a> as they are ready-to-use, free tools.
 
 In our demo we are going to use <a href="https://www.getpostman.com/downloads/">Postman</a>.
 
@@ -32,7 +32,7 @@ In our demo we are going to use <a href="https://www.getpostman.com/downloads/">
 
 ## Authentication
 
-In order to get out of data you must pass an authorization token in the request header. To generate a token please follow the instructions.
+In order to get data out, you must pass an authorization token in the request header. To generate a token please use the following instructions:
 
 **Request Header:** ```Authorization: Bearer <your token>```
 
@@ -42,7 +42,7 @@ In Xavier head to "Your Settings" and under the API tab generate your token.
 
 Copy and store the given token in a safe place. Don't worry if you loose it, you can create a new one anytime.
 
-Add a bearer token as your authentication method and copy your given token in the correct field. See below.
+Select _bearer token_ as your authentication method and copy your given token into the correct field. See below:
 
 ![Add token](./images/token-postman.png)
 
