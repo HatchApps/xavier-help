@@ -40,7 +40,7 @@ In Xavier head to "Your Settings" and under the API tab generate your token.
 
 ![Generate token](./images/api-token.png)
 
-Copy and store the given token in a safe place. Don't worry if you loose it, you can create a new one anytime.
+Copy and store the given token in a safe place. Don't worry if you lose it, you can create a new one anytime.
 
 Select _bearer token_ as your authentication method and copy your given token into the correct field. See below:
 
@@ -86,7 +86,7 @@ Model:
         "id": "string",
         "name": "string",
         "providerId": "string",
-        "practiceCode": integer,
+        "practiceCode": "string",
         "organisationType": "string",
         "healthScore": integer
     }
