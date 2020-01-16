@@ -3,7 +3,7 @@
 ---
 # API
 
-Xavier offers an API to extract basic data about your organizations. If you would like to access to the API, please [get in touch](/contact-us.html).
+We offer a RESTful API to extract basic data contained within your Xavier account. If you would like to access to the API, please [get in touch](/contact-us.html).
 
 ::: warning
  Please note, our API is currently running in BETA phase. It may change in the future.
@@ -32,17 +32,21 @@ In our demo we are going to use <a href="https://www.getpostman.com/downloads/">
 
 ## Authentication
 
-In order to get data out, you must pass an authorization token in the request header. To generate a token please use the following instructions:
+In order to get data out, you must pass an authorization token in the request header:
 
 **Request Header:** ```Authorization: Bearer <your token>```
+
+To generate a token please use the following instructions:
 
 In Xavier head to "Your Settings" and under the API tab generate your token.
 
 ![Generate token](./images/api-token.png)
 
-Copy and store the given token in a safe place. Don't worry if you lose it, you can create a new one anytime.
+::: warning
+Store the token securely and do not share it with anyone else!
+:::
 
-Select _bearer token_ as your authentication method and copy your given token into the correct field. See below:
+For example to use your token in <a href="https://www.getpostman.com/downloads/">Postman</a>; select _bearer token_ as your authentication method and copy your given token into the correct field. See below:
 
 ![Add token](./images/token-postman.png)
 
@@ -53,9 +57,9 @@ Select _bearer token_ as your authentication method and copy your given token in
 
 Request: ```https://api.xavier-analytics.com/clients```
 
-Response Content Type: application/JSON
+Response Content Type: *application/JSON*
 
-Model:
+Response Model:
 
 ```json
 [
@@ -76,9 +80,9 @@ Example value:
 
 Request: ```https://api.xavier-analytics.com/clients/{clientId}```
 
-Response Content Type: application/JSON
+Response Content Type: *application/JSON*
 
-Model:
+Response Model:
 
 ```json
 [
@@ -96,7 +100,7 @@ Example value:
 
 ![GET-Clients/{clientId}-Response](./images/client-response.png)
 
-## Responses
+## Response Codes
 
 ### 200 - OK
 Indicates that the client's request was accepted successfully.
