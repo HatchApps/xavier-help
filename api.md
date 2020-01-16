@@ -28,7 +28,7 @@ In our demo we are going to use <a href="https://www.getpostman.com/downloads/">
 | Endpoint        | What it does   |
 | ------------- |:-------------:| -----|
 | ```/clients```| Returns an array with a list of Clients|
-| ```/client/{clientId}```| Returns an array with a specific Client|
+| ```/clients/{clientId}```| Returns an array with a specific Client|
 
 ## Authentication
 
