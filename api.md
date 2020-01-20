@@ -29,6 +29,7 @@ In our demo we are going to use <a href="https://www.getpostman.com/downloads/">
 | ------------- |:-------------:| -----|
 | ```/clients```| Returns an array with a list of Clients|
 | ```/clients/{clientId}```| Returns an array with a specific Client|
+| ```/clients/{clientId}/activity-stats```| Returns an array with Activity Stats for a specific Client|
 
 ## Authentication
 
@@ -99,6 +100,43 @@ Response Model:
 Example value:
 
 ![GET-Clients/{clientId}-Response](./images/client-response.png)
+
+### GET /clients/{clientId}/activity-stats
+
+***
+
+Request: ```https://api.xavier-analytics.com/clients/{clientId}/activity-stats```
+
+Response Content Type: *application/JSON*
+
+Response Model:
+
+```json
+[
+    {
+        "start": "string",
+        "end": "string",
+        "turnover": integer,
+        "salesCount": integer,
+        "billsCount": integer,
+        "creditsCount": integer,
+        "manualJournalsCount": integer,
+        "bankTransactionsCount": integer,
+        "totalCount": integer,
+        "turnoverChangeYoY": integer,
+        "salesChangeYoY": integer,
+        "billsChangeYoY": integer,
+        "creditsChangeYoY": integer,
+        "manualJournalsChangeYoY": integer,
+        "bankTransactionsChangeYoY": integer,
+        "totalChangeYoY": integer
+    }
+]
+```
+
+Example value:
+
+![GET-Clients/{clientId}/activity-stats-Response](./images/activity-stats-response.png)
 
 ## Response Codes
 
