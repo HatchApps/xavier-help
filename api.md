@@ -86,16 +86,14 @@ Response Content Type: *application/JSON*
 Response Model:
 
 ```json
-[
-    {
-        "id": "string",
-        "name": "string",
-        "providerId": "string",
-        "practiceCode": "string",
-        "organisationType": "string",
-        "healthScore": integer
-    }
-]
+{
+    "id": "string",
+    "name": "string",
+    "providerId": "string",
+    "practiceCode": "string",
+    "organisationType": "string",
+    "healthScore": integer
+}
 ```
 Example value:
 
@@ -112,26 +110,46 @@ Response Content Type: *application/JSON*
 Response Model:
 
 ```json
-[
-    {
-        "start": "string",
-        "end": "string",
-        "turnover": integer,
-        "salesCount": integer,
-        "billsCount": integer,
-        "creditsCount": integer,
-        "manualJournalsCount": integer,
-        "bankTransactionsCount": integer,
-        "totalCount": integer,
-        "turnoverChangeYoY": integer,
-        "salesChangeYoY": integer,
-        "billsChangeYoY": integer,
-        "creditsChangeYoY": integer,
-        "manualJournalsChangeYoY": integer,
-        "bankTransactionsChangeYoY": integer,
-        "totalChangeYoY": integer
+{
+    "activityStats": {
+        "annual": {
+            "start": "string",
+            "end": "string",
+            "turnover": float,
+            "salesCount": integer,
+            "billsCount": integer,
+            "creditsCount": integer,
+            "manualJournalsCount": integer,
+            "bankTransactionsCount": integer,
+            "totalCount": integer,
+            "turnoverChangeYoY": integer,
+            "salesChangeYoY": integer,
+            "billsChangeYoY": integer,
+            "creditsChangeYoY": integer,
+            "manualJournalsChangeYoY": integer,
+            "bankTransactionsChangeYoY": integer,
+            "totalChangeYoY": integer}
+        },
+        "monthlyAverage": {
+            "start": "string",
+            "end": "string",
+            "turnover": float,
+            "salesCount": integer,
+            "billsCount": integer,
+            "creditsCount": integer,
+            "manualJournalsCount": integer,
+            "bankTransactionsCount": integer,
+            "totalCount": integer,
+            "turnoverChangeYoY": integer,
+            "salesChangeYoY": integer,
+            "billsChangeYoY": integer,
+            "creditsChangeYoY": integer,
+            "manualJournalsChangeYoY": integer,
+            "bankTransactionsChangeYoY": integer,
+            "totalChangeYoY": integer
+        }
     }
-]
+}
 ```
 
 Example value:
