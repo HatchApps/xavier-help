@@ -128,7 +128,7 @@ Response Model:
             "creditsChangeYoY": integer,
             "manualJournalsChangeYoY": integer,
             "bankTransactionsChangeYoY": integer,
-            "totalChangeYoY": integer}
+            "totalChangeYoY": integer
         },
         "monthlyAverage": {
             "start": "string",
