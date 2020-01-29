@@ -67,6 +67,8 @@ Response Model:
     {
         "id": "string",
         "name": "string",
+        "practiceCode": "string",
+        "providerId": "string",
         "healthScore": integer
     }
 ]
@@ -92,7 +94,14 @@ Response Model:
     "providerId": "string",
     "practiceCode": "string",
     "organisationType": "string",
-    "healthScore": integer
+    "healthScore": integer,
+    "hmrcStatus": "string",
+    "vatNumber": "string",
+    "metrics": {
+        "debtorBalance": float,
+        "avgDebtorDays": integer,
+        "oneDayImpact": integer,
+    }
 }
 ```
 Example value:
@@ -111,43 +120,41 @@ Response Model:
 
 ```json
 {
-    "activityStats": {
-        "annual": {
-            "start": "string",
-            "end": "string",
-            "turnover": float,
-            "salesCount": integer,
-            "billsCount": integer,
-            "creditsCount": integer,
-            "manualJournalsCount": integer,
-            "bankTransactionsCount": integer,
-            "totalCount": integer,
-            "turnoverChangeYoY": integer,
-            "salesChangeYoY": integer,
-            "billsChangeYoY": integer,
-            "creditsChangeYoY": integer,
-            "manualJournalsChangeYoY": integer,
-            "bankTransactionsChangeYoY": integer,
-            "totalChangeYoY": integer
-        },
-        "monthlyAverage": {
-            "start": "string",
-            "end": "string",
-            "turnover": float,
-            "salesCount": integer,
-            "billsCount": integer,
-            "creditsCount": integer,
-            "manualJournalsCount": integer,
-            "bankTransactionsCount": integer,
-            "totalCount": integer,
-            "turnoverChangeYoY": integer,
-            "salesChangeYoY": integer,
-            "billsChangeYoY": integer,
-            "creditsChangeYoY": integer,
-            "manualJournalsChangeYoY": integer,
-            "bankTransactionsChangeYoY": integer,
-            "totalChangeYoY": integer
-        }
+    "annual": {
+        "start": "string",
+        "end": "string",
+        "turnover": float,
+        "salesCount": integer,
+        "billsCount": integer,
+        "creditsCount": integer,
+        "manualJournalsCount": integer,
+        "bankTransactionsCount": integer,
+        "totalCount": integer,
+        "turnoverChangeYoY": integer,
+        "salesChangeYoY": integer,
+        "billsChangeYoY": integer,
+        "creditsChangeYoY": integer,
+        "manualJournalsChangeYoY": integer,
+        "bankTransactionsChangeYoY": integer,
+        "totalChangeYoY": integer
+    },
+    "monthlyAverage": {
+        "start": "string",
+        "end": "string",
+        "turnover": float,
+        "salesCount": integer,
+        "billsCount": integer,
+        "creditsCount": integer,
+        "manualJournalsCount": integer,
+        "bankTransactionsCount": integer,
+        "totalCount": integer,
+        "turnoverChangeYoY": integer,
+        "salesChangeYoY": integer,
+        "billsChangeYoY": integer,
+        "creditsChangeYoY": integer,
+        "manualJournalsChangeYoY": integer,
+        "bankTransactionsChangeYoY": integer,
+        "totalChangeYoY": integer
     }
 }
 ```
