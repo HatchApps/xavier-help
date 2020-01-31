@@ -23,13 +23,13 @@ In our demo we are going to use <a href="https://www.getpostman.com/downloads/">
 | ------------- |:-------------:| -----|
 | version 1.0 BETA      | 07/01/2020 | Initial deployment | -->
 
-### Endpoints
+### Endpoints Summary
 
 | Endpoint        | What it does   |
 | ------------- |:-------------:| -----|
-| ```/clients```| Returns an array with a list of Clients|
-| ```/clients/{clientId}```| Returns an array with a specific Client|
-| ```/clients/{clientId}/activity-stats```| Returns an array with Activity Stats for a specific Client|
+| [/clients](/api.html#get-clients) | Returns a list of Clients|
+| [/clients/{clientId}](/api.html#get-clients-clientid) | Returns details of a specific Client|
+| [/clients/{clientId}/activity-stats](/api.html#get-clients-clientid-activity-stats) | Returns Activity Stats metrics for a specific Client|
 
 ## Authentication
 
@@ -149,7 +149,7 @@ The `/clients/{clientId}` endpoint returns a detailed set of information about a
 ### GET /clients/{clientId}/activity-stats
 ***
 
-The `/clients/{clientId}/activity-stats` returns the rolling annual and monthly-average [Activity Stats](/insights.html#activity-stats) for a particular client, identified by the `clientId`.
+The `/clients/{clientId}/activity-stats` endpoint returns the rolling annual and monthly-average [Activity Stats](/insights.html#activity-stats) for a particular client, identified by the `clientId`.
 
 **Request:** ```https://api.xavier-analytics.com/clients/{clientId}/activity-stats```
 
