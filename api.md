@@ -163,6 +163,26 @@ Example value:
 
 ![GET-Clients/{clientId}/activity-stats-Response](./images/activity-stats-response.png)
 
+## Rate Limits
+
+A rate limit is the number of API calls an app or user can make within a given time period. If this limit is exceeded the app or user will be throttled and API requests will fail.
+
+**Limits are set to 60 requests / minute.**
+
+If you exceed your rate limit allowance your request will be rejected. An *<a href="#_429-too-many-requests">HTTP 429 (Too Many Requests)</a>* response will be returned.
+
+We return rate limit in our API responses to allow clients to monitor their API usage.
+
+Example response header:
+| Key        | Value   |
+| ------------- |:-------------:| -----|
+| Date | Thu, 30 Jan 2020 16:27:15 GMT |
+| Content-Type | application/json|
+| Connection | keep-alive|
+| Server | cloudflare|
+| X-RateLimit-Limit | 60 |
+| X-RateLimit-Remaining | 42 |
+
 ## Response Codes
 
 ### 200 - OK
@@ -170,6 +190,9 @@ Indicates that the client's request was accepted successfully.
 
 ### 404 - Not found
 The 404 error status code indicates that the API can't map the client's URI to a resource.
+
+### 429 - Too many requests
+The 429 error status code occurs when a user tries to perform too many requests within a certain timeframe.
 
 ### 500 - Internal Server Error
 500 is the generic API server side error response. Please [contact](/contact-us.html) our support team.
