@@ -30,7 +30,7 @@ end of your monthly billing cycle, which will not renew.
 
 ### When will I be billed?
 
-Xavier bills in advance; you will receive an invoice by email for the number of clients present at the start of the monthly billing cycle, which begins when you have entered your payment details, and any free trials have ended.
+Xavier bills in advance; you will receive an invoice by email for the number of clients active in the previous monthly billing cycle, which begins when you have entered your payment details, and any free trials have ended.
 
 ### What happens when I add or remove clients?
 
@@ -98,15 +98,15 @@ and backups are encrypted at rest and data in transit always journeys via SSL (h
 
 Your data is yours - we do not share your data with anyone.
 
-### Can I invite my clients to Xavier? 
+### Can I invite my clients to Xavier?
 
-We actually don’t recommend you give clients access to Xavier; while there are 
-[visibility settings](http://help.xavier-analytics.com/clients.html#client-visibility) in Xavier that you can use to 
-prevent members of your team seeing client data, your team members still have visibility of the list of other team members 
+We actually don’t recommend you give clients access to Xavier; while there are
+[visibility settings](http://help.xavier-analytics.com/clients.html#client-visibility) in Xavier that you can use to
+prevent members of your team seeing client data, your team members still have visibility of the list of other team members
 in various places, so if you add clients as team members those names will be visible.
 
-Instead, we would recommend either you set up a separate Xavier account for that client, or use the exports available 
-within the Xavier tools. Many of our tools are exportable to either Excel or pdf, and you can export any grids in Xavier 
+Instead, we would recommend either you set up a separate Xavier account for that client, or use the exports available
+within the Xavier tools. Many of our tools are exportable to either Excel or pdf, and you can export any grids in Xavier
 to Excel by right-clicking in any cell (exporting of Flows is not yet possible but will be available soon).
 
 ### How can I remove a client from Xavier?
