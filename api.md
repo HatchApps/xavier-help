@@ -3,10 +3,10 @@
 ---
 # API
 
-We offer a RESTful API to extract basic data contained within your Xavier account. If you would like to access to the API, please [get in touch](/contact-us.html).
+Xavier offers a RESTful API to extract basic data contained within your Xavier account. If you would like to access to the API, please [get in touch](/contact-us.html).
 
 ::: warning
- Please note, our API is currently running in BETA phase. It may change in the future.
+ Please note, the Xavier API is currently in BETA. It may change in the future.
 :::
 
 ## Getting Started
@@ -51,16 +51,53 @@ For example, to use your token in <a href="https://www.getpostman.com/downloads/
 
 ![Add token](./images/token-postman.png)
 
-## API Calls
+## Rate Limits
+
+A rate limit restricts the number of API requests a consumer can make within a given time period. If this limit is exceeded the consumer will be throttled and API requests will fail.
+
+**Xavier Rate Limits are set to 60 requests / minute.**
+
+If you exceed your rate limit allowance your request will be rejected. An *<a href="#_429-too-many-requests">HTTP 429 (Too Many Requests)</a>* response will be returned.
+
+Xavier returns rate limit details in the header of API responses to allow consumers to monitor their API usage.
+
+Example response header:
+| Key        | Value   |
+| ------------- |:-------------:| -----|
+| Date | Thu, 30 Jan 2020 16:27:15 GMT |
+| Content-Type | application/json|
+| Connection | keep-alive|
+| Server | cloudflare|
+| X-RateLimit-Limit | 60 |
+| X-RateLimit-Remaining | 42 |
+
+## Response Codes
+
+### 200 - OK
+A 200 status code indicates that the request was accepted and processed successfully.
+
+### 404 - Not found
+A 404 error status code indicates that the API can't map the requested URI to a resource.
+
+### 429 - Too many requests
+A 429 error status code is returned when an API consumer hits Xavier's [rate limits](/api.html#rate-limits).
+
+### 500 - Internal Server Error
+A 500 error status code is a generic API server-side error response. Please [contact](/contact-us.html) our support team if this persists.
+
+
+## API Endpoints
 
 ### GET /clients
 ***
 
-Request: ```https://api.xavier-analytics.com/clients```
+The `/clients` endpoint returns a list of all Xavier clients that the given [authentication token](/api.html#authentication) has access to, in a summarised format.
 
-Response Content Type: *application/JSON*
+**Request:** ```https://api.xavier-analytics.com/clients```
 
-Response Model:
+**Response Content Type:** *application/JSON*
+
+**Response Model:**
 
 ```json
 [
@@ -73,19 +110,20 @@ Response Model:
     }
 ]
 ```
-Example value:
+**Example value:**
 
 ![GET-Clients-Response](./images/clients-response.png)
 
 ### GET /clients/{clientId}
-
 ***
 
-Request: ```https://api.xavier-analytics.com/clients/{clientId}```
+The `/clients/{clientId}` endpoint returns a detailed set of information about a particular client identified by the `clientId`, including some calculated metrics.
 
-Response Content Type: *application/JSON*
+**Request:** ```https://api.xavier-analytics.com/clients/{clientId}```
 
-Response Model:
+**Response Content Type:** *application/JSON*
+
+**Response Model:**
 
 ```json
 {
@@ -104,19 +142,20 @@ Response Model:
     }
 }
 ```
-Example value:
+**Example value:**
 
 ![GET-Clients/{clientId}-Response](./images/client-response.png)
 
 ### GET /clients/{clientId}/activity-stats
-
 ***
 
-Request: ```https://api.xavier-analytics.com/clients/{clientId}/activity-stats```
+The `/clients/{clientId}/activity-stats` returns the rolling annual and monthly-average [Activity Stats](/insights.html#activity-stats) for a particular client, identified by the `clientId`.
 
-Response Content Type: *application/JSON*
+**Request:** ```https://api.xavier-analytics.com/clients/{clientId}/activity-stats```
 
-Response Model:
+**Response Content Type:** *application/JSON*
+
+**Response Model:**
 
 ```json
 {
@@ -159,40 +198,6 @@ Response Model:
 }
 ```
 
-Example value:
+**Example value:**
 
 ![GET-Clients/{clientId}/activity-stats-Response](./images/activity-stats-response.png)
-
-## Rate Limits
-
-A rate limit is the number of API calls an app or user can make within a given time period. If this limit is exceeded the app or user will be throttled and API requests will fail.
-
-**Limits are set to 60 requests / minute.**
-
-If you exceed your rate limit allowance your request will be rejected. An *<a href="#_429-too-many-requests">HTTP 429 (Too Many Requests)</a>* response will be returned.
-
-We return rate limit in our API responses to allow clients to monitor their API usage.
-
-Example response header:
-| Key        | Value   |
-| ------------- |:-------------:| -----|
-| Date | Thu, 30 Jan 2020 16:27:15 GMT |
-| Content-Type | application/json|
-| Connection | keep-alive|
-| Server | cloudflare|
-| X-RateLimit-Limit | 60 |
-| X-RateLimit-Remaining | 42 |
-
-## Response Codes
-
-### 200 - OK
-Indicates that the client's request was accepted successfully.
-
-### 404 - Not found
-The 404 error status code indicates that the API can't map the client's URI to a resource.
-
-### 429 - Too many requests
-The 429 error status code occurs when a user tries to perform too many requests within a certain timeframe.
-
-### 500 - Internal Server Error
-500 is the generic API server side error response. Please [contact](/contact-us.html) our support team.
