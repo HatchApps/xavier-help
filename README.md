@@ -8,4 +8,4 @@ You can also have a play without needing an account using our [demo system](http
 
 Prefer to jump straight in? [Sign Up](https://app.xavier-analytics.com/register) for a free trial to get started.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/07s3HqUvnks?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zbqTwZXa8o8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
