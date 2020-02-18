@@ -69,7 +69,7 @@ the contact already exists.
 
 Review these, you may dismiss any which aren't true duplicates, or clicking the name of the contact will take you to Xero to amend them. The transaction count should give a good indication of which contact has had more activity.
 
-Xero guidance on merging contacts can be found [here](https://central.xero.com/s/article/Edit-or-merge-an-existing-contact).
+Xero guidance on merging contacts can be found [here](https://central.xero.com/s/article/Merge-contacts).
 
 ### Dismissals
 Each duplicate contact can be 'dismissed' - this means that Xavier will no longer count that combination of client names
