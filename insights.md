@@ -407,51 +407,12 @@ supplier in the chosen period. You may then choose to dismiss the alert or go th
 
 We are really excited about the possiblities here and we will be working hard to continue making this insight more powerful.
 
-## VAT Return Checks
-Xavier provides a set of checks that have been designed to quickly spot tax issues with respect to transaction data over
-a given filing period. Simply enter in the date range and the minimum amounts (more on those below) and hit *Run Report*
-to generate the checks. Expanding the card allows you to see these transactions, with a link directly to Xero to sort
-them out.
-
 ### Dismissals
 Each anomalous period can be 'dismissed' if you have reviewed the period and do not want Xavier to raise it again.
 The card for that supplier will not be removed from the view until all anomalous periods in the chart have been dismissed.
 Dismissed items do not contribute to the [Health Score](/clients.html#client-health-score).
 Any dismissed periods can be viewed by selecting *dismissed* from the filter at the top
 of the screen, where you can then review and *undo* any accidental dismissals.
-
-
-![VAT Return Checks](./images/insight-vat-return.png)
-
-### Reconciliation Review
-This uses the same logic as the [Unreconciled Transactions](/insights.html#unreconciled-transactions) insight to find
-unreconciled transactions for the date range you have supplied.
-
-### Revenue Account Review
-This check finds transactions that don't have an Account Class of REVENUE, but have been assigned as revenue Tax Type of
-OUTPUT2, RROUTPUT or ZERORATEDOUTPUT.
-
-### Expense Account Review
-This check finds expense transactions that have been assigned a Tax Type of INPUT2 (20% VAT on Expenses), with accounts
-that have [Reporting Codes](https://central.xero.com/s/article/Report-codes-for-practices-using-report-templates) of
-EXP.ADM.ENT (Entertainment), EXP.ADM.PRI (Printing & Postage) or EXP.ADM.TRA (Travel International).
-
-### Balance Sheet Review
-This check finds ASSET, LIABILITY or EQUITY type transactions with a non-zero tax value, excluding Fixed Assets (account
-type FIXED) and Reporting Codes of LIA.CUR.ACC (income in advance) or ASS.CUR.REC.PRE (prepayments).
-
-### Zero-Rated Review
-This check finds transactions with a tax type of ZERORATEDINPUT with a net value above the minimum amount set by you in
-the report header (*Zero Rated Min*). The idea here is to ensure the client is claiming back VAT on as many high value
-items as possible.
-
-### No-VAT Review
-This check finds transactions with a tax type of NONE with a net value above the minimum amount set by you in
-the report header (*No VAT Min*).
-
-### Multi-coded Contacts
-The same as the [Multi-Coded Contacts](/insights.html#multi-coded-contacts) insight, but looking at contacts that
-have transactions in the reporting period specified.
 
 ## Sales Analysis
 ![Sales Analysis Screenshot](./images/sales-analysis-screenshot-min.png)

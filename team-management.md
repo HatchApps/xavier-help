@@ -71,6 +71,13 @@ This will also take you through to the *Team Members* section of the team settin
 An invite will be emailed to your colleague with a link to Xavier. When they click on the link in the email to accept,
 they'll be asked to sign up and provide login details. They'll be automatically added to your team via this process.
 
+::: warning
+Xavier is designed for inviting _internal_ team members only. We recommend you either use Xavier's Export functions to share Xavier data with clients, or create a separate Xavier team for that client.  
+
+If you invite clients as team members, while you can set [Client Visibility](/clients.html#client-visibility) settings, 
+those users _will_ still be able to see the names and email addresses of other users in the team in some parts of Xavier.   
+:::
+
 ## Two-Factor Authentication
 Team Members can enable Two-Factor Authentication (2FA). 2FA provides additional account security by requiring you to
 provide a token during login in addition to your username and password. This token is retrieved from an application on

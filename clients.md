@@ -77,19 +77,32 @@ favourited, or deleted from this view.
 
 Clicking on a client card from the _Client List_ will take you through to the management of that specific client.
 
-![Client Overview](./images/client-overview.png)
+![Client Overview](./images/client-overview-2.png)
 
-In addition to providing high level stats about a client, the overview is where you can manage a client,
-adjusting specific aspects from the _Edit_ button, removing it from Xavier via the _Delete_ button and un-linking it from
+This view highlights a selection of key alerts, metrics, activity stats, and also highlights any issues with the client's Lock Dates - [find out more](/team-management.md#lock-dates).
+
+Clicking on any of these stats will take you through to the relevant tool or insight in Xavier to learn more. When 
+clicking from the overview, Xavier opens these views in _dashboard mode_ so you'll see the information with the same 
+dates and parameters as we use for the Overview.
+
+###Overview Reporting Mode
+
+The Overview displays the last complete month by default, but you can set the Overview to represent data for a range of date periods. By clicking on the date range below the title, or in _Configuration > Overview Configuration_ you can select a date range that is most suitable for your client.
+
+![Client Overview Configuration options](./images/overview-configuration.png)
+
+::: warning
+Unlike the date periods which are rolling, if you set a manual date configuration the overview will not update until the date range is changed again. 
+:::
+
+In addition to providing high level stats about a client, the overview is where you can manage a client, removing it from Xavier via the _Remove_ button or un-linking it from
 Xero using the _Unlink_ button.
 
 Unlinking a client from Xero means it will remain in Xavier, but will no longer sync with Xero to retrieve the latest
 changes. A client can be re-linked to Xero at any point, and syncing will resume.
 
-[Syncing with Xero](/xero-integration.md#syncing) happens automatically overnight, but you can also trigger a sync on-demand
+[Syncing with Xero](/xero-integration.html#syncing) happens automatically overnight, but you can also trigger a sync on-demand
 via the _Sync Now_ button.
-
-This view also highlights any issues with the client's Lock Dates - [find out more](/team-management.md#lock-dates).
 
 You can _export_ the client overview in both PDF and .XLS format:
 
@@ -98,6 +111,15 @@ You can _export_ the client overview in both PDF and .XLS format:
   arranged in priority order.
 * The .XLSX format is a really stripped-down version of the overview, which is perfect for linking into your own spreadsheet
   reports.
+  
+In the sidebar, clicking on _Configuration_ will show the client configuration options:
+- General: Here you can update the basic client settings in Xavier, including the client name, account managers, and what 
+[tags](clients.html#client-tags) are applied to the client.
+- Visibility: View and edit the current [client visibility](/clients.html#client-visibility) settings applied to the client.
+- Overview Configuration: This allows you to adjust the reporting mode of the client, which will adjust the overview dates 
+and the health score accordingly.
+- Tax and Control Accounts: Throughout Xavier, different tools can be customised with key tax and account codes to make 
+the correct calculations for a client. You can edit these all centrally from this area.   
 
 ## Client Health Score
 
@@ -149,3 +171,19 @@ The default visibility setting for clients is _Xero Users Only_. However if you 
 address does not match the user you have signed into in Xero, the default setting will be _Specific Users Only_, and you
 will be asked to select those specific users in a popup before the client can be imported.
 :::
+
+## Client Tags
+
+Xavier provides the ability to set tags for your clients, to help you organise your practice. 
+
+![Client Tags](./images/client-tags.png) 
+
+Tags can be set centrally from the Team sidebar or within individual clients under _Configuration > Tags_ in the sidebar 
+(see screenshot above for Team-level Tag Management). You can allow tags to be created on the fly within individual clients, 
+or control them from only the team area. In the team area you can add, delete, and assign tags to multiple clients at once. 
+
+Tags are visible on the [Client List](/clients.html#client-list), [Client Overview](/clients.html#client-overview) and 
+in the [Practice Dashboard](/clients.html#practice-dashboard). In both the Client List and the Practice Dashboard, you 
+can use tags to search and filter your clients.
+ 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3lPz2p7ASEM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
