@@ -85,7 +85,7 @@ Clicking on any of these stats will take you through to the relevant tool or ins
 clicking from the overview, Xavier opens these views in _dashboard mode_ so you'll see the information with the same 
 dates and parameters as we use for the Overview.
 
-###Overview Reporting Mode
+### Overview Reporting Mode
 
 The Overview displays the last complete month by default, but you can set the Overview to represent data for a range of date periods. By clicking on the date range below the title, or in _Configuration > Overview Configuration_ you can select a date range that is most suitable for your client.
 
