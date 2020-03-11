@@ -63,16 +63,17 @@ Can create a private Custom Report               |	Y                 |	Y        
 
 ## Inviting Team Members
 If you're the team owner, you can invite other people to become members of your team in the *Team Members* section of the
-*Team Settings*, or via the *Invite Team* action in the menu underneath your user icon in the top-right corner of Xavier.
-This will also take you through to the *Team Members* section of the team settings.
+*Manage Team* list in the sidebar, or via the *Invite Team* action in the menu underneath your user icon in the top-right corner of Xavier.
+This will also take you through to the *Team Members* view.
 
-![Invite Team](./images/invite-team.png)
+![Invite Team](./images/add-new-team-member.png)
 
 An invite will be emailed to your colleague with a link to Xavier. When they click on the link in the email to accept,
 they'll be asked to sign up and provide login details. They'll be automatically added to your team via this process.
 
 ::: warning
-Xavier is designed for inviting _internal_ team members only. We recommend you either use Xavier's Export functions to share Xavier data with clients, or create a separate Xavier team for that client.  
+Xavier is designed for inviting _internal_ team members only. We recommend you either use Xavier's Export functions to 
+share Xavier data with clients, or create a separate Xavier team for that client.  
 
 If you invite clients as team members, while you can set [Client Visibility](/clients.html#client-visibility) settings, 
 those users _will_ still be able to see the names and email addresses of other users in the team in some parts of Xavier.   
