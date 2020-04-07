@@ -26,7 +26,7 @@ It all kicks off in Xavier when you add your first client. A _Client_ in Xavier 
 
 After you register you'll be taken to the home page. This is where your team's clients will live once they've been imported from Xero.
 
-![Import your first client](./images/add-first-client.png)
+![Import your first client](./images/add-new-client.png)
 
 Clicking _Import your first client_ will take you to Xero. You'll be asked to login if you haven't already:
 

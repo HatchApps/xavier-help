@@ -12,14 +12,14 @@ Xavier uses a combination of Xero's Bank Statement Report data, bank transaction
 interactive view across all of an organisation's bank accounts. The format loosely follows Xero's Bank Reconciliation
 Report, distinguishing between outstanding payments, receipts and unreconciled bank statement lines.
 
-Expanding one of these categories allows you to see transaction-level detail in a flexible grid view. From each record,
-you can click straight into Xero to start the reconciliation process. The grid allows you to quickly order by the
-oldest records (useful if you are approaching month end), and also see/filter/group the records that are in a "locked"
-period.
+### Bank Account Summary
 
-![Bank Reconciliation](./images/cleanup-bank-rec-payments.png)
+#### Total Unreconciled
+This is the total number of unreconciled transactions, outstanding payments and outstanding receipts across all bank 
+accounts. Below the summary boxes is also a card for the full _Unreconciled Impact_ - this card will display 
+the difference between the _Statement Balance_ and the _Xero Balance_ (you can click on the card for the detail).   
 
-### Net Assets
+#### Net Assets
 The Net Assets figure is a calculated balance of all transactions with the **Account Class** of _ASSET_ minus all
 transactions with the **Account Class** of _LIABILITY_, up the the reporting date. This figure is also available as a
 metric on the [Client List](/clients.html#client-list) and [Practice Dashboard](/clients.html#practice-dashboard). Xero
@@ -27,7 +27,7 @@ Account Classes are shown below:
 
 ![VAT Tracking](./images/cleanup-bank-rec-account-classes.png)
 
-### Cash Position
+#### Cash Position
 The Cash Position figure is a consolidated statement balance of all bank accounts, on the reporting date set. This
 figure is also available as a metric on the [Client List](/clients.html#client-list) and
 [Practice Dashboard](/clients.html#practice-dashboard).
@@ -36,6 +36,24 @@ figure is also available as a metric on the [Client List](/clients.html#client-l
 Foreign bank account balances are converted to the base currency to produce this number - use as a guideline only, where
 this is a factor, and see below for more info.
 :::
+
+#### No. of Manual Feeds
+Xavier detects which Bank Accounts are updated with Manual Feeds. The number of manual feeds is displayed in the summary, 
+and those Bank Accounts will also have a small pink _broken_ chain indicator next to their names in the cards below. 
+
+Bank accounts detected to have a working bank feed will have a small pink _linked_ chain indicator next to their names. 
+(You can hover over the indicator for more information.) 
+
+### Bank Accounts
+
+Each Bank Account is contained within a card. Expanding this card displays three unreconciled categories; _Outstanding Payments_, 
+_Outstanding Receipts_ and _Unreconciled Statement Lines_. 
+Expanding one of these categories allows you to see transaction-level detail in a flexible grid view. From each record,
+you can click straight into Xero to start the reconciliation process. The grid allows you to quickly order by the
+oldest records (useful if you are approaching month end), and also see/filter/group the records that are in a "locked"
+period.
+
+![Bank Reconciliation](./images/cleanup-bank-rec-payments.png)
 
 ### Foreign Currency Bank Accounts
 Xavier detects when a bank account is in a different currency to the base currency of the organisation, and displays
@@ -67,7 +85,8 @@ The results shown in this Xavier insight are your Xero contacts that we’ve ide
 This can happen if you create a new contact during the process of inputting an invoice or similar, and miss the fact that
 the contact already exists.
 
-Review these, you may dismiss any which aren't true duplicates, or clicking the name of the contact will take you to Xero to amend them. The transaction count should give a good indication of which contact has had more activity.
+Review these, you may dismiss any which aren't true duplicates, or clicking the name of the contact will take you to Xero 
+to amend them. The transaction count should give a good indication of which contact has had more activity.
 
 Xero guidance on merging contacts can be found [here](https://central.xero.com/s/article/Merge-contacts).
 
@@ -77,6 +96,49 @@ to be a potential duplicate. Dismissed items do not contribute to the [Health Sc
 Any dismissed duplicates can be viewed by selecting *dismissed* from the filter at the top
 of the screen, where you can then review and *undo* any accidental dismissals.
 
+You can dismiss multiple duplicates at a time by selecting '_Select All_' above the list, or by using the circular checkbox 
+on the right of the card (on the right of the _Dismiss_ button) on all duplicates you would like to dismiss, and then click 
+'_Dismiss (X) Suggestion(s)_'.  
+
+## Duplicate Transactions
+![Duplicate Transactions](./images/duplicate-transactions.png)
+
+Here Xavier looks across invoices and bank transactions and highlights records that it thinks could be unwanted duplicates. 
+This view allows you and your clients avoid embarrassing situations where you might inadvertently pay a supplier twice, 
+or charge a customer twice. You can filter the check between _Purchase_ and _Sales_ transactions, and sort by contact _Name_, 
+transaction _Value_ or _Date_.
+
+Each detected duplicate is presented in a card for the combination of Contact and Value (in this case, it is good to ensure 
+your Duplicate Contacts are all cleaned up). Clicking on this card to expand it will show the transactions in a grid format 
+with further information on the type, source and description. You can then click the links in this grid to see the transaction 
+or invoice directly in Xero.
+
+The Alert level on the Overview refers directly to the number of duplicate transactions relative to the total number of 
+transactions in the reporting period.
+
+#### Sales Transactions
+
+Duplicate sales transactions result in overstated revenue and unnecessary chasing of customers that have already paid. 
+This can happen due to human error accidentally raising invoices that have already been raised, or from integrations with 
+another system that can sometimes incorrectly pull in duplicates.  
+
+#### Purchase Transactions
+
+Duplicate purchase transactions can result in serious mistakes such as paying a supplier twice. Expenses might also be 
+overstated for the period. Additionally, paid transactions sitting in Aged Payables are messy and can reflect badly on 
+the standards of the accountant or bookkeeper. These can occur when there is a purchase invoice duplicate based on the 
+same criteria as a sales invoice, or when the invoice is an Aged Payable, but reconciled in the bank using 'create transaction', 
+creating both a bank transaction and an invoice against the same item. 
+
+### Dismissals
+Dismissing duplicate transactions means that Xavier will no longer count that combination of invoices and transactions for that contact
+to be a potential duplicate. Dismissed items do not contribute to the [Health Score](/clients.html#client-health-score).
+Any dismissed duplicates can be viewed by selecting *dismissed* from the filter at the top
+of the screen, where you can then review and *undo* any accidental dismissals.
+
+You can dismiss multiple duplicates at a time by selecting '_Select All_' above the list, or by using the circular checkbox 
+on the right of the card (on the right of the _Dismiss_ button) on all duplicates you would like to dismiss, and then click 
+'_Dismiss (X) Suggestion(s)_'.  
 
 ## Multi-Coded Contacts
 ![Multi-Coded Contacts](./images/insight-multi-coded.png)
@@ -230,26 +292,6 @@ registered assets purchased during the date period. It specifically looks for:
 - Fixed Assets with a status of "Registered" (i.e. Draft won't count)
 - Fixed Assets with a purchase date that falls within the start and end dates you've set at the top of the Corporation
 Tax view
-
-## VAT Tracking
-![VAT Tracking](./images/insight-vat.png)
-
-The VAT Tracking insight gives an estimate of the VAT accrued by a company for the current VAT period, and includes
-estimates for previous periods dating back to the end of the previous financial year. The financial year and VAT periods
-are based on the client's settings in Xero.
-
-### Cash vs Accrual Schemes
-In the UK, a company could be configured to report VAT to HMRC on a Cash basis or an Accrual basis. Xavier automatically
-detects this based on Xero settings and adjusts the VAT calculation accordingly.
-
-### Flat Rate Scheme
-Xavier will detect if a client is on a [Flat Rate Scheme](https://www.gov.uk/vat-flat-rate-scheme/how-much-you-pay), but
-it has no way of knowing what VAT rate has been agreed with HMRC for the client. The first time you view the VAT Tracking
-insight, Xavier will prompt for the VAT rate to use if it detects the client is on a Flat Rate Scheme:
-
-![Flat Rate Scheme Prompt](./images/insight-vat-rate-prompt.png)
-
-You can adjust this for a client at any time by clicking on *Adjust Rate* in the menu bar of the VAT view.
 
 ### Scheme Thresholds
 For the Cash and Flat Rate schemes, Xavier monitors your
