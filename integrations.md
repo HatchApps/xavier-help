@@ -86,10 +86,17 @@ to HMRC, or there is no HMRC data available for the selected period, you will be
   URL and API key in the "Connection Credentials" section.
   
   6. Xavier will then do an initial connection to Senta and bring back any Xero-connected clients that it finds. These 
-  will be shown in a list in the "Senta Clients" section of the integration, and indicate which ones were found in Xavier.
+  will be shown in a list in the "Senta Clients" section of the integration. This section contains a filter for _Found in 
+  Xavier_ | _Not Found in Xavier_ | _All_, so you can see any Xero clients you might be missing in Xavier and add them. 
+  
+  Please note; Xavier and Senta match clients based on their _Xero_ information, so _only_ clients connected to Xero in Senta will be 
+  displayed in this list. If a client is not displaying here, check their Xero connection in Senta.
   
   Once the connection is complete, Xavier Health Scores for the clients that are matched across the systems will be sent 
   over to Senta, and refreshed on a nightly basis. You will be able to view the scores in the "Xero" tab for each client, 
   and add a Xavier Health Score column to your client list.
 
-
+  ::: tip
+    Occasionally the health scores can take a little while to show in Senta. We're still trying to improve this, but if 
+    you can't see the Xavier Health Scores in the Xero tab in Senta right away, try leaving it and checking back the next day. 
+  :::

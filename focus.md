@@ -82,6 +82,13 @@ If you are creating the Flow for just one Client there will also be the option t
 shortcut where the Flow will be both created and started in one go, and you will be taken directly into
 [Flow Mode](/focus.html#inside-a-flow).  
 
+## Reviewers
+
+Flows in Xavier can have up to two reviewers which you assign when creating the Flow. These reviewers are sent an email 
+when the Flow is ready for review, starting with the first reviewer, who can either hand it back to the assigned user with 
+any comments, or pass it on to the second reviewer (if assigned). The Flow can only be marked as complete once approved 
+by the reviewer(s). Details of the reviewers and status are listed in the sidebar in Focus Mode.
+
 ## The Flow List
 
 The Flow List shows all Flows for your team, and provides various filters to quickly find the Flows you are looking for.
@@ -111,6 +118,22 @@ complete once you are happy.
 
 From the left hand menu you can head back to the [Flow List](/focus.html#the-flow-list) by clicking on _Focus Home_, and
 go to the Client Overview by clicking on the name of the Client. 
+
+### Exporting a Flow
+
+You can export a Flow to both PDF and Excel. The PDF is an export with the health score and top-level check information, 
+plus the comments. The final section of the export is the [Flow History](/focus.html#flow-history). 
+
+Regular Flows will 
+export directly to your browser, like the other PDF exports in Xavier, however large Flows of 25+ checks will be emailed 
+to the email address of the exporter (this is the email address you use to log into Xavier). This will still use the same 
+'Export to PDF' button, but you'll get a pop-up notification to let you know if it's been emailed. Please bear in mind; 
+the larger the Flow, the more time it will take to be emailed to you, so it could take more than a few minutes in some 
+cases.
+
+The Excel export contains the same data as the PDF, but simply formatted and always downloaded immediately to the browser. 
+It's a good format if you want to create your own Flow export layouts, or edit the information before you provide it to 
+the client. 
 
 ## Completing Flows
 
