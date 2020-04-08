@@ -6,13 +6,14 @@ In addition to allowing you to slice and dice your Client data, Xavier applies a
 techniques and presents the findings up as *Insights*...
 
 ## Bank Reconciliation
-![Bank Reconciliation](./images/cleanup-bank-reconciliation.png)
 
 Xavier uses a combination of Xero's Bank Statement Report data, bank transactions and payments to provide an
 interactive view across all of an organisation's bank accounts. The format loosely follows Xero's Bank Reconciliation
 Report, distinguishing between outstanding payments, receipts and unreconciled bank statement lines.
 
 ### Bank Account Summary
+
+![Bank Reconciliation Summary](./images/bank-rec-summary.png)
 
 #### Total Unreconciled
 This is the total number of unreconciled transactions, outstanding payments and outstanding receipts across all bank 
@@ -45,6 +46,8 @@ Bank accounts detected to have a working bank feed will have a small pink _linke
 (You can hover over the indicator for more information.) 
 
 ### Bank Accounts
+
+![Bank Reconciliation](./images/cleanup-bank-reconciliation.png)
 
 Each Bank Account is contained within a card. Expanding this card displays three unreconciled categories; _Outstanding Payments_, 
 _Outstanding Receipts_ and _Unreconciled Statement Lines_. 
