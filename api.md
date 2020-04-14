@@ -3,11 +3,7 @@
 ---
 # API
 
-Xavier offers a RESTful API to extract basic data contained within your Xavier account. If you would like to access to the API, please [get in touch](/contact-us.html).
-
-::: warning
- Please note, the Xavier API is currently in BETA. It may change in the future.
-:::
+Xavier offers a RESTful API to extract basic data contained within your Xavier account. If you would like to use the API, we would recommend that your team [get in touch](/contact-us.html).
 
 ## Getting Started
 
