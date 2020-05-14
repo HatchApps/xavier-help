@@ -448,7 +448,7 @@ A metric will be shown in the Practice Dashboard to highlight where there has be
 
 ### Historical Changes Checks
 
-The Historical Changes check is also available in Focus; for UK companies, this will be automatically populated as the 
+The Historical Changes check is also available in [Focus](/focus.html); for UK companies, this will be automatically populated as the 
 last filing period, but it can also be adjusted during the Flow.
 
 ## Regular Suppliers
