@@ -28,9 +28,11 @@ Our VAT Checks work best when Xavier is connected with HMRC - without this conne
 have been made or detect any late claims. Please see our [Integrations](https://help.xavier-analytics.com/integrations.html#hmrc-uk-only) section for more information.
 :::
   
-Xavier keeps a running estimate of VAT accrued (or due to be reclaimed) for the current period, and provides a 
-historical view over previous VAT periods. It handles Cash, Accrual and Flat Rate schemes. 
-This check now includes "Box" figures. 
+Xavier keeps a running estimate of VAT accrued (or due to be reclaimed) for the current period, it handles Cash, Accrual and Flat Rate schemes. 
+
+Opening the card reveals further details, with a filter to display in HMRC VAT Return format, grouped by Vat "Box" Figures, or grouped by Tax Rate. 
+You can also filter by current period or late claims.
+
 If connected to HMRC, we are able to use actuals, which makes this estimation much more reliable.
   
 ### HMRC Status (UK Only) 
