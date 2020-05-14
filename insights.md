@@ -446,6 +446,11 @@ Use the 'Use these dates' option to auto-populate the Historical Changes insight
 
 A metric will be shown in the Practice Dashboard to highlight where there has been any changes to filed data. 
 
+::: tip
+Xavier uses the Companies House number it detects in Xero to make this connection - if we can't display any data, check 
+the Companies House number in Xero is correct and update if necessary.
+:::
+
 ### Historical Changes Checks
 
 The Historical Changes check is also available in [Focus](/focus.html); for UK companies, this will be automatically populated as the 
