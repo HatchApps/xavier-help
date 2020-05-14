@@ -39,6 +39,7 @@ Sometimes if a Check raises an alert then you are prompted to take action and fi
 the issue. Focus provides a library of these Checks that can be combined together into
 [Flow Templates](/focus.html#flow-templates).    
 
+
 ## Custom Checks
 
 ![Focus Custom Check](./images/focus-custom-check.png)

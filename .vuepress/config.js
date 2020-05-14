@@ -22,6 +22,7 @@ module.exports = {
             '/sandbox-reporting',
             '/focus',
             '/insights',
+            '/resilience',
             '/checks',
             '/team-management',
             '/xero-integration',
