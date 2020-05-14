@@ -439,6 +439,18 @@ within the historical period, but a created date of __after__ the reporting clos
 You'll be able to jump straight to the offending transaction(s) in Xero from the results. And, in case you need to show
 someone else where it all went wrong, you can always export the results to PDF.
 
+### Companies House Periods (UK Only)
+
+For UK companies, using Companies House data we can pull back your last filing period and the date the accounts were filed in the secondary navigation. 
+Use the 'Use these dates' option to auto-populate the Historical Changes insight with your last filing dates.
+
+A metric will be shown in the Practice Dashboard to highlight where there has been any changes to filed data. 
+
+### Historical Changes Checks
+
+The Historical Changes check is also available in Focus; for UK companies, this will be automatically populated as the 
+last filing period, but it can also be adjusted during the Flow.
+
 ## Regular Suppliers
 ![Regular Suppliers](./images/insight-regular-suppliers.png)
 
