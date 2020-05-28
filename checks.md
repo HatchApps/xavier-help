@@ -165,6 +165,9 @@ have transactions in the reporting period specified.
 The same as the [Regular Suppliers](/insights.html#regular-suppliers) insight, but looking at suppliers active during
 that period with potential anomalies.
 
+### Cost by Account Code
+Similar to the functionality in [Cost Analysis](/insights.html#cost-anslysis) when in 'By Account' mode. Look for anomalies in account movement or as a cost.
+
 ### PAYE Status
 This check balances manual journals against detected payments with PAYE account codes to ensure a correct PAYE status at
 a point in time.
