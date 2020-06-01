@@ -133,9 +133,16 @@ Just want to stop syncing with Xero? You can [disconnect](/xero-integration.md#m
 
 ### How do I leave Xavier?
 
-Had enough of Xavier and want to delete your account? At this point you'll need to [get in touch](/contact-us.md) with
-us so we can remove you and your data from the system - we haven't built the ability to delete yourself from the system
-automatically yet.
+Had enough of Xavier and want to delete your account? 
+
+If you are looking to pause your subscription for a period, you can do so under _Manage Team_ from the sidebar in the 
+Client List. Under _Manage Team_, select _Subscription_, and select the _Cancel Subscription_ button.
+
+If you are looking to delete your team permanently, you will need to create a new Team if you want to return to Xavier at 
+a later date. Please note, only a Team Owner can delete a team. To delete your team, click on your user avatar in 
+the top right of the screen and select _your settings_ from the dropdown list. From the links on the left of the page, 
+select _Teams_ to see the list of Xavier teams you currently belong to (this will usually be just 1). Click the _X_ button 
+to the right of the team name to delete the team. Please note, this action cannot be undone.   
 
 ## Still not sure?
 
