@@ -456,14 +456,22 @@ the Companies House number in Xero is correct and update if necessary.
 The Historical Changes check is also available in [Focus](/focus.html); for UK companies, this will be automatically populated as the 
 last filing period, but it can also be adjusted during the Flow.
 
+## Regular Suppliers
+Regular Suppliers has now become *Cost Analysis*! See below...
+
 ## Cost Analysis
 ![Cost Analysis](./images/insight-cost-analysis.png)
 
-The Cost Analysis insight is designed to analyse your client's expenses across their supplier base and their expense accounts over time and automatically detect issues. Our AI will look for months where the total amount paid is unusual compared to other months.
+The Cost Analysis insight is designed to analyse your client's expenses across their supplier base and their expense accounts 
+over time and automatically detect issues. Our AI will look for months where the total amount paid is unusual compared to other months.
 
 Clicking a supplier or account will show a chart of amounts over time and highlight the periods where we have detected there
 may be an issue. Clicking on a bar in the chart will explain the issue that we have found and show a summary of payments to the
 supplier or account in the chosen period. You may then choose to dismiss the alert or go through to Xero to investigate.
+
+### Regularity 
+
+On each Supplier or Account Code card is an indicator on the right for Xavier's best guess on the regularity of those payments to that supplier or account code, e.g. *weekly* or *monthly*. 
 
 ### Dismissals
 Each anomalous period can be 'dismissed' if you have reviewed the period and do not want Xavier to raise it again.
@@ -471,6 +479,14 @@ The card for that supplier or account will not be removed from the view until al
 Dismissed items do not contribute to the [Health Score](/clients.html#client-health-score).
 Any dismissed periods can be viewed by selecting *dismissed* from the filter at the top
 of the screen, where you can then review and *undo* any accidental dismissals.
+
+### Filters
+
+- *Display Mode* - Use the Display Mode to toggle between reviewing cost by *Supplier* and cost by *Account Code*. Both views work in exactly the same way, except for the categorisation of costs.
+- *Active During* - Set this date parameter to view only suppliers or account codes active in a certain period. 
+- *Anomalies | Dismissed | All Suppliers/Accounts* - Use this filter to view either all anomalies detected, all dismissed 
+anomalies, or simply all account codes or suppliers, regardless of any anomalies or dismissals, for a full review. 
+
 
 ## Sales Analysis
 ![Sales Analysis Screenshot](./images/sales-analysis-screenshot-min.png)

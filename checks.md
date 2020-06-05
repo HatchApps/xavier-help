@@ -156,13 +156,12 @@ Business Entertainment. As VAT cannot be reclaimed on this expenditure, this is 
 
 __Note:__ the rules around staff entertainment are specific to UK tax at present.
 
-
 ### Multi-coded Contacts
 The same as the [Multi-Coded Contacts](/insights.html#multi-coded-contacts) insight, but looking at contacts that
 have transactions in the reporting period specified.
 
 ### Regular Suppliers
-The same as the [Regular Suppliers](/insights.html#regular-suppliers) insight, but looking at suppliers active during
+The same as the [Cost Analysis](/insights.html#cost-analysis) insight, but looking at suppliers active during
 that period with potential anomalies.
 
 ### Cost by Account Code
