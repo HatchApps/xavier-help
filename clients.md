@@ -178,9 +178,16 @@ Xavier provides the ability to set tags for your clients, to help you organise y
 
 ![Client Tags](./images/client-tags.png) 
 
-Tags can be set centrally from the Team sidebar or within individual clients under _Configuration > Tags_ in the sidebar 
-(see screenshot above for Team-level Tag Management). You can allow tags to be created on the fly within individual clients, 
-or control them from only the team area. In the team area you can add, delete, and assign tags to multiple clients at once. 
+You can allow tags to be created on the fly within individual clients, or control them from only the team area. 
+Tags can be set centrally from the Team sidebar under _Configuration > Tags_, where you can add, delete,
+ and assign tags to multiple clients at once. (See screenshot above for Team-level Tag Management).
+ 
+To assign tags to clients in bulk, from the central Tags view click on a purple tag to select it. You will be able to see below how many 
+clients are associated with that tag. Click to open the list of clients associated/not associated with that tag, and 
+search or select from the list to add or remove clients. 
+ 
+To set tags against a client at the client level, from the Overview sidebar select _Configuration > General_. You'll see the option to search 
+and select tags to apply.   
 
 Tags are visible on the [Client List](/clients.html#client-list), [Client Overview](/clients.html#client-overview) and 
 in the [Practice Dashboard](/clients.html#practice-dashboard). In both the Client List and the Practice Dashboard, you 
