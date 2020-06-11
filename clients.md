@@ -184,10 +184,10 @@ Tags can be set centrally from the Team sidebar under _Configuration > Tags_, wh
  
 To assign tags to clients in bulk, from the central Tags view click on a purple tag to select it. You will be able to see below how many 
 clients are associated with that tag. Click to open the list of clients associated/not associated with that tag, and 
-search or select from the list to add or remove clients. 
+search or select from the list to add or remove clients. Then click the _Update_ button to set those tags.
  
 To set tags against a client at the client level, from the Overview sidebar select _Configuration > General_. You'll see the option to search 
-and select tags to apply.   
+and select tags to apply to that client.   
 
 Tags are visible on the [Client List](/clients.html#client-list), [Client Overview](/clients.html#client-overview) and 
 in the [Practice Dashboard](/clients.html#practice-dashboard). In both the Client List and the Practice Dashboard, you 
