@@ -171,7 +171,8 @@ Similar to the functionality in [Cost Analysis](/insights.html#cost-anslysis) wh
 This check balances manual journals against detected payments with PAYE account codes to ensure a correct PAYE status at
 a point in time.
 By default, the check calculates the PAYE control account balance based on account codes found under the reporting code
-*LIA.CUR.TAX.OTH*. You can change the account codes used by clicking the small cog next to the card title. Expanding the
+*LIA.CUR.TAX.OTH*. You can change the account codes used by clicking the small cog next to the card title, where Xavier 
+will suggest a number of account codes for easy setup. Expanding the
 card shows the detailed grid of PAYE transaction history for the last 6 months.
 
 The PAYE check runs through the following logic:

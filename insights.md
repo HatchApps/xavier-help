@@ -388,6 +388,39 @@ The check allows you to review all overpayments that still have remaining credit
 _Reporting Date_, by checking the dates of any allocations to make sure they are applicable. This is categorised into
 Overpayments relating to Suppliers and Customers.
 
+## Control Accounts
+
+All Control account checks use the following logic to decide the alert level: 
+  - All is well: if the Control Account balance is 0 and there is a Manual or Xero Payroll Journal present in the last
+  complete month
+  - All is well: the Control Account balance is equal to the amount posted in the Manual or Xero Payroll Journal(s) in the
+  last complete month, and (if relevant) the snapshot date is well in advance of the HMRC Deadline
+  - Warning: Contol Account and Journals balance, but a payment due date is approaching
+  - Error: No Manual or Xero Payroll Journal found in the last complete month
+  - Error: No payment detected, and a payment deadline is past due
+  - Error: Control Account balance is non-zero and does not reconcile with balance of Manual or Xero Payroll journals
+
+### PAYE Status
+This check balances manual journals against detected payments with PAYE account codes to ensure a correct PAYE status at
+a point in time.
+By default, the check calculates the PAYE control account balance based on account codes found under the reporting code
+*LIA.CUR.TAX.OTH*. You can change the account codes used by clicking the small cog next to the card title, where Xavier 
+will suggest a number of account codes for easy setup. Expanding the card shows the detailed grid of PAYE transaction history for the last 6 months.
+
+### Net Wages Status
+This check balances manual journals against detected payments with Net Wages account codes, to ensure that it reconciles 
+to 0 or the balance is as expected. 
+
+Similar to PAYE status above, you can change the account codes used by clicking the small cog next to the card title.   
+Expanding the card shows a chart of money in and money out, and the detailed grid of Net Wages transaction history for 
+the last 6 months.
+
+### Pensions Status
+This check balances manual journals against detected payments with Net Wages account codes, to ensure that it reconciles 
+to 0 or the balance is as expected. 
+
+You can change the account codes used by clicking the small cog next to the card title. Expanding the card shows a chart 
+of money in and out of the control account, and the detailed grid of Pensions transaction history for the last 6 months.
 
 ## Activity Stats
 ![Activity Stats](./images/insight-activity-stats.png)
