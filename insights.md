@@ -416,7 +416,7 @@ Expanding the card shows a chart of money in and money out, and the detailed gri
 the last 6 months.
 
 ### Pensions Status
-This check balances manual journals against detected payments with Net Wages account codes, to ensure that it reconciles 
+This check balances manual journals against detected payments with Pensions account codes, to ensure that it reconciles 
 to 0 or the balance is as expected. 
 
 You can change the account codes used by clicking the small cog next to the card title. Expanding the card shows a chart 
