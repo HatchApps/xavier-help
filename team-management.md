@@ -55,6 +55,7 @@ Can add a new client                             |	N                 |	N        
 Can manage team integrations                     |	N                 |	N                  | Y                 | Y                 |
 Can create a Team-wide Custom Report             |	N                 |	Y	               | Y                 | Y                 |
 Can create Flow templates                        |	N                 |	Y                  | Y                 | Y                 |
+Can delete Flows                                 |	N                 |	Y                  | Y                 | Y                 |
 Can review and approve completed Flows           |	N                 |	Y                  | Y                 | Y                 |
 Can create a Flow from existing template         |	Y                 |	Y                  | Y                 | Y                 |
 Can create a private Custom Report               |	Y                 |	Y                  | Y                 | Y                 |
@@ -63,16 +64,17 @@ Can create a private Custom Report               |	Y                 |	Y        
 
 ## Inviting Team Members
 If you're the team owner, you can invite other people to become members of your team in the *Team Members* section of the
-*Team Settings*, or via the *Invite Team* action in the menu underneath your user icon in the top-right corner of Xavier.
-This will also take you through to the *Team Members* section of the team settings.
+*Manage Team* list in the sidebar, or via the *Invite Team* action in the menu underneath your user icon in the top-right corner of Xavier.
+This will also take you through to the *Team Members* view.
 
-![Invite Team](./images/invite-team.png)
+![Invite Team](./images/add-new-team-member.png)
 
 An invite will be emailed to your colleague with a link to Xavier. When they click on the link in the email to accept,
 they'll be asked to sign up and provide login details. They'll be automatically added to your team via this process.
 
 ::: warning
-Xavier is designed for inviting _internal_ team members only. We recommend you either use Xavier's Export functions to share Xavier data with clients, or create a separate Xavier team for that client.  
+Xavier is designed for inviting _internal_ team members only. We recommend you either use Xavier's Export functions to 
+share Xavier data with clients, or create a separate Xavier team for that client.  
 
 If you invite clients as team members, while you can set [Client Visibility](/clients.html#client-visibility) settings, 
 those users _will_ still be able to see the names and email addresses of other users in the team in some parts of Xavier.   
@@ -122,13 +124,11 @@ you manage:
 
 ![Account Manager](./images/client-list-snippet.png)
 
-To change who the Account Manager is for a client, click on the client in the client list, then *Edit* from the Client
-Overview.
+To change who the Account Manager is for a client, click on the client in the client list, then open the *configuration* menu from the Client Sidebar. Under this menu, you'll see an option for *General* settings:
 
-![Edit Account Manager](./images/account-manager-edit.png)
+![Edit Account Manager](./images/client-overview-configuration-general.png)
 
-Aside from having a streamlined view in the Client List, we have bigger plans for the Account Manager function - watch
-this space!
+Making sure that you have the right Account Managers assigned provides a streamlined view in the Client List and easy Flow assignment in [Focus](/focus.html#focus), as well as better practice performance overviews in the [Practice Dashboard](/sandbox-reporting.html#practice-dashboard) and [Focus Dashboard](/sandbox-reporting.html#focus-dashboard).
 
 ## Lock Dates
 Lock Dates are a feature of Xero designed to help prevent changes to records in periods that have already been reported

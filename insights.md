@@ -6,20 +6,21 @@ In addition to allowing you to slice and dice your Client data, Xavier applies a
 techniques and presents the findings up as *Insights*...
 
 ## Bank Reconciliation
-![Bank Reconciliation](./images/cleanup-bank-reconciliation.png)
 
 Xavier uses a combination of Xero's Bank Statement Report data, bank transactions and payments to provide an
 interactive view across all of an organisation's bank accounts. The format loosely follows Xero's Bank Reconciliation
 Report, distinguishing between outstanding payments, receipts and unreconciled bank statement lines.
 
-Expanding one of these categories allows you to see transaction-level detail in a flexible grid view. From each record,
-you can click straight into Xero to start the reconciliation process. The grid allows you to quickly order by the
-oldest records (useful if you are approaching month end), and also see/filter/group the records that are in a "locked"
-period.
+### Bank Account Summary
 
-![Bank Reconciliation](./images/cleanup-bank-rec-payments.png)
+![Bank Reconciliation Summary](./images/bank-rec-summary.png)
 
-### Net Assets
+#### Total Unreconciled
+This is the total number of unreconciled transactions, outstanding payments and outstanding receipts across all bank 
+accounts. Below the summary boxes is also a card for the full _Unreconciled Impact_ - this card will display 
+the difference between the _Statement Balance_ and the _Xero Balance_ (you can click on the card for the detail).   
+
+#### Net Assets
 The Net Assets figure is a calculated balance of all transactions with the **Account Class** of _ASSET_ minus all
 transactions with the **Account Class** of _LIABILITY_, up the the reporting date. This figure is also available as a
 metric on the [Client List](/clients.html#client-list) and [Practice Dashboard](/clients.html#practice-dashboard). Xero
@@ -27,7 +28,7 @@ Account Classes are shown below:
 
 ![VAT Tracking](./images/cleanup-bank-rec-account-classes.png)
 
-### Cash Position
+#### Cash Position
 The Cash Position figure is a consolidated statement balance of all bank accounts, on the reporting date set. This
 figure is also available as a metric on the [Client List](/clients.html#client-list) and
 [Practice Dashboard](/clients.html#practice-dashboard).
@@ -36,6 +37,26 @@ figure is also available as a metric on the [Client List](/clients.html#client-l
 Foreign bank account balances are converted to the base currency to produce this number - use as a guideline only, where
 this is a factor, and see below for more info.
 :::
+
+#### No. of Manual Feeds
+Xavier detects which Bank Accounts are updated with Manual Feeds. The number of manual feeds is displayed in the summary, 
+and those Bank Accounts will also have a small pink _broken_ chain indicator next to their names in the cards below. 
+
+Bank accounts detected to have a working bank feed will have a small pink _linked_ chain indicator next to their names. 
+(You can hover over the indicator for more information.) 
+
+### Bank Accounts
+
+![Bank Reconciliation](./images/cleanup-bank-reconciliation.png)
+
+Each Bank Account is contained within a card. Expanding this card displays three unreconciled categories; _Outstanding Payments_, 
+_Outstanding Receipts_ and _Unreconciled Statement Lines_. 
+Expanding one of these categories allows you to see transaction-level detail in a flexible grid view. From each record,
+you can click straight into Xero to start the reconciliation process. The grid allows you to quickly order by the
+oldest records (useful if you are approaching month end), and also see/filter/group the records that are in a "locked"
+period.
+
+![Bank Reconciliation](./images/cleanup-bank-rec-payments.png)
 
 ### Foreign Currency Bank Accounts
 Xavier detects when a bank account is in a different currency to the base currency of the organisation, and displays
@@ -67,7 +88,8 @@ The results shown in this Xavier insight are your Xero contacts that we’ve ide
 This can happen if you create a new contact during the process of inputting an invoice or similar, and miss the fact that
 the contact already exists.
 
-Review these, you may dismiss any which aren't true duplicates, or clicking the name of the contact will take you to Xero to amend them. The transaction count should give a good indication of which contact has had more activity.
+Review these, you may dismiss any which aren't true duplicates, or clicking the name of the contact will take you to Xero 
+to amend them. The transaction count should give a good indication of which contact has had more activity.
 
 Xero guidance on merging contacts can be found [here](https://central.xero.com/s/article/Merge-contacts).
 
@@ -77,6 +99,49 @@ to be a potential duplicate. Dismissed items do not contribute to the [Health Sc
 Any dismissed duplicates can be viewed by selecting *dismissed* from the filter at the top
 of the screen, where you can then review and *undo* any accidental dismissals.
 
+You can dismiss multiple duplicates at a time by selecting '_Select All_' above the list, or by using the circular checkbox 
+on the right of the card (on the right of the _Dismiss_ button) on all duplicates you would like to dismiss, and then click 
+'_Dismiss (X) Suggestion(s)_'.  
+
+## Duplicate Transactions
+![Duplicate Transactions](./images/duplicate-transactions.png)
+
+Here Xavier looks across invoices and bank transactions and highlights records that it thinks could be unwanted duplicates. 
+This view allows you and your clients avoid embarrassing situations where you might inadvertently pay a supplier twice, 
+or charge a customer twice. You can filter the check between _Purchase_ and _Sales_ transactions, and sort by contact _Name_, 
+transaction _Value_ or _Date_.
+
+Each detected duplicate is presented in a card for the combination of Contact and Value (in this case, it is good to ensure 
+your Duplicate Contacts are all cleaned up). Clicking on this card to expand it will show the transactions in a grid format 
+with further information on the type, source and description. You can then click the links in this grid to see the transaction 
+or invoice directly in Xero.
+
+The Alert level on the Overview refers directly to the number of duplicate transactions relative to the total number of 
+transactions in the reporting period.
+
+#### Sales Transactions
+
+Duplicate sales transactions result in overstated revenue and unnecessary chasing of customers that have already paid. 
+This can happen due to human error accidentally raising invoices that have already been raised, or from integrations with 
+another system that can sometimes incorrectly pull in duplicates.  
+
+#### Purchase Transactions
+
+Duplicate purchase transactions can result in serious mistakes such as paying a supplier twice. Expenses might also be 
+overstated for the period. Additionally, paid transactions sitting in Aged Payables are messy and can reflect badly on 
+the standards of the accountant or bookkeeper. These can occur when there is a purchase invoice duplicate based on the 
+same criteria as a sales invoice, or when the invoice is an Aged Payable, but reconciled in the bank using 'create transaction', 
+creating both a bank transaction and an invoice against the same item. 
+
+### Dismissals
+Dismissing duplicate transactions means that Xavier will no longer count that combination of invoices and transactions for that contact
+to be a potential duplicate. Dismissed items do not contribute to the [Health Score](/clients.html#client-health-score).
+Any dismissed duplicates can be viewed by selecting *dismissed* from the filter at the top
+of the screen, where you can then review and *undo* any accidental dismissals.
+
+You can dismiss multiple duplicates at a time by selecting '_Select All_' above the list, or by using the circular checkbox 
+on the right of the card (on the right of the _Dismiss_ button) on all duplicates you would like to dismiss, and then click 
+'_Dismiss (X) Suggestion(s)_'.  
 
 ## Multi-Coded Contacts
 ![Multi-Coded Contacts](./images/insight-multi-coded.png)
@@ -231,26 +296,6 @@ registered assets purchased during the date period. It specifically looks for:
 - Fixed Assets with a purchase date that falls within the start and end dates you've set at the top of the Corporation
 Tax view
 
-## VAT Tracking
-![VAT Tracking](./images/insight-vat.png)
-
-The VAT Tracking insight gives an estimate of the VAT accrued by a company for the current VAT period, and includes
-estimates for previous periods dating back to the end of the previous financial year. The financial year and VAT periods
-are based on the client's settings in Xero.
-
-### Cash vs Accrual Schemes
-In the UK, a company could be configured to report VAT to HMRC on a Cash basis or an Accrual basis. Xavier automatically
-detects this based on Xero settings and adjusts the VAT calculation accordingly.
-
-### Flat Rate Scheme
-Xavier will detect if a client is on a [Flat Rate Scheme](https://www.gov.uk/vat-flat-rate-scheme/how-much-you-pay), but
-it has no way of knowing what VAT rate has been agreed with HMRC for the client. The first time you view the VAT Tracking
-insight, Xavier will prompt for the VAT rate to use if it detects the client is on a Flat Rate Scheme:
-
-![Flat Rate Scheme Prompt](./images/insight-vat-rate-prompt.png)
-
-You can adjust this for a client at any time by clicking on *Adjust Rate* in the menu bar of the VAT view.
-
 ### Scheme Thresholds
 For the Cash and Flat Rate schemes, Xavier monitors your
 [taxable turnover](https://www.gov.uk/vat-registration/calculate-turnover) to ensure that you remain on the right
@@ -343,6 +388,39 @@ The check allows you to review all overpayments that still have remaining credit
 _Reporting Date_, by checking the dates of any allocations to make sure they are applicable. This is categorised into
 Overpayments relating to Suppliers and Customers.
 
+## Control Accounts
+
+All Control account checks use the following logic to decide the alert level: 
+  - All is well: if the Control Account balance is 0 and there is a Manual or Xero Payroll Journal present in the last
+  complete month
+  - All is well: the Control Account balance is equal to the amount posted in the Manual or Xero Payroll Journal(s) in the
+  last complete month, and (if relevant) the snapshot date is well in advance of the HMRC Deadline
+  - Warning: Contol Account and Journals balance, but a payment due date is approaching
+  - Error: No Manual or Xero Payroll Journal found in the last complete month
+  - Error: No payment detected, and a payment deadline is past due
+  - Error: Control Account balance is non-zero and does not reconcile with balance of Manual or Xero Payroll journals
+
+### PAYE Status
+This check balances manual journals against detected payments with PAYE account codes to ensure a correct PAYE status at
+a point in time.
+By default, the check calculates the PAYE control account balance based on account codes found under the reporting code
+*LIA.CUR.TAX.OTH*. You can change the account codes used by clicking the small cog next to the card title, where Xavier 
+will suggest a number of account codes for easy setup. Expanding the card shows the detailed grid of PAYE transaction history for the last 6 months.
+
+### Net Wages Status
+This check balances manual journals against detected payments with Net Wages account codes, to ensure that it reconciles 
+to 0 or the balance is as expected. 
+
+Similar to PAYE status above, you can change the account codes used by clicking the small cog next to the card title.   
+Expanding the card shows a chart of money in and money out, and the detailed grid of Net Wages transaction history for 
+the last 6 months.
+
+### Pensions Status
+This check balances manual journals against detected payments with Pensions account codes, to ensure that it reconciles 
+to 0 or the balance is as expected. 
+
+You can change the account codes used by clicking the small cog next to the card title. Expanding the card shows a chart 
+of money in and out of the control account, and the detailed grid of Pensions transaction history for the last 6 months.
 
 ## Activity Stats
 ![Activity Stats](./images/insight-activity-stats.png)
@@ -394,39 +472,68 @@ within the historical period, but a created date of __after__ the reporting clos
 You'll be able to jump straight to the offending transaction(s) in Xero from the results. And, in case you need to show
 someone else where it all went wrong, you can always export the results to PDF.
 
+### Companies House Periods (UK Only)
+
+For UK companies, using Companies House data we can pull back your last filing period and the date the accounts were filed in the secondary navigation. 
+Use the 'Use these dates' option to auto-populate the Historical Changes insight with your last filing dates.
+
+A metric will be shown in the Practice Dashboard to highlight where there has been any changes to filed data. 
+
+::: tip
+Xavier uses the Companies House number it detects in Xero to make this connection - if we can't display any data, check 
+the Companies House number in Xero is correct and update if necessary.
+:::
+
+### Historical Changes Checks
+
+The Historical Changes check is also available in [Focus](/focus.html); for UK companies, this will be automatically populated as the 
+last filing period, but it can also be adjusted during the Flow.
+
 ## Regular Suppliers
-![Regular Suppliers](./images/insight-regular-suppliers.png)
+Regular Suppliers has now become *Cost Analysis*! See below...
 
-The Regular Suppliers insight is designed to analyse your client's payments to their suppliers over time and
-automatically detect issues. Our AI will look for months where the total amount paid is higher than normal for
-a supplier.
+## Cost Analysis
+![Cost Analysis](./images/insight-cost-analysis.png)
 
-Clicking a supplier will show a chart of payments over time and highlight the periods where we have detected where there
+The Cost Analysis insight is designed to analyse your client's expenses across their supplier base and their expense accounts 
+over time and automatically detect issues. Our AI will look for months where the total amount paid is unusual compared to other months.
+
+Clicking a supplier or account will show a chart of amounts over time and highlight the periods where we have detected there
 may be an issue. Clicking on a bar in the chart will explain the issue that we have found and show a summary of payments to the
-supplier in the chosen period. You may then choose to dismiss the alert or go through to Xero to investigate.
+supplier or account in the chosen period. You may then choose to dismiss the alert or go through to Xero to investigate.
 
-We are really excited about the possiblities here and we will be working hard to continue making this insight more powerful.
+### Regularity 
+
+On each Supplier or Account Code card is an indicator on the right for Xavier's best guess on the regularity of those payments to that supplier or account code, e.g. *weekly* or *monthly*. 
 
 ### Dismissals
 Each anomalous period can be 'dismissed' if you have reviewed the period and do not want Xavier to raise it again.
-The card for that supplier will not be removed from the view until all anomalous periods in the chart have been dismissed.
+The card for that supplier or account will not be removed from the view until all anomalous periods in the chart have been dismissed.
 Dismissed items do not contribute to the [Health Score](/clients.html#client-health-score).
 Any dismissed periods can be viewed by selecting *dismissed* from the filter at the top
 of the screen, where you can then review and *undo* any accidental dismissals.
 
+### Filters
+
+- *Display Mode* - Use the Display Mode to toggle between reviewing cost by *Supplier* and cost by *Account Code*. Both views work in exactly the same way, except for the categorisation of costs.
+- *Active During* - Set this date parameter to view only suppliers or account codes active in a certain period. 
+- *Anomalies | Dismissed | All Suppliers/Accounts* - Use this filter to view either all anomalies detected, all dismissed 
+anomalies, or simply all account codes or suppliers, regardless of any anomalies or dismissals, for a full review. 
+
+
 ## Sales Analysis
 ![Sales Analysis Screenshot](./images/sales-analysis-screenshot-min.png)
 
-This new feature allows you to review your client's revenue for a given period, breaking it down into who their key customers are and how 
-much revenue each of these customers generate. 
+This feature allows you to review your client's revenue for a given period, breaking it down into who their key customers are and how
+much revenue each of these customers generate.
 
 ### Accumulated Revenue
-This chart demonstrates how much of your client's revenue comes from a smaller proportion of customers. The chart area 
-is cumulative; the steeper the curve is at the beginning, the more revenue is generated by that segment. The curve will 
+This chart demonstrates how much of your client's revenue comes from a smaller proportion of customers. The chart area
+is cumulative; the steeper the curve is at the beginning, the more revenue is generated by that segment. The curve will
 typically then level off, as later segments contribute less to the revenue total.
 
-Revenue-generating contacts are listed in the grid below the chart, grouped by segment, with an indication of how reliant the client 
-is on that contact. By identifying these key revenue generating customers, you can give clients informed advice as to 
+Revenue-generating contacts are listed in the grid below the chart, grouped by segment, with an indication of how reliant the client
+is on that contact. By identifying these key revenue generating customers, you can give clients informed advice as to
 where they should be focusing their time.
 
 This grid lists a few key stats:

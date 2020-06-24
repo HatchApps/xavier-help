@@ -12,15 +12,41 @@ a given filing period. Simply enter in the date range and the minimum amounts (m
 to generate the checks. Expanding the card allows you to see these transactions, with a link directly to Xero to sort
 them out.
 
+These checks are called Tax Return Checks in regions outside the UK. We are working on building out functionality for other regions - so far we've added support for the South African 15% Two-Monthly VAT Scheme, and we have other regions also in development. 
+
 ![VAT Return Checks](./images/insight-vat-return.png)
 
-### Scheme Thresholds
+### Scheme Thresholds (UK Only)
 This check finds looks at annual and quarterly (where applicable) Taxable Turnover and makes sure that they are within
 the limits of the selected VAT scheme [as defined by HMRC](https://www.gov.uk/vat-registration-thresholds). You'll see
 a warning if the limits are within 10%, and an error if turnover has exceeded the limits.
 
-### Estimated VAT
-See the [VAT Tracking](/insights.html#vat-tracking) documentation for an overview of this check.
+### Estimated VAT (UK Only)
+
+::: warning UK Customers Please Note:
+Our VAT Checks work best when Xavier is connected with HMRC - without this connection, we cannot know when payments 
+have been made or detect any late claims. Please see our [Integrations](https://help.xavier-analytics.com/integrations.html#hmrc-uk-only) section for more information.
+:::
+  
+Xavier keeps a running estimate of VAT accrued (or due to be reclaimed) for the current period, it handles Cash, Accrual and Flat Rate schemes. 
+
+Opening the card reveals further details, with a filter to display in HMRC VAT Return format, grouped by Vat "Box" Figures, or grouped by Tax Rate. 
+You can also filter by current period or late claims.
+
+If connected to HMRC, we are able to use actuals, which makes this estimation much more reliable.
+  
+### HMRC Status (UK Only) 
+
+If you have connected to HMRC, our HMRC Status section provides details on the selected VAT period as well as upcoming dates for filing and 
+payment status.
+
+### VAT Control Account (UK Only)
+
+If the HMRC integration is enabled, we can now reconcile the VAT Control Account in Xero against the current HMRC 
+liabilities, plus any accrued VAT and future VAT (if on the Cash scheme), to ensure this account balances. The balance is 
+also available at a glance in the [Practice Dashboard](https://help.xavier-analytics.com/sandbox-reporting.html#practice-analysis).
+
+
 
 ### Unreconciled Transactions
 This uses the same logic as the [Unreconciled Transactions](/insights.html#unreconciled-transactions) insight to find
@@ -130,20 +156,23 @@ Business Entertainment. As VAT cannot be reclaimed on this expenditure, this is 
 
 __Note:__ the rules around staff entertainment are specific to UK tax at present.
 
-
 ### Multi-coded Contacts
 The same as the [Multi-Coded Contacts](/insights.html#multi-coded-contacts) insight, but looking at contacts that
 have transactions in the reporting period specified.
 
 ### Regular Suppliers
-The same as the [Regular Suppliers](/insights.html#regular-suppliers) insight, but looking at suppliers active during
+The same as the [Cost Analysis](/insights.html#cost-analysis) insight, but looking at suppliers active during
 that period with potential anomalies.
+
+### Cost by Account Code
+Similar to the functionality in [Cost Analysis](/insights.html#cost-anslysis) when in 'By Account' mode. Look for anomalies in account movement or as a cost.
 
 ### PAYE Status
 This check balances manual journals against detected payments with PAYE account codes to ensure a correct PAYE status at
 a point in time.
 By default, the check calculates the PAYE control account balance based on account codes found under the reporting code
-*LIA.CUR.TAX.OTH*. You can change the account codes used by clicking the small cog next to the card title. Expanding the
+*LIA.CUR.TAX.OTH*. You can change the account codes used by clicking the small cog next to the card title, where Xavier 
+will suggest a number of account codes for easy setup. Expanding the
 card shows the detailed grid of PAYE transaction history for the last 6 months.
 
 The PAYE check runs through the following logic:

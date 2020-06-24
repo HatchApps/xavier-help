@@ -37,7 +37,58 @@ cog icons beside their title. Clicking on the cog will bring up the options that
 
 Sometimes if a Check raises an alert then you are prompted to take action and fix whatever Xavier has found to be
 the issue. Focus provides a library of these Checks that can be combined together into
-[Flow Templates](/focus.html#flow-templates).    
+[Flow Templates](/focus.html#flow-templates).   
+
+
+
+### Check Master List
+
+A list of all checks available in Xavier (last updated 17/5/20)
+
+| Check   Name                            | Description                                                                                                                                                                                   |   
+|-----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Aged Receivables                        | A review of your aged receivables balance, find out who is late in paying   you!                                                                                                              |   
+| Average Debtor Days                     | The Debtor Days ratio shows the average number of days your customers are   taking to pay you.                                                                                                |   
+| Bank Reconciliation                     | This shows the total of unreconciled transactions across all bank   accounts in Xero, as well as the oldest item. Ideally all transactions should   be reconciled as quickly as possible.     |   
+| Aged Payables                           | A review of your aged payables balance - the invoices you have not paid   yet.                                                                                                                |   
+| Client has paid PAYE                    | Confirm with the client that they have paid PAYE as per   HMRC                                                                                                                                |   
+| Contact Defaults                        | Search each Contact's transaction history to suggest default reporting   codes or VAT Rates which are then pushed back into Xero.                                                             |
+| Cost by Account Code                    | Designed to analyse the activity in the General Ledger over time and automatically detect issues.                                                                                             |
+| Customer Reliance                       | Monitor business reliance on key customers and assess associated risk.                                                                                                                        |   
+| Dividends Status                        | Keep track of who has declared dividends, how much they have declared and   when they declared them.                                                                                          |   
+| Dormant Accounts                        | Give your chart of accounts a spring clean - review all of the account   codes which have not had activity in a while and archive them.                                                       |   
+| Draft Invoices                          | Highlights any draft bills or sales invoices in Xero                                                                                                                                          |   
+| Duplicate Contacts                      | Duplicate contacts goes through all your Xero contacts and matches   contacts that we think are the same supplier or customer.                                                                |   
+| Duplicate Transactions                  | Xavier looks across invoices and bank transactions and highlights records   that it thinks could be unwanted duplicates.                                                                      |   
+| Entertainment Accounts                  | A useful tool that tracks your spend on client and staff entertainment   and will let you know if you have breached any thresholds                                                            |   
+| Estimated Corporation Tax               | A simple Corporation Tax estimate to keep track of how much tax your   client needs to pay.                                                                                                   |   
+| Estimated VAT                           | An estimation of VAT liability for the period                                                                                                                                                 |   
+| Fixed Asset Account Reconciliation      | We will take your fixed asset balance compare it to your balance sheet   balance, highlight imbalances and then tell you the date that the imbalance   started.                               |   
+| Fixed Asset Accounts                    | Checks that Fixed Asset Account Types match up to a corresponding General   Ledger Account                                                                                                    |   
+| Fixed Asset Depreciation Reconciliation | We will take your fixed asset depreciation account and compare it to your   balance sheet depreciation account, highlight imbalances and then tell you   the date that the imbalance started. |   
+| Fixed Asset Depreciation Run Date       | Shows you the last time depreciation was run.                                                                                                                                                 |   
+| Fixed Asset Drafts                      | Review all draft assets to check none need to be published to balance the   register                                                                                                          |   
+| Historical Changes                      | Detects changes in a defined period of historical data, since a defined   date (such as a filing date).                                                                                       |   
+| HMRC Status                             | Filing and Payment amounts and dates, direct from HMRC                                                                                                                                        |   
+| Lock Dates Status                       | Track changes to Xero's lock dates and combine with account filing   information from Companies House (where available) to help you keep Xero data   stable                                   |   
+| Multi-Coded Contacts                    | Multi-coded contacts searches through your contacts history to highlight   where a contact has been coded against multiple account codes of VAT rates.                                        |   
+| Net Assets                              | Keep track of net assets over time, and compare current status with   previous periods.                                                                                                       |   
+| Overpayments                            | Stay on top of overpayments                                                                                                                                                                   |   
+| PAYE Status                             | Ensure the PAYE control account is behaving as it should.                                                                                                                                     |
+| Payroll Status                          | Ensure the Payroll control account is behaving as it should.                                                                                                                                  |
+| Pensions Status                         | Ensure the Pensions control account is behaving as it should.                                                                                                                                 |   
+| Regular Suppliers                       | Designed to analyse payments to suppliers over time and automatically   detect issues.                                                                                                        |   
+| Revenue Movement                        | Keep track of revenue over time, and compare performance with previous   periods.                                                                                                             |   
+| Supplier Reliance                       | Monitor business reliance on key suppliers and assess associated risk.                                                                                                                        |   
+| Tax Review By Code                      | Review all transactions for the period over a certain value, grouped by   sales tax code                                                                                                      |   
+| Transactions with Attachments           | Review attachments for all transactions over a certain value for the   period                                                                                                                 |   
+| Transactions without Attachments        | Review all transactions per the period over a certain value that don't   have attachments                                                                                                     |   
+| VAT Balance Sheet Review                | For VAT Review - highlights any Balance Sheet transactions with sales tax   applied                                                                                                           |   
+| VAT Control Account                     | Review the balance of the VAT Control Account against pending liabilities                                                                                                                     |   
+| VAT Expense Account Review              | For VAT Review - highlights high-risk Expense transactions such as   Entertainment, Printing and Travel                                                                                       |   
+| VAT Revenue Account Review              | For VAT Review - finds Revenue transactions that have a non-revenue tax   type                                                                                                                |   
+| VAT Scheme Threshold                    | Compares rolling turnover with the business's VAT Scheme thresholds to   ensure compliance                                                                                                    |   
+| Xero Activity                           | Monitor for sales and bills activity within Xero and raise alerts if none   are detected for 30 days                                                                                          |   
 
 ## Custom Checks
 
@@ -82,6 +133,13 @@ If you are creating the Flow for just one Client there will also be the option t
 shortcut where the Flow will be both created and started in one go, and you will be taken directly into
 [Flow Mode](/focus.html#inside-a-flow).  
 
+## Reviewers
+
+Flows in Xavier can have up to two reviewers which you assign when creating the Flow. These reviewers are sent an email 
+when the Flow is ready for review, starting with the first reviewer, who can either hand it back to the assigned user with 
+any comments, or pass it on to the second reviewer (if assigned). The Flow can only be marked as complete once approved 
+by the reviewer(s). Details of the reviewers and status are listed in the sidebar in Focus Mode.
+
 ## The Flow List
 
 The Flow List shows all Flows for your team, and provides various filters to quickly find the Flows you are looking for.
@@ -111,6 +169,22 @@ complete once you are happy.
 
 From the left hand menu you can head back to the [Flow List](/focus.html#the-flow-list) by clicking on _Focus Home_, and
 go to the Client Overview by clicking on the name of the Client. 
+
+### Exporting a Flow
+
+You can export a Flow to both PDF and Excel. The PDF is an export with the health score and top-level check information, 
+plus the comments. The final section of the export is the [Flow History](/focus.html#flow-history). 
+
+Regular Flows will 
+export directly to your browser, like the other PDF exports in Xavier, however large Flows of 25+ checks will be emailed 
+to the email address of the exporter (this is the email address you use to log into Xavier). This will still use the same 
+'Export to PDF' button, but you'll get a pop-up notification to let you know if it's been emailed. Please bear in mind; 
+the larger the Flow, the more time it will take to be emailed to you, so it could take more than a few minutes in some 
+cases.
+
+The Excel export contains the same data as the PDF, but simply formatted and always downloaded immediately to the browser. 
+It's a good format if you want to create your own Flow export layouts, or edit the information before you provide it to 
+the client. 
 
 ## Completing Flows
 
