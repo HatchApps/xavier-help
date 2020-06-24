@@ -106,7 +106,8 @@ The `/clients` endpoint returns a list of all Xavier clients that the given [aut
         "name": "string",
         "practiceCode": "string",
         "providerId": "string",
-        "healthScore": integer
+        "healthScore": integer,
+        "alertLevel": "string"
     }
 ]
 ```
@@ -133,6 +134,7 @@ The `/clients/{clientId}` endpoint returns a detailed set of information about a
     "practiceCode": "string",
     "organisationType": "string",
     "healthScore": integer,
+    "alertLevel": "string",
     "hmrcStatus": "string",
     "vatNumber": "string",
     "metrics": {
