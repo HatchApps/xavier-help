@@ -32,19 +32,15 @@ end of your monthly billing cycle, which will not renew.
 
 Xavier bills in advance; you will receive an invoice by email for the number of clients active in the previous monthly billing cycle, which begins when you have entered your payment details, and any free trials have ended.
 
-### What happens when I add or remove clients?
-
-If you add or remove a client during the monthly billing cycle, you will be billed accordingly for that client at the start of the next monthly billing cycle.
-
 ### What's your Custom Pricing?
 
-If you have more than 250 clients, please [get in touch](/contact-us.md) and we can arrange a custom plan for you that
+If you have more than 20 clients, please [get in touch](/contact-us.md) and we can arrange a custom plan for you that
 will meet your needs.
 
 ### Can I change plans at any time?
 
-If you're lucky enough to grow to need more than 50 clients whilst using Xavier, please inform us by
-[email](/contact-us.md) and we'll get you sorted with a personalised plan right away.
+If you're lucky enough to grow to need more than the number of clients in your subscription whilst using Xavier, please inform us by
+[email](/contact-us.md) and we'll get you sorted with a new plan right away.
 
 ## Regional Compatibility
 
