@@ -15,6 +15,16 @@ team management actions like inviting a team member or adjusting billing and sub
 
 The Team Settings are available in the sidebar in the *Team View*; from here, you can manage all things Team related...
 
+### Team Roles
+
+For the standard [(non-enterprise)](/team-management.html#xavier-enterprise-team-roles) version of Xavier, there are two different user roles:
+
+* __Owner__: In addition to the permissions of team Members, Owners can: invite new team members, manage the Xavier subscription, add the Team Logo, and by default they can also view all clients added to Xavier. This role defaults to the person who created the Xavier team. There can only be one team Owner per team. 
+ 
+* __Member__: Team members can add and remove clients, and adjust the [visibility settings](https://help.xavier-analytics.com/clients.html#client-visibility) of those clients they are able to view. All team members can add, delete, and review Flows.
+
+
+
 ### Team Profile
 You can add a team icon here, and also add a *branding header*. This header image will be added to the top of Xavier's
 PDF exports. It's best suited to a smaller logo than a large facebook-style banner image, as it will display at about
