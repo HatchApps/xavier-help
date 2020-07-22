@@ -129,14 +129,26 @@ The `/clients/{clientId}` endpoint returns a detailed set of information about a
     "providerId": "string",
     "practiceCode": "string",
     "organisationType": "string",
+    "companyNumber": "string",
     "healthScore": integer,
     "alertLevel": "string",
     "hmrcStatus": "string",
-    "vatNumber": "string",
+    "yearEnd": "string",
+    "vatDetails": {
+        "scheme": "string",
+        "number": "string",
+        "reportingCycle": "string",
+        "periodStart": "string",
+        "periodEnd": "string"
+    },
     "metrics": {
         "debtorBalance": float,
         "avgDebtorDays": integer,
         "oneDayImpact": integer,
+    },
+    "bankReconciliation" : {
+        "bankAccounts": integer,
+        "manualFeeds": integer
     }
 }
 ```
@@ -185,6 +197,31 @@ The `/clients/{clientId}/activity-stats` endpoint returns the rolling annual and
         "manualJournalsCount": integer,
         "bankTransactionsCount": integer,
         "totalCount": integer,
+        "turnoverChangeYoY": integer,
+        "salesChangeYoY": integer,
+        "billsChangeYoY": integer,
+        "creditsChangeYoY": integer,
+        "manualJournalsChangeYoY": integer,
+        "bankTransactionsChangeYoY": integer,
+        "totalChangeYoY": integer
+    },
+    "quarterlyAverage": {
+        "start": "string",
+        "end": "string",
+        "turnover": float,
+        "salesCount": integer,
+        "billsCount": integer,
+        "creditsCount": integer,
+        "manualJournalsCount": integer,
+        "bankTransactionsCount": integer,
+        "totalCount": integer,
+        "turnoverChangeMoM": integer,
+        "salesChangeMoM": integer,
+        "billsChangeMoM": integer,
+        "creditsChangeMoM": integer,
+        "manualJournalsChangeMoM": integer,
+        "bankTransactionsChangeMoM": integer,
+        "totalChangeMoM": integer,
         "turnoverChangeYoY": integer,
         "salesChangeYoY": integer,
         "billsChangeYoY": integer,
