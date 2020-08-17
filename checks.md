@@ -34,6 +34,12 @@ Opening the card reveals further details, with a filter to display in HMRC VAT R
 You can also filter by current period or late claims.
 
 If connected to HMRC, we are able to use actuals, which makes this estimation much more reliable.
+
+### Box 1 to Box 6 Comparison (UK Only)
+
+This check examines your transactions to provide a Box 1 to Box 6 percentage for the current VAT Return. Opening the card for further detail reveals previous periods and their respective Box 1 and Box 6 figures, with their percentage differences. 
+
+If the percentage is not as expected, check the [Tax Review by Code](#tax-review-by-code) check for more insights on what other tax rates may have been used in the period.  
   
 ### HMRC Status (UK Only) 
 
@@ -45,8 +51,6 @@ payment status.
 If the HMRC integration is enabled, we can now reconcile the VAT Control Account in Xero against the current HMRC 
 liabilities, plus any accrued VAT and future VAT (if on the Cash scheme), to ensure this account balances. The balance is 
 also available at a glance in the [Practice Dashboard](https://help.xavier-analytics.com/sandbox-reporting.html#practice-analysis).
-
-
 
 ### Unreconciled Transactions
 This uses the same logic as the [Unreconciled Transactions](/insights.html#unreconciled-transactions) insight to find
@@ -64,6 +68,11 @@ EXP.ADM.ENT (Entertainment), EXP.ADM.PRI (Printing & Postage) or EXP.ADM.TRA (Tr
 ### Balance Sheet Review
 This check finds ASSET, LIABILITY or EQUITY type transactions with a non-zero tax value, excluding Fixed Assets (account
 type FIXED) and Reporting Codes of LIA.CUR.ACC (income in advance) or ASS.CUR.REC.PRE (prepayments).
+
+### Tax Review by Code
+The below checks (_20% VAT Review_, _Zero-Rated Review_ and _No-VAT Review_) have all been combined into one _Tax Review 
+by Code_ Check card, which splits out all transactions in the period by the tax code applied. You can set a minimum value 
+threshold against this Check. 
 
 ### 20% VAT Review
 This check finds transactions with a tax type of either 20% VAT on Income or 20% VAT on Expenses with a net value above
