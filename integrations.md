@@ -92,3 +92,20 @@ to HMRC, or there is no HMRC data available for the selected period, you will be
   ::: tip
     Occasionally the health scores can take a few moments to show in Senta. After a short wait, refresh the page in Senta to check.   
   :::
+  
+  ## GoProposal
+    
+Xavier integrates with [GoProposal pricing software](https://goproposal.com) to allow you to pull [Xavier health 
+scores](/clients.html#client-health-score) and activity metrics into GoProposal to inform your clients' pricing for more 
+up to date data and insights than ever before. 
+
+::: warning Please note:
+  GoProposal will only have access to data from the client that the person generating the API key has access to - for 
+  this reason, we recommend using the Team Owner to generate the API key.
+:::
+
+To set up the integration, you will need to generate an API key to plug into GoProposal. This can be found under your User Icon > Your Settings > API. You can watch [this handy video](https://www.loom.com/share/70dac4bf940349c1b61e386a7f5e2fe6) from Helen on how to generate this key [here](https://www.loom.com/share/70dac4bf940349c1b61e386a7f5e2fe6). 
+
+Once you have generated your API key in Xavier, the majority of the setup actually takes place in GoProposal.  
+
+You can read more about the next steps in the [GoProposal help documentation here](https://help.goproposal.com/en/articles/4304626-how-to-connect-xavier-to-goproposal).

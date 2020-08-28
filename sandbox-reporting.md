@@ -12,9 +12,9 @@ these large grid reports such as sorting and exporting also apply to the grids w
 
 ## The Client Sandbox
 
-Each Client in Xavier has a Snadbox view in the sidebar. A core piece of Xavier functionality since it's launch, we start 
+Each Client in Xavier has a Sandbox view in the sidebar. A core piece of Xavier functionality since it's launch, we start 
 with Xero's Journal Line Items as a base, and supplement each record with additional data based on the type of
-journal it is - be it an Invoice, and Bank Transaction, a Credit Note and so on. We also bring in Contact and Account
+journal it is - be it an Invoice, Bank Transaction, Credit Note or so on. We also bring in Contact and Account
 information so you've got all the key information you need in one place.
 
 ## Practice Analysis
