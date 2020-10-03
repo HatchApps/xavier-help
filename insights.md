@@ -520,6 +520,26 @@ of the screen, where you can then review and *undo* any accidental dismissals.
 - *Anomalies | Dismissed | All Suppliers/Accounts* - Use this filter to view either all anomalies detected, all dismissed 
 anomalies, or simply all account codes or suppliers, regardless of any anomalies or dismissals, for a full review. 
 
+## Benchmarking
+::: warning Please note:
+   This feature is in BETA. If you have any questions, please just let us know! 
+:::
+  
+Using the Benchmarking insight, Xavier can benchmark both Turnover and Expenses for your clients, within their region, 
+industry, or all other clients, either against your own practice or across a wider Xavier dataset. 
+
+The Region and Industry are based on Companies House data cross-checked against Xero data (using a degree of AI matching) 
+to select the best fit.
+
+Benchmarking requires a minimum number of clients to provide our insights, or you will see the warning _'Not enough data for comparison. Try changing your filters.'_. 
+This minimum client requirement also applies to the filters for the number of clients within the same Region and Industry.
+
+You can benchmark within your practice, or against a wider Xavier dataset. When benchmarking a client against wider Xavier 
+data (not just your own practice) the information is displayed as a heat map, rather than data points. 
+
+Benchmarking data is presented graphically but we also provide statistics below the graph, e.g. _"Demo Company's expense is 
+40% higher than other businesses for it's age."_.
+
 
 ## Sales Analysis
 ![Sales Analysis Screenshot](./images/sales-analysis-screenshot-min.png)
