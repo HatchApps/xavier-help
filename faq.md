@@ -5,6 +5,17 @@
 
 ## Billing
 
+### How does your pricing work?
+
+Xavier prices monthly according to client licence bundles. These bundles refer to unique client licences. 
+
+If you add a client to Xavier, that will count as one of your licences for the current billing month, even if you remove that client. 
+If you do remove a client, you can replace that licence with a new client in the next billing month. 
+
+You will have an additional 10% of your bundle size as leeway for your bundle, for example if you accidentally add a client. 
+
+If you accidentally remove a client, this can be restored under *subscription* > *current period* using the *restore* link.
+
 ### What is a client?
 
 For Xavier, a client is a Xero organisation that Xavier will sync with – typically this is your business or your client’s
@@ -30,17 +41,24 @@ end of your monthly billing cycle, which will not renew.
 
 ### When will I be billed?
 
-Xavier bills in advance; you will receive an invoice by email for the number of clients active in the previous monthly billing cycle, which begins when you have entered your payment details, and any free trials have ended.
+Xavier bills in advance; you will receive an invoice by email for the number of clients active in the previous monthly billing cycle, which begins when you have entered your payment details.
 
 ### What's your Custom Pricing?
 
 If you have more than 20 clients, please [get in touch](/contact-us.md) and we can arrange a custom plan for you that
 will meet your needs.
 
-### Can I change plans at any time?
+### Can I change bundles at any time?
 
 If you're lucky enough to grow to need more than the number of clients in your subscription whilst using Xavier, please inform us by
 [email](/contact-us.md) and we'll get you sorted with a new plan right away.
+
+You can upgrade your bundles at any time, however you cannot downgrade your bundle in the same month you have upgraded.
+In order to downgrade your bundle, you will need to remove clients from your client list until you are within the bundle limits. 
+
+### Can I add my Practice for free?
+
+Xavier does not offer a free Practice licence; your practice will still take up one of your licence bundles. 
 
 ## Regional Compatibility
 

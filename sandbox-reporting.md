@@ -32,7 +32,7 @@ the dashboard is still evolving, and we add more metrics to it all the time!
 <iframe width="560" height="315" src="https://www.youtube.com/embed/K9MX2tsKMW4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ### Activity Stats
-The Acivity Stats view is your source for Xavier's performance metrics from the [Acitvity Stats](http://localhost:8081/insights.html#activity-stats) 
+The Activity Stats view is your source for Xavier's performance metrics from the [Activity Stats](/insights.html#activity-stats) 
 Insight, month-by-month for the last year. This includes _MoM_ and _YoY_ changes, so you can check which of your clients 
 are under- or over- performing. 
 
