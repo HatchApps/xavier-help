@@ -16,7 +16,10 @@ Short on time? Check out our video as a quickstart:
 - [Custom Check](/focus.html#custom-checks): A user-defined Check for directing to non-Xavier tasks
 - [Flow Template](/focus.html#flow-templates): a selection of Checks in a specific order, that can be assigned to a Flow
 - [Flow](/focus.html#inside-a-flow): a Flow Template linked to a Client, User and Reporting Period, with a Due Date
-- [Flow History](/focus.html#flow-history): an audit trail of progress on a Flow 
+- [Flow History](/focus.html#flow-history): an audit trail of progress on a Flow
+- [Repeating Flow](/focus.html#repeating-flows): A Flow that is set to repeat on a regular basis, which is linked to a Flow Template, Client(s), 
+User(s) and a reporting time period, with a Publish date and a time span for completion
+- [Draft Flow](): A Flow that has not yet been completed or published. 
 
 ## Checks
 
@@ -110,28 +113,108 @@ like to save the template for re-use. They can also be created from the Flow Tem
 
 ![Focus Flow Template](./images/focus-flow-template.png)
 
-Once multiple Checks have been added to a template they can be re-ordered by dragging and dropping.  
+Once multiple Checks have been added to a template they can be re-ordered by dragging and dropping.
+
+All [Repeating Flows](/focus.html#repeating-flows) must be linked to a Flow Template. If a template linked to a Repeating Flow is edited, you will receive a warning with a list of affected Repeating Flows. 
+
+- Any changes to a Repeating Flow template will take effect on the _next_ scheduled date, and will not effect any Repeating Flows that have entered the Flow List.
+- Any checks added to templates that that require parameters will be added to Repeating Flows with the _default parameters_ applied, unless the Repeating Flow is edited to update the default parameters.    
 
 ## Creating Flows
 
-Creating a Flow involves assigning a Flow Template to one or more Clients, assigning a team member to the Client, and
+Flows are created from the Flow Creator view. You can select to create either a [One-Off Flow](/focus.html#one-off-flows) or a [Repeating Flow](/focus.html#repeating-flows).
+
+Once you have selected the type of Flow you want to create, the Flow Creator will walk you through a series of steps to build the Flow. 
+
+- _Set Checks:_ Select the Checks you would like to use for the Flow, including any Custom Checks. You can either select a Flow Template, or create your own selection of Checks.
+- _Set Dates:_ This step will differ between a Repeating and One-Off Flow, but these are the dates that determine the Flow start and due date, and the reporting period. 
+- _Set Parameters:_ Some Checks require parameters to be set, such as a _'transactions since'_ parameter for [Multi-Coded Contacts](/insights.html#multi-coded-contacts).
+- _Add Clients:_ Add the clients you would like to run the Flow for. You can select as many clients as you would like, and 
+also assign the team members and reviewers who will complete the Flow. These will default to _Account Manager 1_ and _Account Manager 2_, respectively.
+- _Review & Go:_ This stage will allow you to check the template, dates and clients all on one page before completing the Flow. 
+
+During Flow creation, you can navigate forwards and backwards at the bottom of the form with the _'Next'_ and _'Back'_ buttons respectively. 
+You can also click on the links below the coloured progress bar at the top to view stages you have previously completed.
+
+### Draft Flows
+
+A Draft Flow is a Flow that has not yet been published. They are stored in the _'Create Flow'_ view which can be accessed 
+from the sidebar under _Focus_. 
+
+During Flow creation, clicking _'Save'_ at the top right of the screen will allow you to save your Flow and give it a name. 
+It will then appear in the Draft Flow list with the name it was assigned, and any additional details added during Flow creation.
+
+Draft Flows will also be created if you close Xavier or click away from the Flow Creator at any time; if you do this, we'll 
+name the Draft Flow after the template chosen as default.
+
+In the Draft Flow List, each Flow will have the date it was last edited, and a pink _Repeating Flow_ icon will be present 
+if the Flow was a Repeating Flow. 
+
+Draft Flows can be edited or deleted. Simply click the _'Continue'_ button on the Draft Flow card to pick up where you left 
+off. To delete the Draft Flow, you can use the three-dot menu to the right of the card and select 'Delete' from the dropdown list.
+
+## One-Off Flows
+
+Creating a one-off Flow involves assigning a Flow Template to one or more Clients, assigning a team member to the Client, and
 selecting a reporting period and a due date for when the Flow needs to be completed. You can select a pre-existing 
 [Flow Template](/focus.html#flow-templates), or build your own as you go.
 
 ![Focus Flow Create](./images/focus-flow-create.png)
 
+### Adding Clients by Tag
+
+If you are creating a One-Off Flow, you can add multiple clients to a Flow by selecting _By Tag_ in the _Add Client_ stage. This will add all clients to your 
+Flow assigned to a specific tag. Select the account manager and reviewer you would like to use for this group, and then 
+click _Add Clients From Tags_ to add these clients to your Flow. You will then be able to view the list of clients you 
+have added, and edit assignees and reviewers and delete as necessary.  
+
 ::: tip
 If you add multiple Clients when building a Flow, a Flow will be created for each Client.
 ::: 
 
-In the final step, if any of the Checks require your input to specify additional parameters, you will be prompted to
-provide these before Saving the Flow.
-
 ![Focus Flow Parameters](./images/focus-flow-parameters.png)
 
-If you are creating the Flow for just one Client there will also be the option to "Save & Start". This provides a
+If you are creating the Flow for just one Client there will also be the option to _'Save & Start'_. This provides a
 shortcut where the Flow will be both created and started in one go, and you will be taken directly into
 [Flow Mode](/focus.html#inside-a-flow).  
+
+## Repeating Flows
+
+Creating a Repeating Flow will follow a very similar process to creating a One-Off Flow, with a few exceptions:
+
+### Repeating Flow Checks
+Repeating Flows must always use a [Flow Template](/focus.html#flow-templates). You can create one during Flow creation.
+
+If a template linked to a Repeating Flow is edited, you will receive a warning with a list of affected Repeating Flows. 
+- Any changes to a Repeating Flow template will take effect on the _next_ scheduled date, and will not effect any Repeating
+ Flows that have entered the Flow List.
+- Any checks added to templates that that require parameters will be added to Repeating Flows with the _default parameters_ 
+applied, unless the Repeating Flow is edited to update the default parameters.
+
+When _Publishing_ a Repeating Flow, it will enter the [Repeating Flows List](/focus.html#the-repeating-flow-lis). The Flow 
+will also enter the [Flow List](/focus.html#the-flow-list) if the creation date is the same as the _Publish Date_. 
+
+You will only have the option to _'Save and Start'_ if the Repeating Flow is for only one Client, _and_ if the creation date 
+is the same as the _Publish Date_.    
+
+### Repeating Flow Dates
+
+- _Publish Date:_ The date at which your Repeating Flow will first enter the Flow List. 
+- _Complete Within:_ The time between the _Publish Date_ and the _Due Date_ for the Flow. 
+- _Reporting Period:_ The dates the Flow Checks will refer to. This is a date range which is calculated backwards from 
+the the _Publish Date_. These can be client specific, for example _'Last Financial Year'_ which will refer to the most 
+recent complete financial year after the _Publish Date_ for that client.  
+- _Repeat this Flow every:_ The frequency of repetition for the Flow. This begins from the _Publish Date_.
+
+Here's an example. For a Flow, created on the 28th of October with the following dates:
+- _Publish Date:_ 1st November 
+- _Complete Within:_ 2 Weeks 
+- _Reporting Period:_ Last complete Month  
+- _Repeat this Flow every:_ 1 Month
+
+This Flow will enter the [Flow List](/focus.html#the-flow-list) on the 1st of November, and the first due date will be the 15th of November. The 
+date range of the Flow will be the 1st to the 31st of October. The Flow will then appear in the Flow List every month on 
+the 1st, to be due on the 15th. 
 
 ## Reviewers
 
@@ -142,10 +225,12 @@ by the reviewer(s). Details of the reviewers and status are listed in the sideba
 
 ## The Flow List
 
-The Flow List shows all Flows for your team, and provides various filters to quickly find the Flows you are looking for.
+The Flow List shows all Flows to be completed for your team, and provides various filters to quickly find the Flows you are looking for.
 You can filter Flows by their status (Not Started, In Progress, Complete), and order by different values such as Due 
 Date and Period End. Use the search box to filter based on the Flow Template name. If the Flow is not yet completed,
 warnings will be displayed as the Due Date set for the Flow is approaching.
+
+Any Flows linked to a Repeating Flow will have a pink _Repeating Flow_ on the card.
 
 ![Focus Flow List](./images/focus-flow-list.png)
 
@@ -158,6 +243,19 @@ been started cannot be edited.
 A version of the Flow List is available when viewing an individual Client too, which is automatically filtered to Flows
 for that Client.
 :::
+
+## The Repeating Flow List
+
+All [Repeating Flows](/focus.html#repeating-flows) will live within this list, with a card for each one.
+
+If the Repeating Flow has been named (by clicking 'Save' during Flow Creation), it will have that name on the Flow card, 
+otherwise it will be named after the Flow Template as default. 
+
+From the Flow cards, you can see the date which the Flows will be due to enter the [Flow List](/focus.html#the-flow-list). 
+Clicking on the buttons on each card will reveal the checks for that Flow, and the Clients assigned to it.
+
+You can also _Edit_ or _Delete_ each Repeating Flow by using the three dot menu icon on the far right of the card, and 
+selecting from the dropdown menu.
 
 ## Inside a Flow
 
