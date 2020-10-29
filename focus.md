@@ -6,9 +6,9 @@
 Xavier Focus allows you to select from a library of tools and build a workflow that suits the business processes you
 have developed around specific accounting jobs such as Tax Returns, Monthly Bookkeeping or Year End. 
 
-Short on time? Check out our video as a quickstart:
+Looking for some inspiration on how to use Xavier Focus? Check out our [Blog Post](https://xavier-analytics.com/blog/2020/05/29/focus-hacks/) on how to supercharge your processes with Focus here: [LINK](https://xavier-analytics.com/blog/2020/05/29/focus-hacks/)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/MnBT8GZxLuQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+For a guide to our latest Focus Update, introducing [Repeating Flows](/focus.html#repeating-flows), you can watch a quick [video guide](https://www.youtube.com/channel/UCFnpyIWi_tp9V39eThdcYPA) here: [LINK]()
 
 ## Focus Glossary
 
@@ -18,8 +18,8 @@ Short on time? Check out our video as a quickstart:
 - [Flow](/focus.html#inside-a-flow): a Flow Template linked to a Client, User and Reporting Period, with a Due Date
 - [Flow History](/focus.html#flow-history): an audit trail of progress on a Flow
 - [Repeating Flow](/focus.html#repeating-flows): A Flow that is set to repeat on a regular basis, which is linked to a Flow Template, Client(s), 
-User(s) and a reporting time period, with a Publish date and a time span for completion
-- [Draft Flow](): A Flow that has not yet been completed or published. 
+User(s) and a reporting time period, with a scheduled date and a time span for completion
+- [Draft Flow](/focus.html#draft-flows): A Flow that has not yet been completed or published. 
 
 ## Checks
 
@@ -122,6 +122,8 @@ All [Repeating Flows](/focus.html#repeating-flows) must be linked to a Flow Temp
 
 ## Creating Flows
 
+![Focus Flow Creator](./images/repeating-flow-regular-flow-min.png)  
+
 Flows are created from the Flow Creator view. You can select to create either a [One-Off Flow](/focus.html#one-off-flows) or a [Repeating Flow](/focus.html#repeating-flows).
 
 Once you have selected the type of Flow you want to create, the Flow Creator will walk you through a series of steps to build the Flow. 
@@ -133,16 +135,22 @@ Once you have selected the type of Flow you want to create, the Flow Creator wil
 also assign the team members and reviewers who will complete the Flow. These will default to _Account Manager 1_ and _Account Manager 2_, respectively.
 - _Review & Go:_ This stage will allow you to check the template, dates and clients all on one page before completing the Flow. 
 
+![Focus Review & Go Stage](./images/flow-create-review-min.png)  
+
 During Flow creation, you can navigate forwards and backwards at the bottom of the form with the _'Next'_ and _'Back'_ buttons respectively. 
 You can also click on the links below the coloured progress bar at the top to view stages you have previously completed.
 
 ### Draft Flows
+
+![Focus Draft Flow Card](./images/draft-flow-card-min.png)  
 
 A Draft Flow is a Flow that has not yet been published. They are stored in the _'Create Flow'_ view which can be accessed 
 from the sidebar under _Focus_. 
 
 During Flow creation, clicking _'Save'_ at the top right of the screen will allow you to save your Flow and give it a name. 
 It will then appear in the Draft Flow list with the name it was assigned, and any additional details added during Flow creation.
+
+![Focus Draft Flow Name](./images/save-name-draft-flow-min.png)  
 
 Draft Flows will also be created if you close Xavier or click away from the Flow Creator at any time; if you do this, we'll 
 name the Draft Flow after the template chosen as default.
@@ -159,7 +167,7 @@ Creating a one-off Flow involves assigning a Flow Template to one or more Client
 selecting a reporting period and a due date for when the Flow needs to be completed. You can select a pre-existing 
 [Flow Template](/focus.html#flow-templates), or build your own as you go.
 
-![Focus Flow Create](./images/focus-flow-create.png)
+![Focus Flow Create](./images/flow-add-clients-min.png)
 
 ### Adding Clients by Tag
 
@@ -172,7 +180,7 @@ have added, and edit assignees and reviewers and delete as necessary.
 If you add multiple Clients when building a Flow, a Flow will be created for each Client.
 ::: 
 
-![Focus Flow Parameters](./images/focus-flow-parameters.png)
+![Focus Flow Parameters](./images/flow-set-parameters-min.png)
 
 If you are creating the Flow for just one Client there will also be the option to _'Save & Start'_. This provides a
 shortcut where the Flow will be both created and started in one go, and you will be taken directly into
@@ -192,22 +200,22 @@ If a template linked to a Repeating Flow is edited, you will receive a warning w
 applied, unless the Repeating Flow is edited to update the default parameters.
 
 When _Publishing_ a Repeating Flow, it will enter the [Repeating Flows List](/focus.html#the-repeating-flow-lis). The Flow 
-will also enter the [Flow List](/focus.html#the-flow-list) if the creation date is the same as the _Publish Date_. 
+will also enter the [Flow List](/focus.html#the-flow-list) if the creation date is the same as the _Scheduled Date_. 
 
 You will only have the option to _'Save and Start'_ if the Repeating Flow is for only one Client, _and_ if the creation date 
-is the same as the _Publish Date_.    
+is the same as the _Scheduled Date_.    
 
 ### Repeating Flow Dates
 
-- _Publish Date:_ The date at which your Repeating Flow will first enter the Flow List. 
-- _Complete Within:_ The time between the _Publish Date_ and the _Due Date_ for the Flow. 
+- _Scheduled Date:_ The date at which your Repeating Flow will first enter the Flow List. 
+- _Complete Within:_ The time between the _Scheduled Date_ and the _Due Date_ for the Flow. 
 - _Reporting Period:_ The dates the Flow Checks will refer to. This is a date range which is calculated backwards from 
-the the _Publish Date_. These can be client specific, for example _'Last Financial Year'_ which will refer to the most 
-recent complete financial year after the _Publish Date_ for that client.  
-- _Repeat this Flow every:_ The frequency of repetition for the Flow. This begins from the _Publish Date_.
+the _Scheduled Date_. These can be client specific, for example _'Last Financial Year'_ which will refer to the most 
+recent complete financial year after the _Scheduled Date_ for that client.  
+- _Repeat this Flow every:_ The frequency of repetition for the Flow. This begins from the _Scheduled Date_.
 
 Here's an example. For a Flow, created on the 28th of October with the following dates:
-- _Publish Date:_ 1st November 
+- _Scheduled Date:_ 1st November 
 - _Complete Within:_ 2 Weeks 
 - _Reporting Period:_ Last complete Month  
 - _Repeat this Flow every:_ 1 Month
@@ -215,6 +223,8 @@ Here's an example. For a Flow, created on the 28th of October with the following
 This Flow will enter the [Flow List](/focus.html#the-flow-list) on the 1st of November, and the first due date will be the 15th of November. The 
 date range of the Flow will be the 1st to the 31st of October. The Flow will then appear in the Flow List every month on 
 the 1st, to be due on the 15th. 
+
+![Focus Repeating Flow Dates](./images/flow-set-dates-min.png)
 
 ## Reviewers
 
