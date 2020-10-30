@@ -8,7 +8,7 @@ have developed around specific accounting jobs such as Tax Returns, Monthly Book
 
 Looking for some inspiration on how to use Xavier Focus? Check out our [Blog Post](https://xavier-analytics.com/blog/2020/05/29/focus-hacks/) on how to supercharge your processes with Focus here: [LINK](https://xavier-analytics.com/blog/2020/05/29/focus-hacks/)
 
-For a guide to our latest Focus Update, introducing [Repeating Flows](/focus.html#repeating-flows), you can watch a quick [video guide](https://www.youtube.com/channel/UCFnpyIWi_tp9V39eThdcYPA) here: [LINK]()
+For a guide to our latest Focus Update, introducing [Repeating Flows](/focus.html#repeating-flows), you can watch a quick [video guide](https://www.youtube.com/channel/UCFnpyIWi_tp9V39eThdcYPA) here: [LINK](https://youtu.be/2zBW1xLdTjQ)
 
 ## Focus Glossary
 
