@@ -48,7 +48,7 @@ will do a sync after re-linking, so that it is up to date with any changes.
 
 ![Reconnect To Xero](./images/reconnect-to-xero.png)
 
-Xero also [provide a way](https://central.xero.com/s/article/Disconnect-a-connected-app-in-Xero) of removing connected
+Xero also [provide a way](https://central.xero.com/s/article/Getting-started-with-Xero-Connected-Apps) of removing connected
 apps directly from their site.
 
 ::: warning
