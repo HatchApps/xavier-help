@@ -17,6 +17,10 @@ with Xero's Journal Line Items as a base, and supplement each record with additi
 journal it is - be it an Invoice, Bank Transaction, Credit Note or so on. We also bring in Contact and Account
 information so you've got all the key information you need in one place.
 
+To get started with the Client Sandbox, you can watch our latest Sandbox training webinar here:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LiwjlNFiHs8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 ## Practice Analysis
 
 At the team level, Xavier has 4 different practice-level sandboxes that contain data across all your clients. They are:
