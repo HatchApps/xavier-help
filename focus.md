@@ -6,9 +6,11 @@
 Xavier Focus allows you to select from a library of tools and build a workflow that suits the business processes you
 have developed around specific accounting jobs such as Tax Returns, Monthly Bookkeeping or Year End. 
 
-Looking for some inspiration on how to use Xavier Focus? Check out our [Blog Post](https://xavier-analytics.com/blog/2020/05/29/focus-hacks/) on how to supercharge your processes with Focus here: [LINK](https://xavier-analytics.com/blog/2020/05/29/focus-hacks/)
+Looking for some inspiration on how to use Xavier Focus? Check out our [Blog Post](https://xavier-analytics.com/blog/2020/05/29/focus-hacks/) 
+on how to supercharge your processes with Focus here: [LINK](https://xavier-analytics.com/blog/2020/05/29/focus-hacks/)
 
-For a guide to our latest Focus Update, introducing [Repeating Flows](/focus.html#repeating-flows), you can watch a quick [video guide](https://www.youtube.com/channel/UCFnpyIWi_tp9V39eThdcYPA) here: [LINK](https://youtu.be/2zBW1xLdTjQ)
+For a guide to our latest Focus Update, introducing [Repeating Flows](/focus.html#repeating-flows), you can watch a quick 
+[video guide](https://www.youtube.com/channel/UCFnpyIWi_tp9V39eThdcYPA) here: [LINK](https://youtu.be/2zBW1xLdTjQ)
 
 ## Focus Glossary
 
@@ -20,6 +22,7 @@ For a guide to our latest Focus Update, introducing [Repeating Flows](/focus.htm
 - [Repeating Flow](/focus.html#repeating-flows): A Flow that is set to repeat on a regular basis, which is linked to a Flow Template, Client(s), 
 User(s) and a reporting time period, with a scheduled date and a time span for completion
 - [Draft Flow](/focus.html#draft-flows): A Flow that has not yet been completed or published. 
+- [Focus Daily Digest](/focus.html#focus-daily-digest): An email summarising any Flows that require action for the day. 
 
 ## Checks
 
@@ -321,4 +324,20 @@ This includes events such as a user rolling back a completed Check. A snapshot o
 [Health Score](/clients.html#client-health-score) is also captured at the time of these events, so you can track the 
 improvement of this over the course of the Flow. 
 
+## Focus Daily Digest
 
+Xavier will send you an email summary once a day at 8am, *if* (and only if) you have items in Focus that need attention. 
+This will include: 
+
+* **Flows Ready to Start:** 
+If a member of your team creates a Flow and assigns it to you, or a Repeating Flow enters the Flow List assigned to you. 
+
+* **Flows Due:**
+Any Flows that have not been completed, assigned to you, which become due. 
+
+* **Flows Overdue:**
+Any Flows that have not been completed, assigned to you, and the Due date has past. These Flows will only be included for 
+up to three days after the due date, after which we will stop reminding you in the Daily Digest.   
+
+The Daily Digest email can be turned on and off in your User Settings area, which can be accessed by clicking on your user 
+avatar in the top right of Xavier. Alternatively, to access your user settings in Xavier, you can [click here.](https://app.xavier-analytics.com/settings)
