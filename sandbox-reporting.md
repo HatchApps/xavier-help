@@ -28,7 +28,15 @@ At the team level, Xavier has 4 different practice-level sandboxes that contain 
 ### Practice Dashboard
 A comprehensive home of your Xavier clients, this is the first place to come to get a handle on your practice. Each row is a client in Xavier, and here we store many of the Xavier metrics 
 
-Please note, all Practice Dashboard metrics come from the last complete month, to ensure that every metric is comparable for each client.  
+#### Reporting Mode
+
+![Practice Dashboard Reporting Mode](./images/Practice-Dashbord-Reporting-Mode-min.png)
+
+By default, the Practice Dashboard will be set to the Reporting Mode '*Month End*', which means all Practice Dashboard 
+metrics come from the last complete month, to ensure that every metric is comparable for each client.  
+
+If you select '*Custom Per Client*' the Practice Dashboard will use the [Reporting Mode](/clients.html#overview-reporting-mode) 
+dates set against the client from the [Client Overview](/clients.html#client-overview). This will result in each client displaying metrics from their own custom Reporting Mode period (if set).  
 
 Here's a short introduction to the Practice Dashboard functionality from Simon Williams; note that since this was recorded 
 the dashboard is still evolving, and we add more metrics to it all the time!
