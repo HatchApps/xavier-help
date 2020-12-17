@@ -422,6 +422,19 @@ to 0 or the balance is as expected.
 You can change the account codes used by clicking the small cog next to the card title. Expanding the card shows a chart 
 of money in and out of the control account, and the detailed grid of Pensions transaction history for the last 6 months.
 
+### Directors Loan Accounts
+
+A Directors Loan is allowable in a UK business only up to £10,000; once the loan is over £10,000 the business is liable to high tax charges. This represents a significant pay point for the SME, and therefore a key area for accountants to advise. Accountants should therefore keep an eye on the DLA throughout the year. To help you with this, Xavier creates an alert when a DLA exceeds the £10,000 mark. 
+
+As per the other control accounts, Xavier will show a graph of the history of the control account as well as the journals and payments detected in the previous month. 
+
+The alert level relates to the extent to which the DLA is overdrawn: 
+- If the DLA is overdrawn over the limit of £10,000, Xavier will show a red alert. 
+- If the DLA is overdrawn below £10,000, Xavier will show an amber warning. 
+- If the DLA is not overdrawn, with a positive balance, Xavier will show a green check. 
+
+To monitor multiple DLA accounts, you can select multiple account codes for this check, and each will appear as a separate card within the check with it’s own graph. 
+
 ## Activity Stats
 ![Activity Stats](./images/insight-activity-stats.png)
 
