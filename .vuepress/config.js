@@ -1,6 +1,6 @@
 module.exports = {
-    title: 'Xavier Analytics - Help',
-    description: 'Help documentation and support for Xavier Analytics',
+    title: 'Dext Precision - Help',
+    description: 'Help documentation and support for Dext Precision',
     ga: 'UA-76675321-9',
     head: [
         ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' }],
