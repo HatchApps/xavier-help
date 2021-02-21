@@ -3,15 +3,15 @@
 ---
 # Clients
 
-A _Client_ in Xavier is linked to an _Organisation_ in Xero.
+A Client in Precision is linked to an _Organisation_ in Xero, or a _Company_ in QuickBooks Online.
 
-Xavier is at it's most powerful for accountancies when you have added all your practice clients. The _Client List_ and _Practice Dashboard_ are
+Dext Precision is at it's most powerful for accountancies when you have added all your practice clients. The _Client List_ and _Practice Dashboard_ are
 essential tools for prioritising and staying on top of your clients and keeping an eye on your practice performance;
 you'll be able to handle issues as and when they occur, and your clients will always feel like the centre of attention.
 
 ## Client List
 
-This is your _Team_ home page in Xavier, and also where you can add, search and access each of your clients.
+This is your _Team_ home page in Precision, and also where you can add, search and access each of your clients.
 In this view, you can choose to display all clients, only the clients you are an Account Manager for,
 or the ones you have selected as favourites. Click on each of the client cards to view the _Client Overview_ for that client.
 
@@ -24,12 +24,13 @@ and combined with the filtering of the list by My Accounts and Favourites, the "
 quite powerful.
 
 In each of the client cards, on the left you can view the company name, and their last sync date. A small pink padlock
-icon indicates that the client is no longer linked to Xero, and you will need to [re-link](https://help.xavier-analytics.com/xero-integration.html#managing-the-xero-connection)
+icon indicates that the client is no longer linked to their accounting software, and you will need to [re-link](https://help.xavier-analytics.com/xero-integration.html#managing-the-xero-connection)
 that client by clicking in to their Client Overview.
 
 On the right of the client card, you can view the client's metric (if one is selected from the dropdown),
 their overall health score, the account manager's icon, a star button for selecting that client as a 'favourite' and a
-three-dot menu icon - clicking this menu icon will allow you to view that client in Xero, sync with Xero or delete.
+a three-dot menu icon - clicking this menu icon will allow you to view that client in your accounting software, sync with your accounting software, or remove it from Precision.
+
 
 ![Client Cards in the Client List](./images/client-list-snippet.png)
 
@@ -59,7 +60,7 @@ all of your client metrics, plus links straight to the client in Xero for you to
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/K9MX2tsKMW4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-The Practice Dashboard looks, and functions, just like the [Xavier Sandbox](https://help.xavier-analytics.com/sandbox-reporting.html#customising-the-sandbox);
+The Practice Dashboard looks, and functions, just like the [Precision Sandbox](https://help.xavier-analytics.com/sandbox-reporting.html#customising-the-sandbox);
 a drag and drop report-builder, with
 spreadsheet-like functionality. You can choose the columns you want to see, group-by, sort, collapse and expand until
 you get it just how you want. If you're a fan of Excel's pivot tables, you'll find that option too in the columns panel
@@ -81,8 +82,8 @@ Clicking on a client card from the _Client List_ will take you through to the ma
 
 This view highlights a selection of key alerts, metrics, activity stats, and also highlights any issues with the client's Lock Dates - [find out more](/team-management.md#lock-dates).
 
-Clicking on any of these stats will take you through to the relevant tool or insight in Xavier to learn more. When 
-clicking from the overview, Xavier opens these views in _dashboard mode_ so you'll see the information with the same 
+Clicking on any of these stats will take you through to the relevant tool or insight to learn more. When 
+clicking from the overview, Precision opens these views in _dashboard mode_ so you'll see the information with the same 
 dates and parameters as we use for the Overview.
 
 ### Overview Reporting Mode
@@ -95,13 +96,11 @@ The Overview displays the last complete month by default, but you can set the Ov
 Unlike the date periods which are rolling, if you set a manual date configuration the overview will not update until the date range is changed again. 
 :::
 
-In addition to providing high level stats about a client, the overview is where you can manage a client, removing it from Xavier via the _Remove_ button or un-linking it from
-Xero using the _Unlink_ button.
+In addition to providing high level stats about a client, the overview is where you can manage a client, removing it from Precision via the Remove button or un-linking it from your accounting software using the _Unlink_ button.
 
-Unlinking a client from Xero means it will remain in Xavier, but will no longer sync with Xero to retrieve the latest
-changes. A client can be re-linked to Xero at any point, and syncing will resume.
+Unlinking a client means it will remain in Precision, but will no longer sync with your GL to retrieve the latest changes. A client can be re-linked at any point, and syncing will resume.
 
-[Syncing with Xero](/xero-integration.html#syncing) happens automatically overnight, but you can also trigger a sync on-demand
+[Syncing](/xero-integration.html#syncing) happens automatically overnight, but you can also trigger a sync on-demand
 via the _Sync Now_ button.
 
 You can _export_ the client overview in both PDF and .XLS format:
@@ -113,68 +112,82 @@ You can _export_ the client overview in both PDF and .XLS format:
   reports.
   
 In the sidebar, clicking on _Configuration_ will show the client configuration options:
-- General: Here you can update the basic client settings in Xavier, including the client name, account managers, and what 
+- General: Here you can update the basic client settings in Precision, including the client name, account managers, and what 
 [tags](clients.html#client-tags) are applied to the client.
 - Visibility: View and edit the current [client visibility](/clients.html#client-visibility) settings applied to the client.
 - Overview Configuration: This allows you to adjust the reporting mode of the client, which will adjust the overview dates 
 and the health score accordingly.
-- Tax and Control Accounts: Throughout Xavier, different tools can be customised with key tax and account codes to make 
+- Tax and Control Accounts: Throughout Precision, different tools can be customised with key tax and account codes to make 
 the correct calculations for a client. You can edit these all centrally from this area.   
 
 ## Client Health Score
 
-Xavier calculates an overall score for a client to indicate the health of their books. You'll find the Health Score
-displayed on each client in the Client List, and on each client's Overview page underneath their name. A lot of our cleanup tools and insights
-now have an individual Health Score, which the overall Health Score is derived from. You can now focus on improving the
-data quality of your clients and easily see that progress on a daily basis.
+Dext Precision calculates an overall score for a client to indicate the health of their books. You'll find the Health 
+Score displayed on each client in the Client List, and on each client's Overview page underneath their name. A lot of our 
+cleanup tools and insights now have an individual Health Score, which the overall Health Score is derived from. You can 
+now focus on improving the data quality of your clients and easily see that progress on a daily basis.
 
-The score is presented as a percentage, with a heart icon for traffic-light status. The health score is relative to the
-date selected, and proportional to the size of the client. The following Xavier elements contribute to the health score
+The score is presented as a percentage, with a heart icon for traffic-light status. The health score is relative to the 
+date selected, and proportional to the size of the client. The following Precision elements contribute to the health score 
 currently:
 
-* Bank Reconciliation
+* Bank Reconciliation (Xero clients only)
 * Multi-Coded Contacts
 * Duplicate Contacts
 * Regular Supplier Anomalies
 * Lock Dates
-* Fixed Assets
+* Fixed Assets (Xero clients only)
 * Dormant Accounts
-* Contact Defaults
+* Contact Defaults (Xero clients only)
 * Aged Balances
-* PAYE (if configured)
+* PAYE (Xero clients only, if configured)
 
 ::: tip
-The algorithm for the health score will evolve as we fine-tune the weighting of Xavier's different cleanup and insight
+The algorithm for the health score will evolve as we fine-tune the weighting of Precision's different cleanup and insight
 scores on the final health score, but keep aiming for that 100%!
 :::
 
 ## Client Visibility
 
-Xavier provides three options for determining who in your team can view a particular client's data. The following options
+Dext Precision provides different options for determining who in your team can view a particular client's data. The following options
 can be selected from the _Client Settings_ view:
+
+#### For Xero Clients
 
 ![Client Overview](./images/client-visibility.png)
 
-**Whole Team:** everyone on your Xavier team can view this client's data.
+**Whole Team:** everyone on your Precision team can view this client's data.
 
 **Xero Users Only:** only the users linked to the Client in Xero, with the Xero role of either _Adviser_ or _Standard_
-will be able to view the client's data in Xavier. Xavier uses the email you signed up with to match to the user in Xero.
+will be able to view the client's data in Precision. Precision uses the email you log into Precision with to match to the user in Xero.
 
-If _Xero Users Only_ is selected, this view will show you which of your Xavier team members are eligible to view the
-Client, and will also list the users in Xero that are not part of your Xavier team yet - you can choose to invite them
+If _Xero Users Only_  is selected, this view will show you which of your Precision team members are eligible to view the 
+Client, and will also list the users in Xero that are not part of your Precision team yet - you can choose to invite them 
 from here. Clients with _Xero Users Only_ will also show a different visibility icon on the _Client List_.
 
-**Spectific Users Only:** only the users you have selected to view this client will be able to view the data in Xavier.
+**Specific Users Only:** only the users you have selected to view this client will be able to view the data in Precision.
 
 ::: tip
-The default visibility setting for clients is _Xero Users Only_. However if you are importing a client and your email
+The default visibility setting for Xero clients is _Xero Users Only_. However if you are importing a client and your email
 address does not match the user you have signed into in Xero, the default setting will be _Specific Users Only_, and you
 will be asked to select those specific users in a popup before the client can be imported.
 :::
 
+#### For Xero Clients
+
+![Client Overview](./images/client-visibility.png)
+
+**Whole Team:** everyone on your Precision team can view this client's data.
+
+**Specific Users Only:** only the users you have selected to view this client will be able to view the data in Precision.
+
+::: tip
+The default visibility setting for QBO clients is _Whole Team_. 
+:::
+
 ## Client Tags
 
-Xavier provides the ability to set tags for your clients, to help you organise your practice. 
+Dext Precision provides the ability to set tags for your clients, to help you organise your practice. 
 
 ![Client Tags](./images/client-tags.png) 
 
@@ -192,5 +205,4 @@ and select tags to apply to that client.
 Tags are visible on the [Client List](/clients.html#client-list), [Client Overview](/clients.html#client-overview) and 
 in the [Practice Dashboard](/clients.html#practice-dashboard). In both the Client List and the Practice Dashboard, you 
 can use tags to search and filter your clients.
- 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3lPz2p7ASEM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+

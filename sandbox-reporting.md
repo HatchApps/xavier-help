@@ -5,17 +5,21 @@
 The Sandbox is your data playground, a place where your KPI hopes and dreams can come to life. The Sandbox is available 
 within any client that belongs to your team, and also at the Team level containing all data across all your clients. 
 
-The Sandbox grid format is used throughout Xavier, usually wherever you see a table, so many of the tricks that apply to 
+The Sandbox grid format is used throughout Dext Precision, usually wherever you see a table, so many of the tricks that apply to 
 these large grid reports such as sorting and exporting also apply to the grids within cards.  
 
 ![Sandbox](./images/sandbox.png)
 
 ## The Client Sandbox
 
-Each Client in Xavier has a Sandbox view in the sidebar. A core piece of Xavier functionality since it's launch, we start 
-with Xero's Journal Line Items as a base, and supplement each record with additional data based on the type of
+Each Client in Precision has a Sandbox view in the sidebar. A core piece of Precision functionality since it's launch, we start 
+with Journal Line Items as a base, and supplement each record with additional data based on the type of
 journal it is - be it an Invoice, Bank Transaction, Credit Note or so on. We also bring in Contact and Account
 information so you've got all the key information you need in one place.
+
+::: tip
+Within the Practice Dashboard, any metrics not available for QBO or Xero clients specifically will be displayed as blank in the relevant column. You can filter for clients from a specific accounting software using the ‘Accounting Software’ column. 
+::: 
 
 To get started with the Client Sandbox, you can watch our latest Sandbox training webinar here:
 
@@ -23,10 +27,10 @@ To get started with the Client Sandbox, you can watch our latest Sandbox trainin
 
 ## Practice Analysis
 
-At the team level, Xavier has 4 different practice-level sandboxes that contain data across all your clients. They are:
+At the team level, Dext Precision has 4 different practice-level sandboxes that contain data across all your clients. They are:
 
 ### Practice Dashboard
-A comprehensive home of your Xavier clients, this is the first place to come to get a handle on your practice. Each row is a client in Xavier, and here we store many of the Xavier metrics 
+A comprehensive home for all your clients, this is the first place to come to get a handle on your practice. Each row is a client in Precision, and here we store many of our metrics. 
 
 #### Reporting Mode
 
@@ -44,15 +48,20 @@ the dashboard is still evolving, and we add more metrics to it all the time!
 <iframe width="560" height="315" src="https://www.youtube.com/embed/K9MX2tsKMW4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ### Activity Stats
-The Activity Stats view is your source for Xavier's performance metrics from the [Activity Stats](/insights.html#activity-stats) 
+The Activity Stats view is your source for Precision's performance metrics from the [Activity Stats](/insights.html#activity-stats) 
 Insight, month-by-month for the last year. This includes _MoM_ and _YoY_ changes, so you can check which of your clients 
 are under- or over- performing. 
 
 Note that the Activity Stats dashboard, like the Practice Dashboard, defaults to the data from the last complete month and works backwards from there.
 
 ### HMRC Dashboard
+
+::: note
+The HMRC dashboard is currently only available for Xero clients, we hope to make this available for QBO clients soon!
+:::
+
 For UK clients using our [HMRC integration](/integrations.html#hmrc-uk-only) this dashboard is your location for all things 
-MTD in your practice. Each row is a VAT period detected by Xavier for each client, including the filing period, due dates, 
+MTD in your practice. Each row is a VAT period detected by Precision for each client, including the filing period, due dates, 
 status, amount and outstanding values.
 
 ### Focus Dashboard
@@ -88,7 +97,7 @@ over the existing report or create a new one.
 
 ![Save Custom Report](./images/save-report-changes.png)
 
-The Reports section also contains a number of Xavier default reporting configurations developed by the Xavier team, so 
+The Reports section also contains a number of Precision default reporting configurations developed by the Dext team, so 
 be sure to check them out:
 
 - Debtor Days and Cash Report (Practice Dashboard)
