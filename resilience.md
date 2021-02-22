@@ -2,7 +2,7 @@
 ---
 
 # Resilience
-The Resilience section of Xavier is dedicated to ensuring that you have all the insights you need to understand where 
+The Resilience section of Dext Precision is dedicated to ensuring that you have all the insights you need to understand where 
 your clients strengths lie, or where they might be at risk. 
 This should give you the confidence to have have the right conversations with your clients. 
 
@@ -22,6 +22,10 @@ calculate and visualise the impact of growth on future revenue in the graph.
 
 ### Net Assets
 
+::: warning Please note:
+   The Net Assets check is currently available for Xero clients only. 
+:::
+
 Keep track of net assets over time, and compare current status with previous periods.
 
 This check provides the total value of the organisation's net assets, and the % change period-on-period. Expanding the 
@@ -29,16 +33,16 @@ card provides a historical graph of net assets.
 
 ### Customer Reliance
 
-With this check, Xavier detects the top customer by percentage of total revenue during the period; a high percentage of revenue, and so a 
+With this check, Precision detects the top customer by percentage of total revenue during the period; a high percentage of revenue, and so a 
 high reliance on a single customer is a considerable risk to the business.
 Expanding the card shows the percentage of revenue by the top 5 customers in both a chart and a grid view displaying the 
-revenue, number of transactions, and reliance, with links to Xero.   
+revenue, number of transactions, and reliance, with links to the GL.   
 
 For more insight into your clients' revenue sources, you can check out our [Sales Analysis](/insights.html#sales-analysis) insight. 
 
 ### Supplier Reliance
 
-Like Customer Reliance above, Xavier detects top suppliers by spend for the company as a percentage of total costs during the period. 
+Like Customer Reliance above, Precision detects top suppliers by spend for the company as a percentage of total costs during the period. 
 Expanding the card displays this data in the form of a chart with the top 5 suppliers by cost, and a grid view displaying 
 total cost, number of transactions, and the percentage of reliance on that supplier.  
 
