@@ -2,12 +2,17 @@
 ---
 
 # Checks
-Xavier has compiled a number of it's insights and cleanup tools, along with specialist calcuations, into one view
+Dext Precision has compiled a number of it's insights and cleanup tools, along with specialist calcuations, into one view
 designed to fit into your practice processes. These checks have their own date filters that apply to the insights and
 tools within, so you can run through them when the time calls. We call these *Checks*...
 
 ## VAT Return Checks
-Xavier provides a set of checks that have been designed to quickly spot tax issues with respect to transaction data over
+
+::: warning Please note:
+Our VAT Return Checks are currently available for Xero clients only.
+:::
+
+Dext Precision provides a set of checks that have been designed to quickly spot tax issues with respect to transaction data over
 a given filing period. Simply enter in the date range and the minimum amounts (more on those below) and hit *Run Report*
 to generate the checks. Expanding the card allows you to see these transactions, with a link directly to Xero to sort
 them out.
@@ -24,11 +29,11 @@ a warning if the limits are within 10%, and an error if turnover has exceeded th
 ### Estimated VAT (UK Only)
 
 ::: warning UK Customers Please Note:
-Our VAT Checks work best when Xavier is connected with HMRC - without this connection, we cannot know when payments 
+Our VAT Checks work best when Precision is connected with HMRC - without this connection, we cannot know when payments 
 have been made or detect any late claims. Please see our [Integrations](https://help.xavier-analytics.com/integrations.html#hmrc-uk-only) section for more information.
 :::
   
-Xavier keeps a running estimate of VAT accrued (or due to be reclaimed) for the current period, it handles Cash, Accrual and Flat Rate schemes. 
+Precision keeps a running estimate of VAT accrued (or due to be reclaimed) for the current period, it handles Cash, Accrual and Flat Rate schemes. 
 
 Opening the card reveals further details, with a filter to display in HMRC VAT Return format, grouped by Vat "Box" Figures, or grouped by Tax Rate. 
 You can also filter by current period or late claims.
@@ -128,9 +133,17 @@ unreconciled transactions for the date range you have supplied, and the age of t
 indicator will be amber if there are unreconciled transactions over 15 days old, and red for if there are any over 30
 days old.
 
+::: warning Please note:
+The Unreconciled Transactions check is currently available for Xero clients only.
+:::
+
 ### Fixed Assets
 The same as the [Fixed Assets](/insights.html#fixed-assets) insight, but using the end date specified in the Health
 Check as the fixed asset _Reporting Date_.
+
+::: warning Please note:
+The Fixed Assets check is currently available for Xero clients only.
+:::
 
 ### Dormant Accounts
 The same as the [Dormant Accounts](/insights.html#dormant-accounts) cleanup tool, but using 2 years before the end date
@@ -145,6 +158,10 @@ period.
 This check looks for invoices that have a status of either _DRAFT_ or _SUBMITTED_ (Awaiting Approval) and have an
 invoice date that is before the end of the reporting period. Ideally these should be dealt with before the period is
 closed off.
+
+::: warning Please note:
+The Draft Invoices check is currently available for Xero clients only.
+:::
 
 ### Entertainment Accounts
 The purpose of this check is to highlight entertainment expenditure across two categories, Staff and Business, each of
@@ -177,10 +194,15 @@ that period with potential anomalies.
 Similar to the functionality in [Cost Analysis](/insights.html#cost-anslysis) when in 'By Account' mode. Look for anomalies in account movement or as a cost.
 
 ### PAYE Status
+
+::: warning Please note:
+The PAYE status check is currently available for Xero clients only.
+:::
+
 This check balances manual journals against detected payments with PAYE account codes to ensure a correct PAYE status at
 a point in time.
 By default, the check calculates the PAYE control account balance based on account codes found under the reporting code
-*LIA.CUR.TAX.OTH*. You can change the account codes used by clicking the small cog next to the card title, where Xavier 
+*LIA.CUR.TAX.OTH*. You can change the account codes used by clicking the small cog next to the card title, where Precision 
 will suggest a number of account codes for easy setup. Expanding the
 card shows the detailed grid of PAYE transaction history for the last 6 months.
 
@@ -195,14 +217,29 @@ last complete month, and the snapshot date is well in advance of the HMRC Deadli
 - Error: Control Account balance is non-zero and does not reconcile with balance of Manual or Xero Payroll journals
 
 ### VAT Status
+
+::: warning Please note:
+The VAT Status check is currently available for Xero clients only.
+:::
+
 A summary of the [VAT Tracking](/insights.html#vat-tracking) insight reporting on the VAT accrued since the start of the period, and
 if the annual taxable turnover is within the threshold of your detected scheme.
 
 ### Estimated Corporation Tax
+
+::: warning Please note:
+The Corporation Tax check is currently available for Xero clients only.
+:::
+
 A summary of the [Corporation Tax](/insights.html#corporation-tax) insight, sharing the next estimated payment for the
 previous period, and the estimated corporation tax accrued for the current period.
 
 ### Dividends Status
+
+::: warning Please note:
+The Dividends Status check is currently available for Xero clients only.
+:::
+
 This check shows a running tally of the dividends posted in the system since the start of the client's current financial
 year. The point of this check is to ensure that dividends are declared where necessary from an audit trail perspecitve,
 and that these intended funds are not being distributed via other channels.

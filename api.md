@@ -3,7 +3,7 @@
 ---
 # API
 
-Xavier offers a RESTful API to extract basic data contained within your Xavier account. If you would like to use the API, we would recommend that your team [get in touch](/contact-us.html).
+Dext Precision offers a RESTful API to extract basic data contained within your Precision account. If you would like to use the API, we would recommend that your team [get in touch](/contact-us.html).
 
 ## Getting Started
 
@@ -35,7 +35,7 @@ In order to get data out, you must pass an authorization token in the request he
 
 To generate a token please use the following instructions:
 
-In Xavier head to "Your Settings" and under the API tab generate your token.
+In Precision head to "Your Settings" and under the API tab generate your token.
 
 ![Generate token](./images/api-token.png)
 
@@ -51,11 +51,11 @@ For example, to use your token in <a href="https://www.getpostman.com/downloads/
 
 A rate limit restricts the number of API requests a consumer can make within a given time period. If this limit is exceeded the consumer will be throttled and API requests will fail.
 
-**Xavier Rate Limits are set to 60 requests / minute.**
+**Precision Rate Limits are set to 60 requests / minute.**
 
 If you exceed your rate limit allowance your request will be rejected. An *<a href="#_429-too-many-requests">HTTP 429 (Too Many Requests)</a>* response will be returned.
 
-Xavier returns rate limit details in the header of API responses to allow consumers to monitor their API usage.
+Precision returns rate limit details in the header of API responses to allow consumers to monitor their API usage.
 
 Example response header:
 | Key        | Value   |
@@ -76,7 +76,7 @@ A 200 status code indicates that the request was accepted and processed successf
 A 404 error status code indicates that the API can't map the requested URI to a resource.
 
 ### 429 - Too many requests
-A 429 error status code is returned when an API consumer hits Xavier's [rate limits](/api.html#rate-limits).
+A 429 error status code is returned when an API consumer hits Precision's [rate limits](/api.html#rate-limits).
 
 ### 500 - Internal Server Error
 A 500 error status code is a generic API server-side error response. Please [contact](/contact-us.html) our support team if this persists.
@@ -87,7 +87,7 @@ A 500 error status code is a generic API server-side error response. Please [con
 ### GET /clients
 ***
 
-The `/clients` endpoint returns a list of all Xavier clients that the given [authentication token](/api.html#authentication) has access to, in a summarised format.
+The `/clients` endpoint returns a list of all Precision clients that the given [authentication token](/api.html#authentication) has access to, in a summarised format.
 
 **Request:** ```https://api.xavier-analytics.com/clients```
 
