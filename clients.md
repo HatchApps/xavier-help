@@ -150,7 +150,11 @@ scores on the final health score, but keep aiming for that 100%!
 ## Client Visibility
 
 Dext Precision provides different options for determining who in your team can view a particular client's data. The following options
-can be selected from the _Client Settings_ view:
+can be selected from the _Client Settings_ view.
+
+::: warning
+Team Owners and Admins can see all clients, regardless of Client Visibility settings in Precision.
+:::
 
 #### For Xero Clients
 
