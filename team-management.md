@@ -19,9 +19,9 @@ The Team Settings are available in the sidebar in the *Team View*; from here, yo
 
 For the standard [(non-enterprise)](/team-management.html#xavier-enterprise-team-roles) version of Precision, there are three different user roles:
 
-* __Owner__: In addition to the permissions of team Members and Admins, Owners can: manage the Precision subscription, add the Team Logo, and by default they can also view all clients added to Precision. This role defaults to the person who created the Precision team. There can only be one team Owner per team.
+* __Owner__: Owners have the same permissions as Admins. This role defaults to the person who created the Precision team. There can only be one team Owner per team.
 
-* __Admin__: In addition to the permissions of team Members, Admins can: invite new team members.
+* __Admin__: In addition to the permissions of team Members, Admins can: invite new team members, manage the Precision subscription, add the Team Logo, and by default they can also view all clients added to Precision.
  
 * __Member__: Team members can add and remove clients, and adjust the [visibility settings](https://help.xavier-analytics.com/clients.html#client-visibility) of those clients they are able to view. All team members can add, delete, and review Flows.
 
