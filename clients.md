@@ -177,9 +177,7 @@ address does not match the user you have signed into in Xero, the default settin
 will be asked to select those specific users in a popup before the client can be imported.
 :::
 
-#### For Xero Clients
-
-![Client Overview](./images/client-visibility.png)
+#### For QBO Clients
 
 **Whole Team:** everyone on your Precision team can view this client's data.
 
