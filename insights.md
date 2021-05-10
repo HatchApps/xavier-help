@@ -175,6 +175,7 @@ make sense to evaluate transaction history before the change, so set this date t
 you made the change).
 
 ### Narrowing The Scope
+
 The Multi-Coded Contacts insight allows you to get really targeted with the data cleanup process, and quickly filter out
 any suggestions that don't make sense for your situation.
 
@@ -182,6 +183,38 @@ any suggestions that don't make sense for your situation.
 
 **Account | Tax | All**: Restrict the suggestions list to only transactions Precision has identified with Account Code
 anomalies, OR Tax Code anomalies.
+
+#### Exclusions
+Typically, transactions with a single contact will only have one associated account code, with a small number of exceptions. 
+However in some cases, a contact will always have multiple account codes against it, such as a sale to a contact that pays 
+shipping as a separate transaction. Exclusions allow you to specify combinations of account codes that you feel should not 
+be detected as errors for a given client.
+
+Contacts that have the combination of account or tax codes included in the Exclusion list will no longer appear as detected 
+Multi-Coded contacts. If a Contact has multiple codes on other transactions they will appear in the multi-coded contacts 
+view, but only the transactions relating to combinations of codes outside the exclusion list will be displayed
+
+#### Setting Exclusions
+
+![The Exclusions Button](./images/Multi_coded_contacts_exclusions_button.png)
+
+Using the ‘Exclusions’ button at the top of the multi-coded contacts screen, you will be shown a list of current excluded 
+account or tax code combinations. 
+
+![The Exclusions Button](./images/Multi_coded_contacts_exclusions_modal.png)
+
+You can use this list to add, edit or remove a tax or account code combination from the exclusions list. 
+
+To add a combination to the exclusions list, click the ‘add’ button under the account or tax code category. From here you can search 
+for and select the combination of codes you would like to exclude. You must select two or more codes to exclude. This 
+combination of codes will apply as an exclusion across all contacts for that client. 
+
+Combinations of account or tax codes can be added or removed from the exclusion list at any time from the Multi-Coded 
+contacts tool.   
+
+::: warning Please note:
+Exclusions only apply at the Client level - any exclusions set for a client will not apply to other clients in the Precision team.
+:::
 
 ### Understanding the Colour-Coding
 Precision adds colour to the transaction rows to provide a clear indication as to which transactions fall into the "Active
