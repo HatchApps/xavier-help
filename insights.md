@@ -101,11 +101,15 @@ QBO does not provide bank statement data for us to check, so all Unreconciled Tr
 
 ### Unreconciled Transactions Insight
 
+![QBO Unreconciled Transactions Insight](./images/qbo_unreconciled_transactions_insight.png)
+
 The Unreconciled Transactions insight displays a summary of the outstanding payments and deposits for the client, and the 
 dates of the last reconciled transaction detected in Precision as well as the oldest unreconciled transaction.
 
 Depending on the [configuration settings](/insights.html#qbo-unreconciled-transaction-configuration) chosen for the client, 
 this count will consider 'cleared' transactions in QBO as 'reconciled'.
+
+![QBO Unreconciled Transactions Bank Account](./images/qbo_unreconciled_transactions_bank_account.png)
 
 Precision will provide cards for each bank account identified in QBO (including credit cards). Clicking on the bank account 
 card will show a graph of the bank balance over time, and below that, transactional detail for each of the outstanding payments and deposits.
@@ -116,15 +120,18 @@ The Unreconciled Transactions check currently does not include unreconciled tran
 
 ### QBO Unreconciled Transaction Configuration
 
-The configuration settings sit in the Client Configuration menu in the sidebar, and next to the date selection options
-in the Unreconciled Transactions insight, and are unique to QBO clients. When you update the following settings, the 
-insight will recalculate, and these settings will be applied across all views in Precision including Focus unless changed. 
+The configuration settings sit in the Client Configuration menu in the sidebar, and can also be accessed by clicking *adjust settings* next to the date selection options
+in the Unreconciled Transactions Insight. These settings are unique to QBO clients. When you update the following settings, the 
+insight will recalculate, and these settings will be applied across all views in Precision including Focus. 
 Please note the change in metrics may also affect your HealthScore. 
 
 * **Transactions Since date** - This is a fixed date at which we start to count unreconciled transactions. It is set to 1 year prior to the first import by default. For example, this might be the date you first started working with the client, so you do not have to clean up old transactions. 
 * **Count Cleared as Reconciled** - This checkbox states whether or not Precision counts 'Cleared' transactions in QBO as 'Reconciled', depending on the way the partner uses QBO. By default, Precision will count 'cleared' transactions as 'reconciled'. 
 
 ### Unreconciled Transactions on the Client Overview
+
+![QBO Unreconciled Transactions on Overview](./images/qbo_unreconciled_transactions_overview.png)
+
 Last reconciled bank transaction on the client overview will display the most recent reconciled transaction date. The 
 alert icon status will be: 
 * Green: if the last reconciled transaction is less than 15 days old
