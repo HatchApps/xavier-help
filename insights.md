@@ -7,8 +7,8 @@ techniques and presents the findings up as *Insights*...
 
 ## Bank Reconciliation
 
-::: warning Please note:
-Bank Reconciliation is currently available for Xero clients only.
+::: tip Please note:
+Bank Reconciliation refers to clients integrated with Xero. For our QBO equivalent, see [Unreconciled Transactions](/insights.html#unreconciled-transactions).
 :::
 
 Dext Precision uses a combination of Xero's Bank Statement Report data, bank transactions and payments to provide an
@@ -84,6 +84,64 @@ bank statement records, not just the unreconciled ones.
 ![Bank Reconciliation](./images/cleanup-bank-rec-all-statements.png)
 
 Xero guidance on bank reconciliation can be found [here](https://central.xero.com/s/article/Bank-reconciliation-in-Xero).
+
+## Unreconciled Transactions 
+
+::: tip Please note:
+Unreconciled Transactions refers to clients integrated with QBO. For our Xero equivalent, see [Bank Reconciliation](/insights.html#bank-reconciliation).
+:::
+
+The Unreconciled Transactions check is the equivalent of the Bank Reconciliation check for Xero, however it works slightly 
+differently for QBO. The number of outstanding payments and deposits and the age of the latest reconciled bank transaction 
+will affect the client HealthScore. 
+
+::: warning Please note:
+QBO does not provide bank statement data for us to check, so all Unreconciled Transactions are from the ledger side (outstanding Payments and Outstanding Deposits). This is in contrast to our Xero integration which works from the bank statement data.
+:::
+
+### Unreconciled Transactions Insight
+
+The Unreconciled Transactions insight displays a summary of the outstanding payments and deposits for the client, and the 
+dates of the last reconciled transaction detected in Precision as well as the oldest unreconciled transaction.
+
+Depending on the [configuration settings](/insights.html#qbo-unreconciled-transaction-configuration) chosen for the client, 
+this count will consider 'cleared' transactions in QBO as 'reconciled'.
+
+Precision will provide cards for each bank account identified in QBO (including credit cards). Clicking on the bank account 
+card will show a graph of the bank balance over time, and below that, transactional detail for each of the outstanding payments and deposits.
+
+::: warning Please note: 
+The Unreconciled Transactions check currently does not include unreconciled transactions that sit outside of a bank account. This feature is in development and planned for a future release. 
+:::
+
+### QBO Unreconciled Transaction Configuration
+
+The configuration settings sit in the Client Configuration menu in the sidebar, and next to the date selection options
+in the Unreconciled Transactions insight, and are unique to QBO clients. When you update the following settings, the 
+insight will recalculate, and these settings will be applied across all views in Precision including Focus unless changed. 
+Please note the change in metrics may also affect your HealthScore. 
+
+* **Transactions Since date** - This is a fixed date at which we start to count unreconciled transactions. It is set to 1 year prior to the first import by default. For example, this might be the date you first started working with the client, so you do not have to clean up old transactions. 
+* **Count Cleared as Reconciled** - This checkbox states whether or not Precision counts 'Cleared' transactions in QBO as 'Reconciled', depending on the way the partner uses QBO. By default, Precision will count 'cleared' transactions as 'reconciled'. 
+
+### Unreconciled Transactions on the Client Overview
+Last reconciled bank transaction on the client overview will display the most recent reconciled transaction date. The 
+alert icon status will be: 
+* Green: if the last reconciled transaction is less than 15 days old
+* Amber: if the last reconciled transaction is 15-30 days old
+* Red: if the last reconciled transaction is over 30 days old
+
+Outstanding Payments and Deposits on the client overview will display the total count of outstanding (unreconciled or uncleared) payments and deposits. The alert icon status will be:
+* Green: if the oldest outstanding payment or deposit for the reporting period is less than 15 days old
+* Amber: if the oldest outstanding payment or deposit for the reporting period is 15-30 days old
+* Red: if the oldest outstanding payment or deposit for the reporting period is over 30 days old
+
+### Unreconciled Transactions and Bank Reconciliation in Focus
+
+Unreconciled Transactions is combined with the Bank Reconciliation check for Flow templates and has been named "Bank 
+Reconciliation - Unreconciled Transactions". Where this check is used in a flow template, when applied to Xero clients, 
+Bank Reconciliation will appear in the flow list and when applied to QBO clients, Unreconciled Transactions will appear 
+in the flow list.
 
 ## Duplicate Contacts
 ![Duplicate Contacts](./images/duplicate-contacts.png)
