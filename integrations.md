@@ -104,7 +104,7 @@ up to date data and insights than ever before.
   this reason, we recommend using the Team Owner to generate the API key.
 :::
 
-To set up the integration, you will need to generate an API key to plug into GoProposal. This can be found under your User Icon > Your Settings > API. You can watch [this handy video](https://www.loom.com/share/70dac4bf940349c1b61e386a7f5e2fe6) from Helen on how to generate this key [here](https://www.loom.com/share/70dac4bf940349c1b61e386a7f5e2fe6). 
+To set up the integration, you will need to generate an API key to plug into GoProposal. This can be found in the Team sidebar under Your Settings > selecting 'API' from the list on the left. You can watch [this handy video](https://www.loom.com/share/70dac4bf940349c1b61e386a7f5e2fe6) from Helen on how to generate this key [here](https://www.loom.com/share/70dac4bf940349c1b61e386a7f5e2fe6). 
 
 Once you have generated your API key in Precision, the majority of the setup actually takes place in GoProposal.  
 
