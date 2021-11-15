@@ -129,15 +129,11 @@ Deleting a client from Precision removes all corresponding data from the Precisi
 reversable - to bring a client back you'll need to go through the process of
 [adding a new client](/getting-started.md#adding-your-first-client).
 
-There are two places you can delete a client from Precision - the _Client Overview_:
+There are two places you can delete a client from Precision: 
+- the _Client Overview_ by selecting the 'Remove' button in the top right of the Overview screen (below Resources).
+- the _Client List_ by clicking the three dot menu at the right of the client card, and selecting 'Remove' from the drop-down options menu.  
 
-![Delete From Overview](./images/delete-from-overview.png)
-
-or from the options menu of a client on the _Client List_ page:
-
-![Delete From Client List](./images/delete-from-client-list.png)
-
-You'll be prompted to confirm before proceeding.
+In both cases, you'll be prompted to confirm before proceeding.
 
 Your data in Xero or QBO will not be affected by the removal of a client in Precision.
 
@@ -149,12 +145,13 @@ Just want to stop syncing with your accounting software? You can [disconnect](/x
 
 Had enough of Precision and want to delete your account? 
 
-If you are looking to pause your subscription for a period, you can do so under _Manage Team_ from the sidebar in the 
+If you are paying for Precision as part of your Dext subscription, please contact us at support@xavier-analytics.com to cancel your subscription and remove your team. 
+
+If you are paying for your Precision subscription through Precision only, and looking to pause your subscription for a period, you can do so under _Manage Team_ from the sidebar in the 
 Client List. Under _Manage Team_, select _Subscription_, and select the _Cancel Subscription_ button.
 
 If you are looking to delete your team permanently, you will need to create a new Team if you want to return to Precision at 
-a later date. Please note, only a Team Owner can delete a team. To delete your team, click on your user avatar in 
-the top right of the screen and select _your settings_ from the dropdown list. From the links on the left of the page, 
+a later date. Please note, only a Team Owner can delete a team. To delete your team, click on _your settings_ from the client list sidebar. From the links on the left of the page, 
 select _Teams_ to see the list of Precision teams you currently belong to (this will usually be just 1). Click the _X_ button 
 to the right of the team name to delete the team. Please note, this action cannot be undone.   
 
