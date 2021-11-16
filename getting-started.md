@@ -35,3 +35,19 @@ Learn more about our accounting software integrations [here](/xero-integration.m
 Having issues adding your first client? Check out our [troubleshooting tips](/troubleshooting.md).
 
 Once you've got a client added, click on through to the [Client Overview](/clients.md#client-overview).
+
+## Bulk Adding Clients [Xero Only]
+
+::: warning Please note:
+Only Whole Team and Xero Users Only visibility settings are available with Bulk Client Import. For Specific Users Only, import first, then use the new Bulk Client Visibility Settings feature. For more information, see [Client Visibility](/clients.html#client-visibility).
+:::
+
+Using Xero's bulk client functionality, Dext Precision’s Bulk Client Import feature allows you to import all of your Xero clients at once. Configure the visibility and account managers in one shot to get up and running straight away.
+
+When you select to add a Xero client, you'll be taken to Xero and asked to log in as usual. To bulk import, instead of selecting only one client, you can select some or all of your Xero clients, by ticking the box next to each client that you want to import. You will then be automatically returned to Precision as usual.
+
+If the number of clients selected exceeds your team bundle limit (or 10 clients, if you are in a Free Trial), you will be able to remove the clients that you don’t want to import.
+
+Once the clients have been selected, there will be a screen to choose the visibility setting and account managers for each of these clients. You can also choose to apply the first setting to all clients for import.
+
+To make sure the bulk import runs smoothly, the clients will be imported in batches of 5, which you will see importing in the client list.

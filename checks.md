@@ -128,13 +128,13 @@ how to approach it with your client. You can click the speech bubble again to cl
 ![Health Check](./images/health-check-screenshot.png)
 
 ### Unreconciled Transactions
-This uses the same logic as the [Unreconciled Transactions](/insights.html#unreconciled-transactions) insight to find
+This uses the same logic as the [Bank Reconcilation](/insights.html#bank-reconciliation) insight to find
 unreconciled transactions for the date range you have supplied, and the age of the oldest unreconciled transaction. The
 indicator will be amber if there are unreconciled transactions over 15 days old, and red for if there are any over 30
 days old.
 
 ::: warning Please note:
-The Unreconciled Transactions check is currently available for Xero clients only.
+The Unreconciled Transactions check operates differently for QuickBooks Online and Xero.
 :::
 
 ### Fixed Assets

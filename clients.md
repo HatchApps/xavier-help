@@ -53,7 +53,7 @@ You can filter both the client list, and the [practice dashboard,](https://help.
 
 When switching quickly between clients in the sidebar, your favourite clients will always sit at the top of the list so you can find and switch between them quickly.
 
-### Practice Dashboard
+## Practice Dashboard
 
 The Practice Dashboard is a KPI data playground across all of your clients. This view contains the data from the Client List including
 all of your client metrics, plus links straight to the client in Xero for you to compare data across clients or account managers.
