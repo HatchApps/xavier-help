@@ -147,6 +147,16 @@ The algorithm for the health score will evolve as we fine-tune the weighting of 
 scores on the final health score, but keep aiming for that 100%!
 :::
 
+### Health Score Over Time
+
+The health score over time chart can be seen on the _Client Overview_ just below the main metrics. This feature tracks the changes to a client’s health score and displays this as a graph. Hovering your mouse over a point on the graph will show the health score at that time.
+
+Clicking on Table View will replace the graph with a table of the data. Clicking Graph View will return you to the graph view. In the table view, you can right-click to export to CSV format, compatible with Excel or Google Sheets.
+
+You can choose the date range by clicking on the drop down menu and choosing a date range. By default, the date range shown is the one that corresponds to the period for set for the Client Overview. 
+
+Depending on the date range selected, Dext Precision will switch to viewing the healthscore either per day, week or month. However, you can also select which you would prefer to use, which will override the default display format. 
+
 ## Client Visibility
 
 Dext Precision provides different options for determining who in your team can view a particular client's data. The following options
