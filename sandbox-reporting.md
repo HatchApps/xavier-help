@@ -117,3 +117,12 @@ do this from the *Export* button in the banner at the top of the report (to prod
 file by right-clicking anywhere inside the grid and choosing *Export -> CSV Export*.
 
 ![Export To Excel](./images/export-to-excel.png)
+
+## Result Grids
+
+Where results are available for checks with a list of transactions, we display this data in a grid view that works just like the [Sandbox](sandbox-reporting.html#the-client-sandbox) or [Practice Dashboard](sandbox-reporting.html#practice-dashboard); by clicking into each of the column headers you can pin columns, sort and filter the results as you need to.  
+
+There are a few things we have added to these results to make reviewing transactions easier than ever:
+- _Fullscreen Grids_: In order to view more results at once, you can click _View Fullscreen_ at the top-left of the grid to enlarge the grid to the full screen. This makes it easier to review all the transactions, and use the grid's sorting and filtering capabilities. 
+- _View in Xero_: Clicking _View in Xero_ against a transaction will take you directly to the transaction for that client in Xero that Precision has detected. If you are not logged into Xero, you will be prompted to do so before you can view the transction. 
+- _View in QuickBooks_: Clicking _View in QuickBooks_ against a transaction will take you directly to the transaction in QuickBooks that Precision has detected. However, Precision requires you to be logged into the correct client in QuickBooks online before you can view this transaction. On the first time clicking this link for a client per session, you will be asked by Precision that you are logged into the correct client before you proceed.
