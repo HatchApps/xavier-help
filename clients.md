@@ -187,6 +187,30 @@ will be asked to select those specific users in a popup before the client can be
 The default visibility setting for QBO clients is _Whole Team_. 
 :::
 
+## Bulk Client Configuration
+
+Precision’s new Bulk Client Configuration feature allows you to see and edit the visibility and account manager settings for all of your clients at once. Manage which team members have access to each of your clients’ data in one place. 
+
+To bulk configure your clients, from the _Client List_ in the sidebar, select _Configuration_ > _Client Configuration_. You'll be presented with a grid view of all clients accessible to you, with visibility details for each one. 
+From this view, for each client, you can set the visibility and account manager, just as you can in the client view. Hovering over an editable cell will reveal an edit button - just click to edit the contents. 
+
+![Bulk Client Configuration](./images/bulk_client_config_1.png) 
+
+When you edit a part of the grid, a small dot and orange background will appear, so you can see where you have been.
+ 
+![Bulk Client Configuration](./images/bulk_client_config_2.png) 
+
+For power users, when Specific Users is set as the visibility setting, the list of specified users can be copied and pasted between clients - Just use the keyboard shortcuts cmd/ctrl+c to copy and cmd/ctrl+v to paste. This is particularly useful for the onboarding of large portfolios. 
+
+The colours of the individual members correspond to their user roles:
+- Green: Team Owner
+- Blue: Team Admin
+- Grey: Team Member
+
+Before the changes are committed, Precision will ask you to review and confirm the changes you have made per client, so that accidental changes don’t get saved. That way you can be confident that only the right team members have access to their clients’ data.
+
+![Bulk Client Configuration Review](./images/bulk_client_config_3.png) 
+
 ## Client Tags
 
 Dext Precision provides the ability to set tags for your clients, to help you organise your practice. 
