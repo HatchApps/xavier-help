@@ -412,7 +412,7 @@ Tax view
 ### Scheme Thresholds
 
 ::: warning Please note:
-Our VAT tools are currently available for Xero clients only.
+Not all VAT tools are available for QuickBooks Online clients.
 :::
 
 For the Cash and Flat Rate schemes, Precision monitors your
@@ -568,8 +568,34 @@ The alert level relates to the extent to which the DLA is overdrawn:
 To monitor multiple DLA accounts, you can select multiple account codes for this check, and each will appear as a separate 
 card within the check with it’s own graph. 
 
+## ABN Checks (Australia Only)
+
+Dext Precision will automatically highlight all missing or invalid Australian Business Numbers (ABN's) in Xero for you and identify any transactions 
+with inconsistent tax rates, saving hours of checking time and reducing the risk of costly fines.
+
+![ABN Validation check](./images/ABN_Validation_1.png)
+
+The ABN checks can be tailored to a transaction threshold, so you can filter out the noise and direct your attention to more high-value items as necessary
+The contact and line item lists in both checks are presented in Precision’s flexible grid format, so you can sort and filter the results, export to Excel, and share with clients and colleagues as necessary
+Our ABN checks can be added to Flows in Precision, so you can integrate them into your regular practice processes.
+
+### ABN validity
+
+![ABN Validation check detail](./images/ABN_Validation_2.png)
+
+Precision detects ABN numbers and checks them against the Australian Business Registry (ABR) for validity. Opening the card will show a list of contacts and their relevant line items, sorted by GST Rate, with links back to Xero where the ABN can be checked against the contact.
+Precision detects contacts with the relevant GST treatment that are missing ABN numbers. Opening the card will show a list of contacts and their relevant line items, sorted by GST rate.
+Where relevant, if the ABN is missing or invalid, Precision will display a button in the grid to ‘Find ABN’ - this will show a popup with suggested matches from the Australian Business Register. There is a maximum of 10 results. You can refine your search by entering another alternative name into the search text box. This will update the displayed results. You can also refine your search using the grid (this will only sort or filter the currently displayed results)
+
+(Xero Only) Once you have identified the correct ABN, Xero users can use the ‘Push to Xero’ button. This will update the ABN number for that contact in Xero with the new ABN.  
+
+### GST Treatment checks
+
+Precision now reviews your contacts and highlights potential GST issues detected in the period based on the Contact’s GST status. The card will expand to show a list of contacts and the line items we have detected issues on, sorted by GST treatment.
+
+![GST check detail](./images/ABN_Validation_3.png)
+
 ## Activity Stats
-![Activity Stats](./images/insight-activity-stats.png)
 
 Designed for accountancy firms utilising proposal tools such as [GoProposal](https://goproposal.com/) to determine
 pricing for their clients, the _Activity Stats_ insight gives a breakdown of the key trading statistics of a company,

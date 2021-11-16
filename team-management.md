@@ -92,17 +92,19 @@ those users _will_ still be able to see the names and email addresses of other u
 :::
 
 ## Two-Factor Authentication
+
+::: warning
+The following 2FA guidance is only applicable for partners who joined Precision before February 2021, and/or have not been migrated to a new Dext account. If you are not sure if this applies to you, please contact support at contact@xavier-analytics.com.   
+:::
+
 Team Members can enable Two-Factor Authentication (2FA). 2FA provides additional account security by requiring you to
 provide a token during login in addition to your username and password. This token is retrieved from an application on
 your mobile phone. Precision uses [Authy](https://authy.com/) to provide 2FA. To get started, Team Members should download
 and install the Authy mobile app for iOS or Android, then follow the instructions below:
 
 ### Enabling 2FA
-Turning on 2FA in Precision is simple. From the drop-down _User Menu_ in the top right of your screen, select
-_Your Settings_, then head to _Security_. Enter your country code (e.g. +44 for the UK) and mobile number and click
-"Enable".
-
-![Enable 2FA](./images/team-enable-2fa.png)
+Turning on 2FA in Precision is simple. Select 'Your Settings' in the sidebar navigation from the _Client List_, then head to _Security_. 
+Enter your country code (e.g. +44 for the UK) and mobile number and click "Enable".
 
 ::: tip
 Dext Precision will give you an emergency recovery token that allows you to login if you've lost your phone. Take note of it
@@ -111,19 +113,13 @@ immediately by storing it in a safe secure place, such as a Password Manager.
 
 ### Logging in with 2FA
 If you have 2FA enabled, enter your email address and password like normal, then you'll be presented with one extra step
-where you need to enter the 2FA token. Retrieve this from the Authy mobile app:
-
-![Login with 2FA](./images/team-2fa-login.png)
+where you need to enter the 2FA token. Retrieve this from the Authy mobile app.
 
 ### Disabling 2FA
-You can disable 2FA in the same place you enabled it. From the drop-down _User Menu_ in the top right of your screen,
-select _Your Settings_, then head to _Security_.
+You can disable 2FA in the same place you enabled it.  Select 'Your Settings' in the sidebar navigation from the _Client List_, then head to _Security_.
 
 ### Monitor Adoption of 2FA
-If you're the team owner, you can see which team members have enabled 2FA. From the drop-down _User Menu_ in the top
-right of your screen, select _Team Settings_, then head to _Team Members_:
-
-![2FA Adoption](./images/team-members-2fa.png)
+If you're the team owner, you can see which team members have enabled 2FA. In the sidebar when viewing the _Client List_, select _Team Settings_, then head to _Team Members_.
 
 ## Account Managers
 If your team manages many clients, you'll likely have a concept in your team structure where certain people look after
